@@ -16,5 +16,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    print(solution.findErrorNums([1, 2, 2, 4]))
     assert [2, 3] == solution.findErrorNums([1, 2, 2, 4])

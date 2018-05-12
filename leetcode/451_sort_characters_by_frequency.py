@@ -19,6 +19,6 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    print(solution.frequencySort('tree'))
-    print(solution.frequencySort('cccaaa'))
-    print(solution.frequencySort('Aabb'))
+    assert 'eert' == solution.frequencySort('tree')
+    assert 'aaaccc' == solution.frequencySort('cccaaa')
+    assert 'bbAa' == solution.frequencySort('Aabb')
