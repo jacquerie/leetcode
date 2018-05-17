@@ -5,15 +5,12 @@ from __future__ import absolute_import, division, print_function
 
 class NumArray(object):
     def __init__(self, nums):
-        current, self.sums = 0, []
+        self.sums = [0]
         for num in nums:
-            current += num
-            self.sums.append(current)
+            self.sums.append(self.sums[-1] + num)
 
     def sumRange(self, i, j):
-        if i:
-            return self.sums[j] - self.sums[i - 1]
-        return self.sums[j]
+        return self.sums[j + 1] - self.sums[i]
 
 
 if __name__ == '__main__':
