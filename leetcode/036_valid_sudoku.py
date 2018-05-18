@@ -2,32 +2,22 @@
 
 from __future__ import absolute_import, division, print_function
 
-from collections import Counter
-
 
 class Solution(object):
     def isInvalidSubset(self, subset):
-        return any(v > 1 and k != '.' for k, v in Counter(subset).items())
+        filtered_subset = [el for el in subset if el != '.']
+        return len(set(filtered_subset)) != len(filtered_subset)
 
     def isValidSudoku(self, board):
-        for i in range(9):
-            if self.isInvalidSubset(board[i]):
+        for i in xrange(9):
+            if self.isInvalidSubset(board[i][j] for j in xrange(9)):
+                return False
+            if self.isInvalidSubset(board[j][i] for j in xrange(9)):
                 return False
 
-        for i in range(9):
-            column = []
-            for j in range(9):
-                column.append(board[j][i])
-            if self.isInvalidSubset(column):
-                return False
-
-        for i in range(3):
-            for j in range(3):
-                square = []
-                for h in range(3):
-                    for k in range(3):
-                        square.append(board[3 * i + h][3 * j + k])
-                if self.isInvalidSubset(square):
+        for i in xrange(3):
+            for j in xrange(3):
+                if self.isInvalidSubset(board[3 * i + h][3 * j + k] for h in xrange(3) for k in xrange(3)):
                     return False
 
         return True
