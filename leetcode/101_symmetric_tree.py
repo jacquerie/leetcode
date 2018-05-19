@@ -9,14 +9,6 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-    def __eq__(self, other):
-        return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
-        )
-
 
 class Solution(object):
     def isSymmetric(self, root):
