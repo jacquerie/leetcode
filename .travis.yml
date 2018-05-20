@@ -1,0 +1,21 @@
+notifications:
+  email: false
+
+language: python
+
+cache: pip
+
+python:
+  - 2.7
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - travis_retry pip install --upgrade pip setuptools
+
+install:
+  - travis_retry pip install flake8 flake8-future-import
+
+script:
+  - flake8 leetcode
