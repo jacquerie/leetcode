@@ -7,7 +7,7 @@ from collections import Counter
 
 class Solution(object):
     def topKFrequent(self, nums, k):
-        return [k for k, v in Counter(nums).most_common(k)]
+        return [el for el, _ in Counter(nums).most_common(k)]
 
 
 if __name__ == '__main__':

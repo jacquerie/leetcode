@@ -22,7 +22,7 @@ class Solution(object):
             for level in self.domainToLevels(domain):
                 result[level] += int(count)
 
-        return ['%d %s' % (count, level) for level, count in result.items()]
+        return ['%d %s' % (count, level) for level, count in result.items()]  # noqa: F812
 
 
 if __name__ == '__main__':
