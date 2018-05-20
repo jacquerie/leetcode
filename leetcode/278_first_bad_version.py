@@ -12,11 +12,11 @@ class Solution(object):
         first, last = 1, n
 
         while first <= last:
-           mid = (first + last) // 2 
-           if isBadVersion(mid):
-               last = mid - 1
-           else:
-               first = mid + 1
+            mid = (first + last) // 2
+            if isBadVersion(mid):
+                last = mid - 1
+            else:
+                first = mid + 1
 
         return first
 
