@@ -23,7 +23,7 @@ class Solution(object):
     def rotatedDigits(self, N): 
         result = 0
 
-        for i in range(1, N+1):
+        for i in range(1, N + 1):
             rotated_digits = [self.rotateDigit(digit) for digit in list(str(i))]
             if None in rotated_digits:
                 continue

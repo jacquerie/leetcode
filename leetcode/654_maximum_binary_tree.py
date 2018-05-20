@@ -28,7 +28,7 @@ class Solution(object):
         i, maximum = max(enumerate(nums), key=operator.itemgetter(1))
         node = TreeNode(maximum)
         node.left = self.constructMaximumBinaryTree(nums[:i])
-        node.right = self.constructMaximumBinaryTree(nums[i+1:])
+        node.right = self.constructMaximumBinaryTree(nums[i + 1:])
 
         return node
 
