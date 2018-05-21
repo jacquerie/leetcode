@@ -21,4 +21,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    assert sorted([[0,1,3],[0,2,3]]) == sorted(solution.allPathsSourceTarget([[1,2], [3], [3], []]))
+    assert sorted([[0, 1, 3], [0, 2, 3]]) == sorted(solution.allPathsSourceTarget([[1, 2], [3], [3], []]))

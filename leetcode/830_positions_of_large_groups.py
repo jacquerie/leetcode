@@ -24,4 +24,4 @@ if __name__ == '__main__':
 
     assert [[3, 6]] == solution.largeGroupPositions('abbxxxxzzy')
     assert [] == solution.largeGroupPositions('abc')
-    assert [[3,5],[6,9],[12,14]] == solution.largeGroupPositions('abcdddeeeeaabbbcd')
+    assert [[3, 5], [6, 9], [12, 14]] == solution.largeGroupPositions('abcdddeeeeaabbbcd')

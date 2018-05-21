@@ -24,5 +24,5 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    assert 2 == solution.largestTriangleArea([[0,0],[0,1],[1,0],[0,2],[2,0]])
-    assert 0.5 == solution.largestTriangleArea([[1,0],[0,0],[0,1]])
+    assert 2 == solution.largestTriangleArea([[0, 0], [0, 1], [1, 0], [0, 2], [2, 0]])
+    assert 0.5 == solution.largestTriangleArea([[1, 0], [0, 0], [0, 1]])
