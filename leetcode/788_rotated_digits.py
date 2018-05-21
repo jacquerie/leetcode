@@ -20,7 +20,7 @@ class Solution(object):
         elif d == '9':
             return '6'
 
-    def rotatedDigits(self, N): 
+    def rotatedDigits(self, N):
         result = 0
 
         for i in range(1, N + 1):

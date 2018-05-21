@@ -23,7 +23,7 @@ class Complex(object):
 
     @staticmethod
     def loads(s):
-        match = RE_COMPLEX_NUMBER.match(s) 
+        match = RE_COMPLEX_NUMBER.match(s)
         real = int(match.group('real'))
         imaginary = int(match.group('imaginary'))
 
