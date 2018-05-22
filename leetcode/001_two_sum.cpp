@@ -1,5 +1,5 @@
 #include <cassert>
-#include <map>
+#include <unordered_map>
 #include <vector>
 
 using namespace std;
@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum (vector<int>& nums, int target) {
-        map<int, int> seen;
+        unordered_map<int, int> seen;
         for (int i = 0; i < nums.size(); i++) {
             auto it = seen.find(target - nums[i]);
             if (it != seen.end()) {
