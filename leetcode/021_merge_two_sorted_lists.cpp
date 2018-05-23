@@ -13,10 +13,8 @@ struct ListNode {
 bool operator== (ListNode& lhs, ListNode& rhs) {
     if (lhs.next && rhs.next) {
         return lhs.val == rhs.val && *(lhs.next) == *(rhs.next);
-    } else if (lhs.next || rhs.next) {
-        return false;
     } else {
-        return true;
+        return !(lhs.next || rhs.next);
     }
 };
 
