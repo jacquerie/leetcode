@@ -11,7 +11,7 @@ public:
         }
 
         int i = 0, l = s.length();
-        for (auto c: t) {
+        for (auto c : t) {
             if (c == s[i]) {
                 i++;
                 if (i == l) {

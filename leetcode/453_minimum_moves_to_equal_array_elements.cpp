@@ -9,7 +9,7 @@ public:
     int minMoves (vector<int>& nums) {
         int count = 0, min = INT_MAX, sum = 0;
 
-        for (auto num: nums) {
+        for (auto num : nums) {
             if (num < min) {
                 min = num;
             }

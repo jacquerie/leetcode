@@ -17,7 +17,7 @@ public:
             auto i = queue.front();
             queue.pop();
 
-            for (auto j: rooms[i]) {
+            for (auto j : rooms[i]) {
                 if (visited.find(j) == visited.end()) {
                     visited.insert(j);
                     queue.push(j);

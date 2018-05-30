@@ -14,7 +14,7 @@ public:
         }
 
         vector<int> counts(26);
-        for (auto c: p) {
+        for (auto c : p) {
             ++counts[c - 'a'];
         }
         for (int i = 0; i < p.length(); ++i) {

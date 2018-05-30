@@ -10,7 +10,7 @@ public:
     int evalRPN (vector<string>& tokens) {
         stack<int> stack;
 
-        for (auto token: tokens) {
+        for (auto token : tokens) {
             int op1, op2;
 
             if (token == "+") {

@@ -12,7 +12,7 @@ public:
 
         int median = nums[nums.size() / 2], result = 0;
 
-        for (auto num: nums) {
+        for (auto num : nums) {
             result += abs(num - median);
         }
 

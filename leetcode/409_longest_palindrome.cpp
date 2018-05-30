@@ -8,13 +8,13 @@ class Solution {
 public:
     int longestPalindrome (string s) {
         unordered_map<char, int> counter;
-        for (auto c: s) {
+        for (auto c : s) {
             counter[c]++;
         }
 
         int odd = 0, result = 0;
 
-        for (auto it: counter) {
+        for (auto it : counter) {
             if (it.second % 2) {
                 result += it.second - 1;
                 odd = 1;

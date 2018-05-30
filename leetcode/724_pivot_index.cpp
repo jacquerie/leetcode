@@ -7,7 +7,7 @@ class Solution {
 public:
     int pivotIndex (vector<int>& nums) {
         int totalSum = 0;
-        for (auto num: nums) {
+        for (auto num : nums) {
             totalSum += num;
         }
 

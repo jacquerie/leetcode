@@ -14,7 +14,7 @@ public:
         bool inWord = !(isspace(s[0]));
         int result = 0;
 
-        for (auto c: s) {
+        for (auto c : s) {
             if (isspace(c) && inWord) {
                 inWord = false;
                 result++;
