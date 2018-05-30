@@ -28,7 +28,7 @@ int main () {
     auto solution = Solution();
 
     assert(solution.isSubsequence("abc", "ahbgdc"));
-    assert(not solution.isSubsequence("axc", "ahbgdc"));
+    assert(!solution.isSubsequence("axc", "ahbgdc"));
     assert(solution.isSubsequence("", "ahbgdc"));
     assert(solution.isSubsequence("a", "ab"));
 }
