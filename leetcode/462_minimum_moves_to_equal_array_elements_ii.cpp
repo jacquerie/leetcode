@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    int minMoves2 (vector<int>& nums) {
+    int minMoves2(vector<int>& nums) {
         sort(nums.begin(), nums.end());
 
         int median = nums[nums.size() / 2], result = 0;
@@ -20,7 +20,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> nums = {1, 2, 3};

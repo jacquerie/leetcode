@@ -7,10 +7,10 @@ struct ListNode {
     int val;
     ListNode* next;
 
-    explicit ListNode (int x): val(x), next(NULL) {}
+    explicit ListNode(int x): val(x), next(NULL) {}
 };
 
-bool operator== (ListNode& lhs, ListNode& rhs) {
+bool operator==(ListNode& lhs, ListNode& rhs) {
     if (lhs.next && rhs.next) {
         return lhs.val == rhs.val && *(lhs.next) == *(rhs.next);
     } else {
@@ -20,7 +20,7 @@ bool operator== (ListNode& lhs, ListNode& rhs) {
 
 class Solution {
 public:
-    ListNode* mergeTwoLists (ListNode* l1, ListNode* l2) {
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         auto head = ListNode(0);
         auto current = &head;
 
@@ -46,7 +46,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     auto l0_0 = ListNode(1);

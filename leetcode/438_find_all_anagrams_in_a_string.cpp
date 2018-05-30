@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> findAnagrams (string s, string p) {
+    vector<int> findAnagrams(string s, string p) {
         vector<int> result;
         if (s.length() < p.length()) {
             return result;
@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> expected = {0, 6};

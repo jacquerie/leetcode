@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int minMoves (vector<int>& nums) {
+    int minMoves(vector<int>& nums) {
         int count = 0, min = INT_MAX, sum = 0;
 
         for (auto num : nums) {
@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> nums = {1, 2, 3};

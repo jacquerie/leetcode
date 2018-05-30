@@ -5,7 +5,7 @@ using namespace std;
 
 class NumMatrix {
 public:
-    explicit NumMatrix (vector<vector<int>> matrix) {
+    explicit NumMatrix(vector<vector<int>> matrix) {
         if (matrix.empty()) {
             return;
         }
@@ -23,7 +23,7 @@ public:
         }
     }
 
-    int sumRegion (int row1, int col1, int row2, int col2) {
+    int sumRegion(int row1, int col1, int row2, int col2) {
         return sums_[row2 + 1][col2 + 1] - sums_[row2 + 1][col1] - sums_[row1][col2 + 1] + sums_[row1][col1];
     }
 
@@ -31,7 +31,7 @@ private:
     vector<vector<int>> sums_;
 };
 
-int main () {
+int main() {
     vector<vector<int>> matrix = {
         {3, 0, 1, 4, 2},
         {5, 6, 3, 2, 1},

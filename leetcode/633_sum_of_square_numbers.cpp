@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool judgeSquareSum (int c) {
+    bool judgeSquareSum(int c) {
         if (c < 2) {
             return true;
         } else if (c % 4 == 3) {
@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(solution.judgeSquareSum(5));

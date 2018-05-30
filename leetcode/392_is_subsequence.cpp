@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool isSubsequence (string s, string t) {
+    bool isSubsequence(string s, string t) {
         if (s.empty()) {
             return true;
         }
@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(solution.isSubsequence("abc", "ahbgdc"));

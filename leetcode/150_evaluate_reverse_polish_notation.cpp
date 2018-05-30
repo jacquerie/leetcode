@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    int evalRPN (vector<string>& tokens) {
+    int evalRPN(vector<string>& tokens) {
         stack<int> stack;
 
         for (auto token : tokens) {
@@ -46,7 +46,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<string> tokens = {"2", "1", "+", "3", "*"};

@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> partitionLabels (string S) {
+    vector<int> partitionLabels(string S) {
         map<char, int> lastOccurrences;
         for (size_t i = 0; i < S.length(); i++) {
             lastOccurrences[S[i]] = i;
@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> expected = {9, 7, 8};

@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int longestPalindrome (string s) {
+    int longestPalindrome(string s) {
         unordered_map<char, int> counter;
         for (auto c : s) {
             counter[c]++;
@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(7 == solution.longestPalindrome("abccccdd"));

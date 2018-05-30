@@ -8,12 +8,12 @@ struct TreeNode {
     TreeNode* left;
     TreeNode* right;
 
-    explicit TreeNode (int x): val(x), left(NULL), right(NULL) {}
+    explicit TreeNode(int x): val(x), left(NULL), right(NULL) {}
 };
 
 class Solution {
 public:
-    bool isSameTree (TreeNode* p, TreeNode* q) {
+    bool isSameTree(TreeNode* p, TreeNode* q) {
         if (!p && !q) {
             return true;
         } else if (!p || !q) {
@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     auto t0_0 = TreeNode(1);

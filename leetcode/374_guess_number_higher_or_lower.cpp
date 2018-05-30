@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int guess (int num) {
+int guess(int num) {
     if (num > 6) {
         return -1;
     } else if (num == 6) {
@@ -14,7 +14,7 @@ int guess (int num) {
 
 class Solution {
 public:
-    int guessNumber (int n) {
+    int guessNumber(int n) {
         int mid, first = 1, last = n;
 
         while (first <= last) {
@@ -30,7 +30,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(6 == solution.guessNumber(10));

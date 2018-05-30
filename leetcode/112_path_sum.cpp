@@ -8,12 +8,12 @@ struct TreeNode {
     TreeNode* left;
     TreeNode* right;
 
-    explicit TreeNode (int x): val(x), left(NULL), right(NULL) {}
+    explicit TreeNode(int x): val(x), left(NULL), right(NULL) {}
 };
 
 class Solution {
 public:
-    bool hasPathSum (TreeNode* root, int sum) {
+    bool hasPathSum(TreeNode* root, int sum) {
         if (!root) {
             return false;
         } else if (!root->left && !root->right) {
@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     auto t0_0 = TreeNode(5);

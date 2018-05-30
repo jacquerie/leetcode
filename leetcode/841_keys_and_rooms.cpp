@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool canVisitAllRooms (vector<vector<int>>& rooms) {
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
         unordered_set<int> visited = {0};
 
         queue<int> queue;
@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<vector<int>> rooms = {{1}, {2}, {3}, {}};

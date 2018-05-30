@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    int pivotIndex (vector<int>& nums) {
+    int pivotIndex(vector<int>& nums) {
         int totalSum = 0;
         for (auto num : nums) {
             totalSum += num;
@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> nums = {1, 7, 3, 6, 5, 6};

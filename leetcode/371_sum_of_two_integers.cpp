@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
 public:
-    int getSum (int a, int b) {
+    int getSum(int a, int b) {
         while (b) {
             int carry = a & b;
             a ^= b;
@@ -15,7 +15,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(3 == solution.getSum(1, 2));

@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int findLengthOfLCIS (vector<int>& nums) {
+    int findLengthOfLCIS(vector<int>& nums) {
         if (nums.empty()) {
             return 0;
         }
@@ -34,7 +34,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     vector<int> nums = {1, 3, 5, 4, 7};

@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
 public:
-    int reverse (int x) {
+    int reverse(int x) {
         int previous, result = 0;
 
         while (x) {
@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(321 == solution.reverse(123));

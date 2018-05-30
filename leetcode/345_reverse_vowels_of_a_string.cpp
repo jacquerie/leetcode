@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    string reverseVowels (string s) {
+    string reverseVowels(string s) {
         int i = 0, j = s.size() - 1;
 
         while (i <= j) {
@@ -24,12 +24,12 @@ public:
 private:
     const string vowels_ = "AEIOUaeiou";
 
-    bool isNotVowel (char c) {
+    bool isNotVowel(char c) {
         return vowels_.find(c) == string::npos;
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert("holle" == solution.reverseVowels("hello"));

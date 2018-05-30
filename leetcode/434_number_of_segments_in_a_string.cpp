@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int countSegments (string s) {
+    int countSegments(string s) {
         if (s.empty()) {
             return 0;
         }
@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(5 == solution.countSegments("Hello, my name is John"));

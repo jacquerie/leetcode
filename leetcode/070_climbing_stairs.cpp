@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int climbStairs (int n) {
+    int climbStairs(int n) {
         int previous = 1, current = 1;
 
         for (int i = 1; i < n; i++) {
@@ -15,7 +15,7 @@ public:
     }
 };
 
-int main () {
+int main() {
     auto solution = Solution();
 
     assert(1 == solution.climbStairs(1));
