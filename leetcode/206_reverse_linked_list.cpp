@@ -16,7 +16,7 @@ bool operator== (ListNode& lhs, ListNode& rhs) {
     } else {
         return !(lhs.next || rhs.next);
     }
-};
+}
 
 class Solution {
 public:
