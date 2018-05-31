@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     int pivotIndex(vector<int>& nums) {
         int totalSum = 0;
         for (auto num : nums) {

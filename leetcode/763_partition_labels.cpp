@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     vector<int> partitionLabels(string S) {
         map<char, int> lastOccurrences;
         for (size_t i = 0; i < S.length(); i++) {

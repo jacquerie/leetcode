@@ -13,7 +13,7 @@ struct TreeNode {
 };
 
 class Solution {
-public:
+ public:
     int findBottomLeftValue(TreeNode* root) {
         TreeNode* current = NULL;
 

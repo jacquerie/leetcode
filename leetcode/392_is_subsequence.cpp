@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     bool isSubsequence(string s, string t) {
         if (s.empty()) {
             return true;

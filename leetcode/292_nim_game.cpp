@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     bool canWinNim(int n) {
         return n % 4 != 0;
     }

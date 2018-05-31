@@ -4,7 +4,7 @@
 using namespace std;
 
 class NumMatrix {
-public:
+ public:
     explicit NumMatrix(vector<vector<int>> matrix) {
         if (matrix.empty()) {
             return;
@@ -27,7 +27,7 @@ public:
         return sums_[row2 + 1][col2 + 1] - sums_[row2 + 1][col1] - sums_[row1][col2 + 1] + sums_[row1][col1];
     }
 
-private:
+ private:
     vector<vector<int>> sums_;
 };
 

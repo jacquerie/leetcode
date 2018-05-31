@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     bool canVisitAllRooms(vector<vector<int>>& rooms) {
         unordered_set<int> visited = {0};
 

@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     vector<int> findAnagrams(string s, string p) {
         vector<int> result;
         if (s.length() < p.length()) {

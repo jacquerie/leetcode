@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     int hIndex(vector<int>& citations) {
         int n = citations.size();
         int mid, first = 0, last = n - 1;

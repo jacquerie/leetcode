@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     int minMoves(vector<int>& nums) {
         int count = 0, min = INT_MAX, sum = 0;
 

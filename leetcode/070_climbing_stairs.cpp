@@ -1,7 +1,7 @@
 #include <cassert>
 
 class Solution {
-public:
+ public:
     int climbStairs(int n) {
         int previous = 1, current = 1;
 

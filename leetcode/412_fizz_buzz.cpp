@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     vector<string> fizzBuzz(int n) {
         vector<string> result;
 

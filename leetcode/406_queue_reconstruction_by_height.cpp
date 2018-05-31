@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     vector<pair<int, int>> reconstructQueue(vector<pair<int, int>>& people) {
         vector<pair<int, int>> result;
 

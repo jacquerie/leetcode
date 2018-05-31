@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     int minMoves2(vector<int>& nums) {
         sort(nums.begin(), nums.end());
 

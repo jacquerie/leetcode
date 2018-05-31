@@ -19,7 +19,7 @@ bool operator==(ListNode& lhs, ListNode& rhs) {
 }
 
 class Solution {
-public:
+ public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         auto head = ListNode(0);
         auto current = &head;

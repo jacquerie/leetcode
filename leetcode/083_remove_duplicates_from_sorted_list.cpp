@@ -19,7 +19,7 @@ bool operator==(ListNode& lhs, ListNode& rhs) {
 }
 
 class Solution {
-public:
+ public:
     ListNode* deleteDuplicates(ListNode* head) {
         auto current = head;
 

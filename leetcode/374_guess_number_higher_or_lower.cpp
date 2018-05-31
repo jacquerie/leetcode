@@ -13,7 +13,7 @@ int guess(int num) {
 }
 
 class Solution {
-public:
+ public:
     int guessNumber(int n) {
         int mid, first = 1, last = n;
 

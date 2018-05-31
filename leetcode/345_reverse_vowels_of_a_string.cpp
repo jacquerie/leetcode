@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     string reverseVowels(string s) {
         int i = 0, j = s.size() - 1;
 
@@ -21,7 +21,7 @@ public:
         return s;
     }
 
-private:
+ private:
     const string vowels_ = "AEIOUaeiou";
 
     bool isNotVowel(char c) {

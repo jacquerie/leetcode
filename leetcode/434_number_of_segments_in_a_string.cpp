@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     int countSegments(string s) {
         if (s.empty()) {
             return 0;

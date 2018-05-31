@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
     bool judgeSquareSum(int c) {
         if (c < 2) {
             return true;
