@@ -1,3 +1,5 @@
+// Copyright (c) 2018 Jacopo Notarstefano
+
 #include <cassert>
 
 using namespace std;
