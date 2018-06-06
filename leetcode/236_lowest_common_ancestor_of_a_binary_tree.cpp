@@ -2,7 +2,6 @@
 
 #include <cassert>
 #include <cstddef>
-#include <utility>
 
 using namespace std;
 
@@ -17,27 +16,20 @@ struct TreeNode {
 class Solution {
  public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        return lowestCommonAncestorHelper(root, p, q).second;
-    }
-
- private:
-    pair<int, TreeNode*> lowestCommonAncestorHelper(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root) {
-            return pair<int, TreeNode*>(0, NULL);
+        if (!root || root == p || root == q) {
+            return root;
         }
 
-        auto left = lowestCommonAncestorHelper(root->left, p, q);
-        if (left.first == 2) {
+        auto left = lowestCommonAncestor(root->left, p, q);
+        auto right = lowestCommonAncestor(root->right, p, q);
+
+        if (left && right) {
+            return root;
+        } else if (left) {
             return left;
-        }
-
-        auto right = lowestCommonAncestorHelper(root->right, p, q);
-        if (right.first == 2) {
+        } else {
             return right;
         }
-
-        int numTargetNodes = left.first + right.first + (root == p) + (root == q);
-        return pair<int, TreeNode*>(numTargetNodes, numTargetNodes == 2 ? root : NULL);
     }
 };
 
