@@ -34,7 +34,7 @@ class Solution {
         auto left = diameterAndHeightOfBinaryTree(root->left);
         auto right = diameterAndHeightOfBinaryTree(root->right);
 
-        int diameter = max(max(left.first, right.first), left.second + right.second + 1);
+        int diameter = max({left.first, right.first, left.second + right.second + 1});
         int height = 1 + max(left.second, right.second);
 
         return pair<int, int>(diameter, height);
