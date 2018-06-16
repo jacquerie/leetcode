@@ -42,5 +42,5 @@ int main() {
     auto solution = Solution();
 
     assert(solution.checkInclusion("ab", "eidbaooo"));
-    assert(not solution.checkInclusion("ab", "eidboaoo"));
+    assert(!solution.checkInclusion("ab", "eidboaoo"));
 }
