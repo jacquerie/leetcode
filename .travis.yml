@@ -18,5 +18,5 @@ install:
   - travis_retry pip install cpplint flake8 flake8-future-import
 
 script:
-  - cpplint --recursive leetcode
+  - cpplint --recursive --quiet leetcode
   - flake8 leetcode
