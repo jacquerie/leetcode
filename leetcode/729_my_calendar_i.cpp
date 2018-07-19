@@ -1,8 +1,7 @@
 // Copyright (c) 2018 Jacopo Notarstefano
 
 #include <cassert>
-#include <utility>
-#include <vector>
+#include <map>
 
 using namespace std;
 
@@ -11,25 +10,20 @@ class MyCalendar {
     MyCalendar() {}
 
     bool book(int start, int end) {
-        pair<int, int> new_event = {start, end};
-
-        for (auto event : events_) {
-            if (intersects(event, new_event)) {
-                return false;
-            }
+        auto next = events_.lower_bound(start);
+        if (next != events_.end() && next->first < end) {
+            return false;
+        } else if (next != events_.begin() && start < (--next)->second) {
+            return false;
         }
 
-        events_.push_back(new_event);
+        events_[start] = end;
 
         return true;
     }
 
  private:
-    vector<pair<int, int>> events_;
-
-    bool intersects(pair<int, int> a, pair<int, int> b) {
-        return !((a.second <= b.first) || (b.second <= a.first));
-    }
+    map<int, int> events_;
 };
 
 int main() {
