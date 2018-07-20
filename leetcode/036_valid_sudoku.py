@@ -4,15 +4,13 @@ from __future__ import absolute_import, division, print_function
 
 
 class Solution(object):
-    def isInvalidSubset(self, subset):
-        filtered_subset = [el for el in subset if el != '.']
-        return len(set(filtered_subset)) != len(filtered_subset)
-
     def isValidSudoku(self, board):
         for i in xrange(9):
             if self.isInvalidSubset(board[i][j] for j in xrange(9)):
                 return False
-            if self.isInvalidSubset(board[j][i] for j in xrange(9)):
+
+        for j in xrange(9):
+            if self.isInvalidSubset(board[i][j] for i in xrange(9)):
                 return False
 
         for i in xrange(3):
@@ -21,6 +19,10 @@ class Solution(object):
                     return False
 
         return True
+
+    def isInvalidSubset(self, subset):
+        filtered_subset = [el for el in subset if el != '.']
+        return len(set(filtered_subset)) != len(filtered_subset)
 
 
 if __name__ == '__main__':
