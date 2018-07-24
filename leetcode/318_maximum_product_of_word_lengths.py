@@ -7,18 +7,17 @@ import itertools
 
 class Solution(object):
     def maxProduct(self, words):
-        lengths = [None] * len(words)
-        for i, word in enumerate(words):
-            lengths[i] = len(word)
+        lengths = [len(word) for word in words]
 
-        sets = [None] * len(words)
+        bits = [0] * len(words)
         for i, word in enumerate(words):
-            sets[i] = set(word)
+            for c in word:
+                bits[i] |= 1 << (ord(c) - ord('a'))
 
         result = 0
 
         for i, j in itertools.combinations(xrange(len(words)), 2):
-            if lengths[i] * lengths[j] > result and not sets[i] & sets[j]:
+            if lengths[i] * lengths[j] > result and not bits[i] & bits[j]:
                 result = lengths[i] * lengths[j]
 
         return result
