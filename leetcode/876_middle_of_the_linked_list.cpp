@@ -23,27 +23,14 @@ bool operator==(ListNode& lhs, ListNode& rhs) {
 class Solution {
  public:
     ListNode* middleNode(ListNode* head) {
-        int listLength = getListLength(head);
-        auto current = head;
+        auto slow = head, fast = head;
 
-        for (int i = 0; i < listLength / 2; i++) {
-            current = current->next;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
         }
 
-        return current;
-    }
-
- private:
-    int getListLength(ListNode* head) {
-        int result = 1;
-        auto current = head;
-
-        while (current->next) {
-            result++;
-            current = current->next;
-        }
-
-        return result;
+        return slow;
     }
 };
 
