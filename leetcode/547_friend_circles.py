@@ -2,28 +2,40 @@
 
 from __future__ import absolute_import, division, print_function
 
-from collections import deque
+
+class UnionFind(object):
+    def __init__(self, n):
+        self.ids = list(xrange(n))
+        self.sizes = [1] * n
+
+    def root(self, i):
+        self.ids[i] = self.ids[self.ids[i]]
+        return self.ids[i]
+
+    def union(self, p, q):
+        i, j = self.root(p), self.root(q)
+        if i == j:
+            return
+        if self.sizes[i] < self.sizes[j]:
+            self.ids[i] = j
+            self.sizes[j] += self.sizes[i]
+        else:
+            self.ids[j] = i
+            self.sizes[i] += self.sizes[j]
+
+    def find(self, p, q):
+        return self.root(p) == self.root(q)
 
 
 class Solution(object):
     def findCircleNum(self, M):
-        result = 0
-
+        union_find = UnionFind(len(M))
         for i in xrange(len(M)):
-            if M[i][i]:
-                result += 1
-                self.markCircleAsVisited(M, i)
+            for j in xrange(i + 1, len(M)):
+                if M[i][j] and not union_find.find(i, j):
+                    union_find.union(i, j)
 
-        return result
-
-    def markCircleAsVisited(self, M, i):
-        queue = deque([i])
-        while queue:
-            j = queue.pop()
-            M[j][j] = 0
-            for h, k in enumerate(M[j]):
-                if k and M[h][h]:
-                    queue.append(h)
+        return len({union_find.root(i) for i in xrange(len(M))})
 
 
 if __name__ == '__main__':
@@ -38,4 +50,10 @@ if __name__ == '__main__':
         [1, 1, 0],
         [1, 1, 1],
         [0, 1, 1],
+    ])
+    assert 1 == solution.findCircleNum([
+        [1, 0, 0, 1],
+        [0, 1, 1, 0],
+        [0, 1, 1, 1],
+        [1, 0, 1, 1],
     ])
