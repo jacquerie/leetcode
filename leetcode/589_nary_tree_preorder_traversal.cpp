@@ -1,7 +1,7 @@
 // Copyright (c) 2018 Jacopo Notarstefano
 
-#include <algorithm>
 #include <cassert>
+#include <vector>
 
 using namespace std;
 
@@ -20,15 +20,23 @@ class Node {
 
 class Solution {
  public:
-    int maxDepth(Node* root) {
+    vector<int> preorder(Node* root) {
+        vector<int> result;
         if (!root) {
-            return 0;
-        } else {
-            int result = 0;
-            for (auto child : root->children) {
-                result = max(result, maxDepth(child));
-            }
-            return 1 + result;
+            return result;
+        }
+
+        preorderHelper(root, result);
+
+        return result;
+    }
+
+ private:
+    void preorderHelper(Node* root, vector<int>& result) {
+        result.push_back(root->val);
+
+        for (auto child : root->children) {
+            preorderHelper(child, result);
         }
     }
 };
@@ -43,5 +51,8 @@ int main() {
     auto t0_3 = Node(4, {});
     auto t0_0 = Node(1, {&t0_1, &t0_2, &t0_3});
 
-    assert(3 == solution.maxDepth(&t0_0));
+    vector<int> expected = {1, 3, 5, 6, 2, 4};
+    vector<int> result = solution.preorder(&t0_0);
+
+    assert(expected == result);
 }
