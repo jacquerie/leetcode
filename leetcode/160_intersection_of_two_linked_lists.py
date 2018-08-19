@@ -11,9 +11,6 @@ class ListNode(object):
     def __eq__(self, other):
         return self.val == other.val and self.next == other.next
 
-    def __str__(self):
-        return '<ListNode val=%d>' % self.val
-
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
