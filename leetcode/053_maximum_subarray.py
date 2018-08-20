@@ -5,13 +5,11 @@ from __future__ import absolute_import, division, print_function
 
 class Solution(object):
     def maxSubArray(self, nums):
-        max_ending_here = max_so_far = nums[0]
-
-        for num in nums[1:]:
-            max_ending_here = max(num, max_ending_here + num)
-            max_so_far = max(max_so_far, max_ending_here)
-
-        return max_so_far
+        best_max, current_max = float('-inf'), 0
+        for num in nums:
+            current_max = max(num, current_max + num)
+            best_max = max(best_max, current_max)
+        return best_max
 
 
 if __name__ == '__main__':
