@@ -5,19 +5,22 @@ from __future__ import absolute_import, division, print_function
 
 class Solution(object):
     def generate(self, numRows):
-        if numRows == 0:
-            return []
-        elif numRows == 1:
-            return [[1]]
+        result = []
+        if not numRows:
+            return result
 
-        result = [
-            [1],
-            [1, 1],
-        ]
-
-        for i in range(2, numRows):
-            partial = [1] + [result[-1][j - 1] + result[-1][j] for j in range(1, i)] + [1]
-            result.append(partial)
+        current = [1]
+        for row in xrange(numRows):
+            next = []
+            for col in xrange(row + 1):
+                if col == 0:
+                    next.append(current[col])
+                elif col == row:
+                    next.append(current[col - 1])
+                else:
+                    next.append(current[col - 1] + current[col])
+            result.append(next)
+            current = next
 
         return result
 
