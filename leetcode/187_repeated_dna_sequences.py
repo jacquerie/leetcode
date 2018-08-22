@@ -2,17 +2,21 @@
 
 from __future__ import absolute_import, division, print_function
 
-import itertools
-from collections import Counter
-
 
 class Solution(object):
     def findRepeatedDnaSequences(self, s):
-        counter = Counter(self.eachCons(s, n=10))
-        return [''.join(k) for k, v in counter.iteritems() if v > 1]
+        result = set()
+        if len(s) < 11:
+            return []
 
-    def eachCons(self, xs, n=10):
-        return itertools.izip(*(xs[i:] for i in xrange(n)))
+        seen = set([s[:10]])
+        for i in xrange(10, len(s)):
+            sequence = s[i - 9:i + 1]
+            if sequence in seen:
+                result.add(sequence)
+            seen.add(sequence)
+
+        return list(result)
 
 
 if __name__ == '__main__':
