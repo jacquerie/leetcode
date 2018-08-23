@@ -18,22 +18,36 @@ class ListNode(object):
         )
 
 
+class ListHeap(object):
+    def __init__(self, lists):
+        self.els = []
+        for el in lists:
+            if el is not None:
+                heappush(self.els, (el.val, el))
+
+    def __nonzero__(self):
+        return len(self.els) > 0
+
+    def pop(self):
+        _, el = heappop(self.els)
+        return el
+
+    def push(self, el):
+        heappush(self.els, (el.val, el))
+
+
 class Solution(object):
     def mergeKLists(self, lists):
         dummy = ListNode(None)
         current = dummy
 
-        heap = []
-        for el in lists:
-            if el:
-                heappush(heap, (el.val, el))
-
+        heap = ListHeap(lists)
         while heap:
-            _, node = heappop(heap)
+            node = heap.pop()
             current.next = node
             current = current.next
             if node.next is not None:
-                heappush(heap, (node.next.val, node.next))
+                heap.push(node.next)
 
         return dummy.next
 
