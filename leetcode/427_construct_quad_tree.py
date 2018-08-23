@@ -13,9 +13,8 @@ class Node(object):
         self.bottomRight = bottomRight
 
     def __eq__(self, other):
-        if other is None:
-            return False
         return (
+            other is not None and
             self.val == other.val and
             self.isLeaf == other.isLeaf and
             self.topLeft == other.topLeft and
