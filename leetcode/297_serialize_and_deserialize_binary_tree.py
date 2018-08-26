@@ -2,8 +2,6 @@
 
 from __future__ import absolute_import, division, print_function
 
-from collections import deque
-
 
 class TreeNode(object):
     def __init__(self, x):
@@ -52,13 +50,13 @@ class Codec(object):
         return i, int(data[1:i])
 
     def parseSubtree(self, data, i):
-        stack = deque([data[i]])
-        while stack:
+        n = 1
+        while n:
             i += 1
             if data[i] == '(':
-                stack.append('(')
+                n += 1
             elif data[i] == ')':
-                stack.pop()
+                n -= 1
         return i + 1
 
 
