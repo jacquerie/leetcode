@@ -20,4 +20,4 @@ if __name__ == '__main__':
     solution = Solution()
 
     assert solution.isHappy(19)
-    assert solution.isHappy(2)
+    assert not solution.isHappy(2)
