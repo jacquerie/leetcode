@@ -9,6 +9,14 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+    def __eq__(self, other):
+        return (
+            other is not None and
+            self.val == other.val and
+            self.left == other.left and
+            self.right == other.right
+        )
+
 
 class Solution(object):
     def insertIntoBST(self, root, val):
@@ -41,6 +49,10 @@ if __name__ == '__main__':
     t0_2 = TreeNode(7)
     t0_3 = TreeNode(1)
     t0_4 = TreeNode(3)
+    t0_1.right = t0_4
+    t0_1.left = t0_3
+    t0_0.right = t0_2
+    t0_0.left = t0_1
 
     t1_0 = TreeNode(4)
     t1_1 = TreeNode(2)
@@ -48,5 +60,10 @@ if __name__ == '__main__':
     t1_3 = TreeNode(1)
     t1_4 = TreeNode(3)
     t1_5 = TreeNode(5)
+    t1_2.left = t1_5
+    t1_1.right = t1_4
+    t1_1.left = t1_3
+    t1_0.right = t1_2
+    t1_0.left = t1_1
 
     assert t1_0 == solution.insertIntoBST(t0_0, 5)
