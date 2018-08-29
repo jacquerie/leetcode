@@ -29,4 +29,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    assert 2 == solution.uniqueMorseRepresentation(['gin', 'zen', 'gig', 'msg'])
+    assert 2 == solution.uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg'])
