@@ -14,4 +14,4 @@ if __name__ == '__main__':
     solution = Solution()
 
     assert solution.isAnagram('anagram', 'nagaram')
-    assert solution.isAnagram('rat', 'car')
+    assert not solution.isAnagram('rat', 'car')
