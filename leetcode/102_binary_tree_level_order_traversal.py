@@ -12,10 +12,9 @@ class TreeNode(object):
 
 class Solution(object):
     def levelOrder(self, root):
-        if root is None:
-            return []
-
         result = []
+        if root is None:
+            return result
 
         current = [root]
         while current:
