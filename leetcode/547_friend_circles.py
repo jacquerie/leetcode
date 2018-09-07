@@ -9,8 +9,10 @@ class UnionFind(object):
         self.sizes = [1] * n
 
     def root(self, i):
-        self.ids[i] = self.ids[self.ids[i]]
-        return self.ids[i]
+        while i != self.ids[i]:
+            self.ids[i] = self.ids[self.ids[i]]
+            i = self.ids[i]
+        return i
 
     def union(self, p, q):
         i, j = self.root(p), self.root(q)
