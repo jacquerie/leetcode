@@ -9,9 +9,6 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-    def __str__(self):
-        return '<TreeNode [{0}]>'.format(self.val)
-
 
 class Solution(object):
     def countNodes(self, root):

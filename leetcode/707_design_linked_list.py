@@ -9,9 +9,6 @@ class ListNode(object):
         self.next = None
         self.prev = None
 
-    def __str__(self):
-        return '<ListNode [{0}]>'.format(self.val)
-
 
 class MyLinkedList(object):
     def __init__(self):
