@@ -15,8 +15,7 @@ class Solution(object):
             else:
                 ones_count += 1
 
-            if result > ones_count:
-                result = ones_count
+            result = min(result, ones_count)
 
         return result
 
