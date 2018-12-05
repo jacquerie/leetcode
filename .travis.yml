@@ -15,7 +15,7 @@ before_install:
   - travis_retry pip install --upgrade pip setuptools
 
 install:
-  - travis_retry pip install cpplint flake8 flake8-future-import
+  - travis_retry pip install -r requirements.txt
 
 script:
   - ./run-tests.sh
