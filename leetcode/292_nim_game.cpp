@@ -14,5 +14,5 @@ class Solution {
 int main() {
     auto solution = Solution();
 
-    assert(!solution.canWin(4));
+    assert(!solution.canWinNim(4));
 }
