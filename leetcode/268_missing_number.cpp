@@ -1,7 +1,7 @@
 // Copyright (c) 2018 Jacopo Notarstefano
 
-#include <algorithm>
 #include <cassert>
+#include <numeric>
 #include <vector>
 
 using namespace std;
