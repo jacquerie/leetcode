@@ -13,7 +13,10 @@ class Solution {
         auto last = upper_bound(nums.begin(), nums.end(), target);
 
         if (first != nums.end() && *first == target) {
-            return {first - nums.begin(), last - nums.begin() - 1};
+            return {
+              static_cast<int>(first - nums.begin()),
+              static_cast<int>(last - nums.begin() - 1),
+            };
         } else {
             return {-1, -1};
         }
