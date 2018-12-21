@@ -64,7 +64,7 @@ int main() {
 
     auto t1_0 = TreeNode(1);
     auto t1_1 = TreeNode(2);
-    t0_0.left = &t0_1;
+    t1_0.left = &t1_1;
 
     assert(t1_0 == *(solution.trimBST(&t0_0, 1, 2)));
 }
