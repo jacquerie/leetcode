@@ -43,5 +43,5 @@ int main() {
 
     vector<int> seats = {1, 0, 0, 0, 1, 0, 1};
 
-    assert(1 == solution.maxDistToClosest(seats));
+    assert(2 == solution.maxDistToClosest(seats));
 }
