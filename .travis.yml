@@ -17,6 +17,7 @@ before_install:
   - travis_retry pip install --upgrade pip setuptools
 
 install:
+  - travis_retry curl -sSLO https://github.com/shyiko/ktlint/releases/download/0.29.0/ktlint && chmod u+x ktlint && mv ktlint /usr/local/bin
   - travis_retry pip install -r requirements.txt
 
 script:
