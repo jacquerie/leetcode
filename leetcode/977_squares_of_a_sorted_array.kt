@@ -4,7 +4,7 @@ import kotlin.math.abs
 
 class Solution {
     fun sortedSquares(A: IntArray): IntArray {
-        var result = IntArray(A.size)
+        val result = IntArray(A.size)
 
         var i = 0
         var j = A.size - 1

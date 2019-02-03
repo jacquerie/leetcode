@@ -32,12 +32,12 @@ class Solution {
 fun main(args: Array<String>) {
     val solution = Solution()
 
-    var t0_0 = TreeNode(1)
-    var t0_1 = TreeNode(1)
-    var t0_2 = TreeNode(1)
-    var t0_3 = TreeNode(1)
-    var t0_4 = TreeNode(1)
-    var t0_5 = TreeNode(1)
+    val t0_0 = TreeNode(1)
+    val t0_1 = TreeNode(1)
+    val t0_2 = TreeNode(1)
+    val t0_3 = TreeNode(1)
+    val t0_4 = TreeNode(1)
+    val t0_5 = TreeNode(1)
     t0_2.right = t0_5
     t0_1.right = t0_4
     t0_1.left = t0_3
@@ -46,11 +46,11 @@ fun main(args: Array<String>) {
 
     assert(solution.isUnivalTree(t0_0))
 
-    var t1_0 = TreeNode(2)
-    var t1_1 = TreeNode(2)
-    var t1_2 = TreeNode(2)
-    var t1_3 = TreeNode(5)
-    var t1_4 = TreeNode(2)
+    val t1_0 = TreeNode(2)
+    val t1_1 = TreeNode(2)
+    val t1_2 = TreeNode(2)
+    val t1_3 = TreeNode(5)
+    val t1_4 = TreeNode(2)
     t1_1.right = t1_4
     t1_1.left = t1_3
     t1_0.right = t1_2

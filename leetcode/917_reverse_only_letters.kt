@@ -2,7 +2,7 @@ package leetcode
 
 class Solution {
     fun reverseOnlyLetters(S: String): String {
-        var result = S.toCharArray()
+        val result = S.toCharArray()
 
         var i = 0
         var j = S.length - 1

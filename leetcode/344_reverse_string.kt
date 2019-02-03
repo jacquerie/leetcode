@@ -18,7 +18,7 @@ class Solution {
 fun main(args: Array<String>) {
     val solution = Solution()
 
-    var s = charArrayOf('h', 'e', 'l', 'l', 'o')
+    val s = charArrayOf('h', 'e', 'l', 'l', 'o')
 
     solution.reverseString(s)
 
