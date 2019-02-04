@@ -13,28 +13,6 @@ struct TreeNode {
     explicit TreeNode(int x): val(x), left(NULL), right(NULL) {}
 };
 
-bool operator==(TreeNode& p, TreeNode& q) {
-    bool left, right;
-
-    if (!p.left && !q.left) {
-        left = true;
-    } else if (!p.left || !q.left) {
-        left = false;
-    } else {
-        left = *(p.left) == *(q.left);
-    }
-
-    if (!p.right && !q.right) {
-        right = true;
-    } else if (!p.right || !q.right) {
-        right = false;
-    } else {
-        right = *(p.right) == *(q.right);
-    }
-
-    return p.val == q.val && left && right;
-}
-
 class Solution {
  public:
     TreeNode* searchBST(TreeNode* root, int val) {
@@ -61,11 +39,5 @@ int main() {
     t0_0.right = &t0_2;
     t0_0.left = &t0_1;
 
-    auto t1_0 = TreeNode(2);
-    auto t1_1 = TreeNode(1);
-    auto t1_2 = TreeNode(3);
-    t1_0.right = &t1_2;
-    t1_0.left = &t1_1;
-
-    assert(t1_0 == *(solution.searchBST(&t0_0, 2)));
+    assert(&t0_1 == solution.searchBST(&t0_0, 2));
 }
