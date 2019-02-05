@@ -21,7 +21,10 @@ class Solution {
         } else if (!p || !q) {
             return false;
         } else {
-            return p->val == q->val && isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+            return (
+                p->val == q->val &&
+                isSameTree(p->left, q->left) &&
+                isSameTree(p->right, q->right));
         }
     }
 };
@@ -42,4 +45,28 @@ int main() {
     t1_0.left = &t1_1;
 
     assert(solution.isSameTree(&t0_0, &t1_0));
+
+    auto t2_0 = TreeNode(1);
+    auto t2_1 = TreeNode(2);
+    t2_0.left = &t2_1;
+
+    auto t3_0 = TreeNode(1);
+    auto t3_1 = TreeNode(2);
+    t3_0.right = &t3_1;
+
+    assert(!solution.isSameTree(&t2_0, &t3_0));
+
+    auto t4_0 = TreeNode(1);
+    auto t4_1 = TreeNode(2);
+    auto t4_2 = TreeNode(1);
+    t4_0.right = &t4_2;
+    t4_0.left = &t4_1;
+
+    auto t5_0 = TreeNode(1);
+    auto t5_1 = TreeNode(1);
+    auto t5_2 = TreeNode(2);
+    t5_0.right = &t5_2;
+    t5_0.left = &t5_1;
+
+    assert(!solution.isSameTree(&t4_0, &t5_0));
 }
