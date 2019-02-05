@@ -12,18 +12,18 @@ class TreeNode(object):
 
 class Solution(object):
     def isSymmetric(self, root):
-        def _isSymmetric(left, right):
-            if left is None or right is None:
-                return left is None and right is None
-            return (
-                left.val == right.val and
-                _isSymmetric(left.left, right.right) and
-                _isSymmetric(left.right, right.left)
-            )
-
         if root is None:
             return True
-        return _isSymmetric(root.left, root.right)
+        return self._isSymmetric(root.left, root.right)
+
+    def _isSymmetric(self, left, right):
+        if left is None or right is None:
+            return left is None and right is None
+        return (
+            left.val == right.val and
+            self._isSymmetric(left.left, right.right) and
+            self._isSymmetric(left.right, right.left)
+        )
 
 
 if __name__ == '__main__':
@@ -44,3 +44,15 @@ if __name__ == '__main__':
     t0_0.right = t0_2
 
     assert solution.isSymmetric(t0_0)
+
+    t1_0 = TreeNode(1)
+    t1_1 = TreeNode(2)
+    t1_2 = TreeNode(2)
+    t1_3 = TreeNode(3)
+    t1_4 = TreeNode(3)
+    t1_2.right = t1_4
+    t1_1.right = t1_3
+    t1_0.left = t1_1
+    t1_0.right = t1_2
+
+    assert not solution.isSymmetric(t1_0)
