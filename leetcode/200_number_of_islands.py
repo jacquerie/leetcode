@@ -21,18 +21,18 @@ class Solution(object):
         return result
 
     def deleteIsland(self, grid, i, j):
-        queue = deque([(i, j)])
-        while queue:
-            x, y = queue.pop()
+        stack = deque([(i, j)])
+        while stack:
+            x, y = stack.pop()
             grid[x][y] = '0'
             if 0 < x and grid[x - 1][y] == '1':
-                queue.append((x - 1, y))
+                stack.append((x - 1, y))
             if 0 < y and grid[x][y - 1] == '1':
-                queue.append((x, y - 1))
+                stack.append((x, y - 1))
             if x < len(grid) - 1 and grid[x + 1][y] == '1':
-                queue.append((x + 1, y))
+                stack.append((x + 1, y))
             if y < len(grid[0]) - 1 and grid[x][y + 1] == '1':
-                queue.append((x, y + 1))
+                stack.append((x, y + 1))
 
 
 if __name__ == '__main__':
@@ -44,7 +44,6 @@ if __name__ == '__main__':
         ['1', '1', '0', '0', '0'],
         ['0', '0', '0', '0', '0'],
     ])
-
     assert 3 == solution.numIslands([
         ['1', '1', '0', '0', '0'],
         ['1', '1', '0', '0', '0'],
