@@ -4,7 +4,7 @@ class Interval(var start: Int = 0, var end: Int = 0)
 
 class Solution {
     fun intervalIntersection(A: Array<Interval>, B: Array<Interval>): Array<Interval> {
-        val C = mutableListOf<Interval>()
+        val result = mutableListOf<Interval>()
 
         var i = 0
         var j = 0
@@ -14,7 +14,7 @@ class Solution {
             } else if (B[j].end < A[i].start) {
                 j++
             } else {
-                C.add(
+                result.add(
                     Interval(
                         maxOf(A[i].start, B[j].start),
                         minOf(A[i].end, B[j].end)
@@ -29,9 +29,7 @@ class Solution {
             }
         }
 
-        val result = Array<Interval>(C.size, { _ -> Interval() })
-        C.forEachIndexed({ k, el -> result[k] = el })
-        return result
+        return Array<Interval>(result.size, { i -> result[i] })
     }
 }
 
