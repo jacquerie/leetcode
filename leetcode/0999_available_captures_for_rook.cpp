@@ -26,42 +26,41 @@ class Solution {
         int result = 0;
 
         for (int k = i; k >= 0; k--) {
-            if (board[k][j] == 'p') {
-                result++;
-                break;
-            } else if (board[k][j] == 'B') {
+            if (numRookCaptures(board, k, j, result)) {
                 break;
             }
         }
 
         for (int k = i; k < board.size(); k++) {
-            if (board[k][j] == 'p') {
-                result++;
-                break;
-            } else if (board[k][j] == 'B') {
+            if (numRookCaptures(board, k, j, result)) {
                 break;
             }
         }
 
         for (int k = j; k >= 0; k--) {
-            if (board[i][k] == 'p') {
-                result++;
-                break;
-            } else if (board[i][k] == 'B') {
+            if (numRookCaptures(board, i, k, result)) {
                 break;
             }
         }
 
         for (int k = j; k < board[0].size(); k++) {
-            if (board[i][k] == 'p') {
-                result++;
-                break;
-            } else if (board[i][k] == 'B') {
+            if (numRookCaptures(board, i, k, result)) {
                 break;
             }
         }
 
         return result;
+    }
+
+    bool numRookCaptures(vector<vector<char>>& board, int i, int j, int& result) {
+        if (board[i][j] == 'p') {
+            result++;
+            return true;
+        } else if (board[i][j] == 'B') {
+            return true;
+        }
+
+        return false;
     }
 };
 
