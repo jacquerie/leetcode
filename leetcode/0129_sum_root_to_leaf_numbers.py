@@ -12,40 +12,20 @@ class TreeNode(object):
 
 class Solution(object):
     def sumNumbers(self, root):
-        result = 0
         if root is None:
-            return result
+            return 0
+        return self._sumNumbers(root, 0)
 
-        for path in self.allPaths(root):
-            result += self.sumPath(path)
+    def _sumNumbers(self, root, current):
+        current = 10 * current + root.val
 
-        return result
-
-    def allPaths(self, root):
         if root.left is None and root.right is None:
-            return [[root.val]]
-
-        result = []
-
-        if root.left is not None:
-            for path in self.allPaths(root.left):
-                path.append(root.val)
-                result.append(path)
-        if root.right is not None:
-            for path in self.allPaths(root.right):
-                path.append(root.val)
-                result.append(path)
-
-        return result
-
-    def sumPath(self, path):
-        result = 0
-
-        for el in reversed(path):
-            result *= 10
-            result += el
-
-        return result
+            return current
+        elif root.left is None:
+            return self._sumNumbers(root.right, current)
+        elif root.right is None:
+            return self._sumNumbers(root.left, current)
+        return self._sumNumbers(root.left, current) + self._sumNumbers(root.right, current)
 
 
 if __name__ == '__main__':
@@ -70,3 +50,7 @@ if __name__ == '__main__':
     t1_0.left = t1_1
 
     assert 1026 == solution.sumNumbers(t1_0)
+
+    t2_0 = None
+
+    assert 0 == solution.sumNumbers(t2_0)
