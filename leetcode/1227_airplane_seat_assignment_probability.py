@@ -5,9 +5,7 @@ from __future__ import absolute_import, division, print_function
 
 class Solution(object):
     def nthPersonGetsNthSeat(self, n):
-        if n == 1:
-            return 1
-        return 0.5
+        return 1 if n == 1 else 0.5
 
 
 if __name__ == '__main__':
