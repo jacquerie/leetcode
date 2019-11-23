@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def isMagicSquareCenteredHere(self, grid, i, j):
@@ -9,7 +7,7 @@ class Solution(object):
             grid[i - 1][j - 1], grid[i - 1][j], grid[i - 1][j + 1],
             grid[i][j - 1], grid[i][j], grid[i][j + 1],
             grid[i + 1][j - 1], grid[i + 1][j], grid[i + 1][j + 1],
-        ]) == range(1, 10)
+        ]) == list(range(1, 10))
 
         all_sums_equal = len(set([
             # rows
@@ -31,8 +29,8 @@ class Solution(object):
         result = 0
         num_rows, num_cols = len(grid), len(grid[0])
 
-        for i in xrange(1, num_rows - 1):
-            for j in xrange(1, num_cols - 1):
+        for i in range(1, num_rows - 1):
+            for j in range(1, num_cols - 1):
                 if self.isMagicSquareCenteredHere(grid, i, j):
                     result += 1
 

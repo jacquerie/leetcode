@@ -1,20 +1,18 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
 class Solution(object):
     def combinationSum(self, candidates, target):
-        result = [[[] for j in xrange(target + 1)] for i in xrange(len(candidates))]
+        result = [[[] for j in range(target + 1)] for i in range(len(candidates))]
 
-        for j in xrange(1, target + 1):
+        for j in range(1, target + 1):
             if j % candidates[0] == 0:
                 result[0][j].append(Counter({candidates[0]: j // candidates[0]}))
 
-        for i in xrange(1, len(candidates)):
-            for j in xrange(1, target + 1):
+        for i in range(1, len(candidates)):
+            for j in range(1, target + 1):
                 result[i][j] = result[i - 1][j]
                 if j - candidates[i] > 0:
                     for old in result[i][j - candidates[i]]:

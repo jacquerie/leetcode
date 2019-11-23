@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def coinChange(self, coins, amount):
@@ -10,7 +8,7 @@ class Solution(object):
 
         result = [0] * (amount + 1)
 
-        for i in xrange(amount + 1):
+        for i in range(amount + 1):
             partial = float('inf')
             for coin in coins:
                 if i - coin == 0:

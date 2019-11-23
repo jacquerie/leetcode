@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def minimumAbsDifference(self, arr):
         arr.sort()
 
         min_abs_difference, result = float('inf'), []
-        for i in xrange(len(arr) - 1):
+        for i in range(len(arr) - 1):
             abs_difference = abs(arr[i + 1] - arr[i])
             if abs_difference < min_abs_difference:
                 min_abs_difference = abs_difference

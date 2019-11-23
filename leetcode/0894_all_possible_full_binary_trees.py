@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class TreeNode(object):
     def __init__(self, x):
@@ -25,7 +23,7 @@ class Solution(object):
 
         result = []
 
-        for i in xrange(1, N, 2):
+        for i in range(1, N, 2):
             for left in self.allPossibleFBT(i):
                 for right in self.allPossibleFBT(N - i - 1):
                     node = TreeNode(0)

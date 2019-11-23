@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Node(object):
     def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
@@ -45,8 +43,8 @@ class Solution(object):
         return Node(None, False, topLeft, topRight, bottomLeft, bottomRight)
 
     def allEqual(self, grid, min_row, max_row, min_col, max_col):
-        for i in xrange(min_row, max_row):
-            for j in xrange(min_col, max_col):
+        for i in range(min_row, max_row):
+            for j in range(min_col, max_col):
                 if grid[i][j] != grid[min_row][min_col]:
                     return None
         return 1 == grid[min_row][min_col]

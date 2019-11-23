@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def prisonAfterNDays(self, cells, N):
-        for i in xrange(N % 14 + 14):
+        for i in range(N % 14 + 14):
             cells = tuple(
-                1 if 0 < j < 7 and cells[j - 1] == cells[j + 1] else 0 for j in xrange(8))
+                1 if 0 < j < 7 and cells[j - 1] == cells[j + 1] else 0 for j in range(8))
         return list(cells)
 
 

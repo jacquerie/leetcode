@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def exist(self, board, word):
         visited = set()
-        for i in xrange(len(board)):
-            for j in xrange(len(board[0])):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 if self.startsHere(board, word, visited, 0, i, j):
                     return True
         return False

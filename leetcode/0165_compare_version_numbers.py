@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def versionStringToList(self, version):
-        result = map(int, version.split('.'))
+        result = list(map(int, version.split('.')))
         while result and result[-1] == 0:
             result.pop()
         return result

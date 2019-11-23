@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Environment(object):
     def __init__(self, parent=None):
@@ -20,7 +18,7 @@ class Solution(object):
         return self.eval(self.parse(expression), Environment())
 
     def eval(self, ast, env):
-        if isinstance(ast, basestring):
+        if isinstance(ast, str):
             return env[ast]
         elif isinstance(ast, int):
             return ast

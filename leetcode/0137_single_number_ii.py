@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
@@ -24,7 +22,7 @@ class Solution(object):
         nums = [num + abs(min_num) for num in nums]
 
         nums_in_base3 = [self.toBase3(num) for num in nums]
-        sums_in_base3 = [self.sumBase3(el) for el in itertools.izip_longest(*nums_in_base3)]
+        sums_in_base3 = [self.sumBase3(el) for el in itertools.zip_longest(*nums_in_base3)]
 
         return self.fromBase3(sums_in_base3) - abs(min_num)
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 def almost_equal(x, y, rel_tol=1e-09, abs_tol=0.0):
     return abs(x - y) <= max(rel_tol * max(abs(x), abs(y)), abs_tol)

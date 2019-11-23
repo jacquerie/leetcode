@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
@@ -10,7 +8,7 @@ class Solution(object):
             return result
 
         first, step = 0, A[1] - A[0]
-        for i in xrange(2, len(A)):
+        for i in range(2, len(A)):
             if A[i] - A[i - 1] == step:
                 result += i - first - 1
             else:

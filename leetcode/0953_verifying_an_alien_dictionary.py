@@ -1,20 +1,18 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
 class Solution(object):
     def isAlienSorted(self, words, order):
-        for i in xrange(len(words) - 1):
+        for i in range(len(words) - 1):
             if not self.isAlienLessOrEqual(words[i], words[i + 1], order):
                 return False
         return True
 
     def isAlienLessOrEqual(self, word1, word2, order):
         rank = {c: i for i, c in enumerate(order)}
-        for char1, char2 in itertools.izip_longest(word1, word2):
+        for char1, char2 in itertools.zip_longest(word1, word2):
             if char1 is None:
                 return True
             elif char2 is None:

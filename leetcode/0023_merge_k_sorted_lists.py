@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from heapq import heappop, heappush
 
 
@@ -17,6 +15,12 @@ class ListNode(object):
             self.next == other.next
         )
 
+    def __lt__(self, other):
+        return (
+            other is not None and
+            self.val < other.val
+        )
+
 
 class ListHeap(object):
     def __init__(self, lists):
@@ -25,7 +29,7 @@ class ListHeap(object):
             if el is not None:
                 heappush(self.els, (el.val, el))
 
-    def __nonzero__(self):
+    def __bool__(self):
         return len(self.els) > 0
 
     def pop(self):

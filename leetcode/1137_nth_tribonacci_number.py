@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def tribonacci(self, n):
@@ -13,7 +11,7 @@ class Solution(object):
             return 1
         else:
             x, y, z = 0, 1, 1
-            for _ in xrange(3, n + 1):
+            for _ in range(3, n + 1):
                 x, y, z = y, z, x + y + z
             return z
 

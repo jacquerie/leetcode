@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def transformArray(self, arr):
@@ -10,7 +8,7 @@ class Solution(object):
         while modified:
             modified = False
             previous = current[:]
-            for i in xrange(1, len(previous) - 1):
+            for i in range(1, len(previous) - 1):
                 if previous[i - 1] < previous[i] and previous[i + 1] < previous[i]:
                     modified = True
                     current[i] -= 1

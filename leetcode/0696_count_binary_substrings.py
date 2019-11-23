@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
@@ -10,7 +8,7 @@ class Solution(object):
         result = 0
 
         groups = [list(group) for _, group in itertools.groupby(s)]
-        for i in xrange(len(groups) - 1):
+        for i in range(len(groups) - 1):
             result += min(len(groups[i]), len(groups[i + 1]))
 
         return result

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -10,8 +8,8 @@ class Solution(object):
         result = 0
 
         counts = Counter(ages)
-        for age1, count1 in counts.iteritems():
-            for age2, count2 in counts.iteritems():
+        for age1, count1 in counts.items():
+            for age2, count2 in counts.items():
                 if age1 // 2 + 7 < age2 <= age1:
                     result += count1 * (count2 - (1 if age1 == age2 else 0))
 

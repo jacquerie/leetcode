@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
@@ -16,7 +14,7 @@ class Solution(object):
         return ''.join(self.flattenLst(result))
 
     def chunkStr(self, s, k):
-        for i in xrange((len(s) // k) + 1):
+        for i in range((len(s) // k) + 1):
             start, end = k * i, k * i + k
             yield s[start:end]
 

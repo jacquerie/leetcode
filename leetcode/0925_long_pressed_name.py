@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
 class Solution(object):
     def isLongPressedName(self, name, typed):
-        for name_group, typed_group in itertools.izip_longest(
+        for name_group, typed_group in itertools.zip_longest(
                 itertools.groupby(name), itertools.groupby(typed)):
             if name_group is None or typed_group is None:
                 return False

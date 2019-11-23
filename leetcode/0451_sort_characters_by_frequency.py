@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -19,6 +17,6 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    assert 'eert' == solution.frequencySort('tree')
-    assert 'aaaccc' == solution.frequencySort('cccaaa')
+    assert 'eetr' == solution.frequencySort('tree')
+    assert 'cccaaa' == solution.frequencySort('cccaaa')
     assert 'bbAa' == solution.frequencySort('Aabb')

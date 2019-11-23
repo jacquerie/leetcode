@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -22,11 +20,11 @@ class Solution(object):
         return result
 
     def toUniversal(self, b_counter, b_universal_counter):
-        for char, count in b_counter.iteritems():
+        for char, count in b_counter.items():
             b_universal_counter[char] = max(b_universal_counter[char], count)
 
     def isUniversal(self, a_counter, b_universal_counter):
-        for char, count in b_universal_counter.iteritems():
+        for char, count in b_universal_counter.items():
             if char not in a_counter or a_counter[char] < count:
                 return False
         return True

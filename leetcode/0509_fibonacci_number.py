@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def fib(self, N):
         current, next = 0, 1
-        for _ in xrange(N):
+        for _ in range(N):
             current, next = next, current + next
         return current
 

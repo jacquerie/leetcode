@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -13,7 +11,7 @@ class Solution(object):
             row_counts[row] += 1
             col_counts[col] += 1
 
-        return sum((row_counts[i] + col_counts[j]) % 2 for i in xrange(n) for j in xrange(m))
+        return sum((row_counts[i] + col_counts[j]) % 2 for i in range(n) for j in range(m))
 
 
 if __name__ == '__main__':

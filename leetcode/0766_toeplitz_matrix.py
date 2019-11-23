@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def isToeplitzMatrix(self, matrix):
-        for i in xrange(1, len(matrix)):
-            for j in xrange(1, len(matrix[0])):
+        for i in range(1, len(matrix)):
+            for j in range(1, len(matrix[0])):
                 if matrix[i - 1][j - 1] != matrix[i][j]:
                     return False
 

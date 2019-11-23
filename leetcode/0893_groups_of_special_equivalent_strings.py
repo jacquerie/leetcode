@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -25,7 +23,7 @@ class Solution(object):
         )
 
     def toCounterNormalForm(self, c):
-        return tuple(sorted(c.iteritems()))
+        return tuple(sorted(c.items()))
 
 
 if __name__ == '__main__':

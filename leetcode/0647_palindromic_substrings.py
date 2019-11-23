@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def countSubstrings(self, s):
@@ -12,7 +10,7 @@ class Solution(object):
         s = '^#' + '#'.join(s) + '#$'
         p = [0] * len(s)
 
-        for i in xrange(1, len(s) - 1):
+        for i in range(1, len(s) - 1):
             if i < r:
                 p[i] = min(r - i, p[2 * c - i])
             while s[i + 1 + p[i]] == s[i - 1 - p[i]]:

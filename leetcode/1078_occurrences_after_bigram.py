@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def findOcurrences(self, text, first, second):
         result = []
 
         words = text.split()
-        for i in xrange(len(words) - 2):
+        for i in range(len(words) - 2):
             if words[i] == first and words[i + 1] == second:
                 result.append(words[i + 2])
 

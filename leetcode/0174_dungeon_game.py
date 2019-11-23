@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def calculateMinimumHP(self, dungeon):
-        result = [float('inf') for _ in xrange(len(dungeon[0]))]
+        result = [float('inf') for _ in range(len(dungeon[0]))]
         result[-1] = 1
 
-        for i in reversed(xrange(len(dungeon))):
+        for i in reversed(range(len(dungeon))):
             result[-1] = max(result[-1] - dungeon[i][-1], 1)
-            for j in reversed(xrange(len(dungeon[0]) - 1)):
+            for j in reversed(range(len(dungeon[0]) - 1)):
                 result[j] = max(min(result[j], result[j + 1]) - dungeon[i][j], 1)
 
         return result[0]

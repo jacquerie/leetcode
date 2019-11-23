@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
@@ -15,7 +13,7 @@ class Solution(object):
         result = []
 
         carry = 0
-        for d1, d2 in itertools.izip_longest(reversed(num1), reversed(num2)):
+        for d1, d2 in itertools.zip_longest(reversed(num1), reversed(num2)):
             carry, digit = divmod(toInt(d1) + toInt(d2) + carry, 10)
             result.append(str(digit))
         if carry:

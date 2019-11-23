@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def lengthOfLIS(self, nums):
@@ -10,9 +8,9 @@ class Solution(object):
 
         result = [1] * len(nums)
 
-        for i in xrange(len(nums)):
+        for i in range(len(nums)):
             partial = result[i]
-            for j in xrange(i):
+            for j in range(i):
                 if nums[i] > nums[j]:
                     partial = max(partial, 1 + result[j])
             result[i] = partial

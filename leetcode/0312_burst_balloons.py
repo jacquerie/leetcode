@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def maxCoins(self, nums):
@@ -17,12 +15,12 @@ class Solution(object):
                     prod *= nums[j]
 
                 cache[i * n + j] = max(
-                    _maxCoins(i, k) + prod * nums[k] + _maxCoins(k + 1, j) for k in xrange(i, j))
+                    _maxCoins(i, k) + prod * nums[k] + _maxCoins(k + 1, j) for k in range(i, j))
 
             return cache[i * n + j]
 
         n = len(nums) + 1
-        cache = [-1 for i in xrange(n) for j in xrange(n)]
+        cache = [-1 for i in range(n) for j in range(n)]
         return _maxCoins(0, len(nums))
 
 

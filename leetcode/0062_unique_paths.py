@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
+import functools
 import operator
 
 
 class Solution(object):
     def choose(self, n, k):
         k = min(k, n - k)
-        numerator = reduce(operator.mul, xrange(n, n - k, -1), 1)
-        denominator = reduce(operator.mul, xrange(1, k + 1), 1)
+        numerator = functools.reduce(operator.mul, range(n, n - k, -1), 1)
+        denominator = functools.reduce(operator.mul, range(1, k + 1), 1)
 
         return numerator // denominator
 

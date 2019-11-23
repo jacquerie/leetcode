@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import deque
 
 
 class Solution(object):
     def floodFill(self, image, sr, sc, newColor):
         nr, nc = len(image), len(image[0])
-        result = [[image[i][j] for j in xrange(nc)] for i in xrange(nr)]
+        result = [[image[i][j] for j in range(nc)] for i in range(nr)]
 
         queue = deque([(sr, sc)])
         while queue:

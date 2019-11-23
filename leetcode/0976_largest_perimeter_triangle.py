@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def largestPerimeter(self, A):
         A.sort(reverse=True)
-        for i in xrange(len(A) - 2):
+        for i in range(len(A) - 2):
             if A[i + 2] + A[i + 1] > A[i]:
                 return A[i + 2] + A[i + 1] + A[i]
         return 0
