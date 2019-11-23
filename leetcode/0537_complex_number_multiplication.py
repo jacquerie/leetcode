@@ -1,7 +1,5 @@
 # -*- coding: utf-8' -*-
 
-from __future__ import absolute_import, division, print_function
-
 import re
 
 RE_COMPLEX_NUMBER = re.compile(r'(?P<real>-?\d+)\+(?P<imaginary>-?\d+)i')

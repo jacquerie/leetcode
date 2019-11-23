@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import deque
 
 
@@ -12,8 +10,8 @@ class Solution(object):
 
         result = 0
 
-        for i in xrange(len(grid)):
-            for j in xrange(len(grid[0])):
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
                 if grid[i][j] == '1':
                     result += 1
                     self.deleteIsland(grid, i, j)

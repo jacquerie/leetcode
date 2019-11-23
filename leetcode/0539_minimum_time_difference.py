@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def findMinDifference(self, timePoints):
         result = float('inf')
 
         times = sorted(self.toTimes(timePoints))
-        for i in xrange(len(times)):
+        for i in range(len(times)):
             if i == len(times) - 1:
                 result = min(result, 1440 + times[0] - times[i])
             else:

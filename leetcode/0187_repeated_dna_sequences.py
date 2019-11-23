@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def findRepeatedDnaSequences(self, s):
@@ -10,7 +8,7 @@ class Solution(object):
             return []
 
         seen = set([s[:10]])
-        for i in xrange(10, len(s)):
+        for i in range(10, len(s)):
             sequence = s[i - 9:i + 1]
             if sequence in seen:
                 result.add(sequence)

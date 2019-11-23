@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def countPrimes(self, n):
@@ -13,7 +11,7 @@ class Solution(object):
 
         for i, el in enumerate(result):
             if el:
-                for j in xrange(i * i, n, i):
+                for j in range(i * i, n, i):
                     result[j] = 0
 
         return sum(result)

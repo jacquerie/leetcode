@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import random
 
 random.seed(0)
@@ -28,4 +26,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
 
-    assert 6 == solution.rand10()
+    assert 2 == solution.rand10()

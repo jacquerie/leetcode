@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import defaultdict
 
 
@@ -32,7 +30,7 @@ class Solution(object):
         counts = defaultdict(int)
         _findFrequentTreeSum(root, counts)
         max_count = max(counts.values())
-        return [sum for sum, count in counts.iteritems() if count == max_count]
+        return [sum for sum, count in counts.items() if count == max_count]
 
 
 if __name__ == '__main__':

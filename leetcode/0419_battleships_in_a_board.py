@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def countBattleships(self, board):
@@ -9,8 +7,8 @@ class Solution(object):
         if not board or not board[0]:
             return result
 
-        for i in xrange(len(board)):
-            for j in xrange(len(board[0])):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 result += 1 if (
                     (i == 0 or board[i - 1][j] != 'X') and
                     (j == 0 or board[i][j - 1] != 'X') and

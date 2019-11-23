@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
-from mock import Mock, call
+from unittest.mock import Mock, call
 from threading import Event, Thread
 
 
@@ -13,7 +11,7 @@ class FooBar(object):
         self.n = n
 
     def foo(self, printFoo):
-        for i in xrange(self.n):
+        for i in range(self.n):
             if i > 0:
                 self.fe.wait()
             self.fe.clear()
@@ -21,7 +19,7 @@ class FooBar(object):
             self.be.set()
 
     def bar(self, printBar):
-        for i in xrange(self.n):
+        for i in range(self.n):
             self.be.wait()
             self.be.clear()
             printBar()

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def findRestaurant(self, list1, list2):
@@ -15,7 +13,7 @@ class Solution(object):
                 result[name] = dict1[name] + dict2[name]
                 min_index_sum = min(min_index_sum, result[name])
 
-        return [name for name, index_sum in result.iteritems() if index_sum == min_index_sum]
+        return [name for name, index_sum in result.items() if index_sum == min_index_sum]
 
 
 if __name__ == '__main__':

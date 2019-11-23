@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
         m, n = len(obstacleGrid), len(obstacleGrid[0])
-        result = [[0 for j in xrange(n)] for i in xrange(m)]
+        result = [[0 for j in range(n)] for i in range(m)]
 
-        for i in xrange(m):
-            for j in xrange(n):
+        for i in range(m):
+            for j in range(n):
                 if obstacleGrid[i][j]:
                     result[i][j] = 0
                 elif i == 0 and j == 0:

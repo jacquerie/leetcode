@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def canPlaceFlowers(self, flowerbed, n):
-        for i in xrange(len(flowerbed)):
+        for i in range(len(flowerbed)):
             previous = i == 0 or flowerbed[i - 1] == 0
             current = flowerbed[i] == 0
             next = i == len(flowerbed) - 1 or flowerbed[i + 1] == 0

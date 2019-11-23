@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import heapq
 
 
 class Solution(object):
     def kClosest(self, points, K):
-        return heapq.nsmallest(K, points, key=lambda (x, y): x * x + y * y)
+        return heapq.nsmallest(K, points, key=lambda xy: xy[0] * xy[0] + xy[1] * xy[1])
 
 
 if __name__ == '__main__':

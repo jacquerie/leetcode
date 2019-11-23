@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def checkPossibility(self, nums):
         peak = None
-        for i in xrange(len(nums) - 1):
+        for i in range(len(nums) - 1):
             if nums[i] > nums[i + 1]:
                 if peak is not None:
                     return False

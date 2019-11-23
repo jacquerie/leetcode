@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import deque
 
 
@@ -11,8 +9,8 @@ class Solution(object):
         if not grid:
             return result
 
-        for i in xrange(len(grid)):
-            for j in xrange(len(grid[0])):
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
                 if grid[i][j]:
                     result = max(result, self.measureAndDeleteIsland(grid, i, j))
 

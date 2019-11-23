@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def minCostClimbingStairs(self, cost):
         previous, current = cost[0], cost[1]
-        for i in xrange(2, len(cost)):
+        for i in range(2, len(cost)):
             previous, current = current, cost[i] + min(previous, current)
         return min(previous, current)
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import deque
 
 
@@ -13,7 +11,7 @@ class Color(object):
 class Solution(object):
     def isBipartite(self, graph):
         color = {}
-        for node in xrange(len(graph)):
+        for node in range(len(graph)):
             if node in color:
                 continue
             stack = deque([node])

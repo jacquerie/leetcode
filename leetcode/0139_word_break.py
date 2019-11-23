@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
@@ -11,11 +9,11 @@ class Solution(object):
         wordSet = set(wordDict)
         result = [False] * (len(s) + 1)
 
-        for i in xrange(len(s) + 1):
+        for i in range(len(s) + 1):
             if not result[i] and s[:i + 1] in wordSet:
                 result[i] = True
             if result[i]:
-                for j in xrange(i + 1, len(s) + 1):
+                for j in range(i + 1, len(s) + 1):
                     if not result[j] and s[i + 1:j + 1] in wordSet:
                         result[j] = True
 

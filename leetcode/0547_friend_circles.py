@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class UnionFind(object):
     def __init__(self, n):
-        self.ids = list(xrange(n))
+        self.ids = list(range(n))
         self.sizes = [1] * n
 
     def root(self, i):
@@ -32,12 +30,12 @@ class UnionFind(object):
 class Solution(object):
     def findCircleNum(self, M):
         union_find = UnionFind(len(M))
-        for i in xrange(len(M)):
-            for j in xrange(i + 1, len(M)):
+        for i in range(len(M)):
+            for j in range(i + 1, len(M)):
                 if M[i][j] and not union_find.find(i, j):
                     union_find.union(i, j)
 
-        return len({union_find.root(i) for i in xrange(len(M))})
+        return len({union_find.root(i) for i in range(len(M))})
 
 
 if __name__ == '__main__':

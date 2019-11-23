@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 from heapq import heappop, heappush
 
@@ -27,7 +25,7 @@ class MaxHeap(object):
 class Solution(object):
     def topKFrequent(self, nums, k):
         counter, heap = Counter(nums), MaxHeap()
-        for el, count in counter.iteritems():
+        for el, count in counter.items():
             heap.push(el, count)
             if len(heap) > k:
                 heap.pop()

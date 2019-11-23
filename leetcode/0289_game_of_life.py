@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def gameOfLife(self, board):
         m, n = len(board), len(board[0])
-        for i in xrange(m):
-            for j in xrange(n):
+        for i in range(m):
+            for j in range(n):
                 self.computeSquare(board, i, j)
-        for i in xrange(m):
-            for j in xrange(n):
+        for i in range(m):
+            for j in range(n):
                 self.updateSquare(board, i, j)
 
     def computeSquare(self, board, i, j):

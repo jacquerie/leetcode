@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class UnionFind(object):
     def __init__(self, n):
-        self.ids = list(xrange(n))
+        self.ids = list(range(n))
         self.sizes = [1] * n
 
     def root(self, i):

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 from collections import Counter
 
 
@@ -13,7 +11,7 @@ class Solution(object):
 
         result = []
 
-        for word, count in counts.iteritems():
+        for word, count in counts.items():
             if count == 1:
                 result.append(word)
 

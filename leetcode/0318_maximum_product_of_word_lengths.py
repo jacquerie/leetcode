@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 import itertools
 
 
@@ -16,7 +14,7 @@ class Solution(object):
 
         result = 0
 
-        for i, j in itertools.combinations(xrange(len(words)), 2):
+        for i, j in itertools.combinations(range(len(words)), 2):
             if lengths[i] * lengths[j] > result and not bits[i] & bits[j]:
                 result = lengths[i] * lengths[j]
 

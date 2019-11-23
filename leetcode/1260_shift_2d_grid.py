@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def shiftGrid(self, grid, k):
         m, n = len(grid), len(grid[0])
-        elements = [grid[i][j] for i in xrange(m) for j in xrange(n)]
+        elements = [grid[i][j] for i in range(m) for j in range(n)]
         shifted = elements[-(k % (m * n)):] + elements[:-(k % (m * n))]
-        return [[shifted[i * n + j] for j in xrange(n)] for i in xrange(m)]
+        return [[shifted[i * n + j] for j in range(n)] for i in range(m)]
 
 
 if __name__ == '__main__':

@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def divisorGame(self, N):
         result = [False] * (N + 1)
 
-        for i in xrange(2, N + 1):
-            for j in xrange(1, i):
+        for i in range(2, N + 1):
+            for j in range(1, i):
                 if i % j == 0 and not result[i - j]:
                     result[i] = True
 

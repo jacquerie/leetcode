@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def solveSudoku(self, board):
         self.solveSudokuHelper(board)
 
     def solveSudokuHelper(self, board):
-        for i in xrange(9):
-            for j in xrange(9):
+        for i in range(9):
+            for j in range(9):
                 if board[i][j] == '.':
                     for k in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
                         board[i][j] = k
@@ -20,16 +18,16 @@ class Solution(object):
         return True
 
     def isValidSudoku(self, board, x, y):
-        for i in xrange(9):
+        for i in range(9):
             if i != x and board[i][y] == board[x][y]:
                 return False
 
-        for j in xrange(9):
+        for j in range(9):
             if j != y and board[x][j] == board[x][y]:
                 return False
 
-        for i in xrange(3):
-            for j in xrange(3):
+        for i in range(3):
+            for j in range(3):
                 if i != x % 3 and j != y % 3 and board[3 * (x // 3) + i][3 * (y // 3) + j] == board[x][y]:
                     return False
 

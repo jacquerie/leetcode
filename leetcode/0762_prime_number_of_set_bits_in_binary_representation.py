@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def countPrimeSetBits(self, L, R):
@@ -15,7 +13,7 @@ class Solution(object):
         result = 0
 
         primes = {2, 3, 5, 7, 11, 13, 17, 19}
-        for n in xrange(L, R + 1):
+        for n in range(L, R + 1):
             if countSetBits(n) in primes:
                 result += 1
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class TrieNode(object):
     def __init__(self):
@@ -31,8 +29,8 @@ class Solution(object):
         result = set()
 
         visited = set()
-        for i in xrange(len(board)):
-            for j in xrange(len(board[0])):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 self.startingHere(board, trie, visited, result, trie.root, '', i, j)
 
         return list(result)

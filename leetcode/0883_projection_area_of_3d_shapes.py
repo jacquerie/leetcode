@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def projectionArea(self, grid):
         result = 0
 
-        for i in xrange(len(grid)):
-            for j in xrange(len(grid[0])):
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
                 if grid[i][j]:
                     result += 1
 
-        for i in xrange(len(grid)):
+        for i in range(len(grid)):
             partial = 0
-            for j in xrange(len(grid[0])):
+            for j in range(len(grid[0])):
                 partial = max(partial, grid[i][j])
             result += partial
 
-        for j in xrange(len(grid[0])):
+        for j in range(len(grid[0])):
             partial = 0
-            for i in xrange(len(grid)):
+            for i in range(len(grid)):
                 partial = max(partial, grid[i][j])
             result += partial
 

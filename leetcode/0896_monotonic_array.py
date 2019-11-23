@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def isMonotonic(self, A):
         decreasing, increasing = False, False
-        for i in xrange(1, len(A)):
+        for i in range(1, len(A)):
             if A[i] < A[i - 1] and not decreasing:
                 decreasing = True
             elif A[i] > A[i - 1] and not increasing:

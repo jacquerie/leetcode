@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def minFallingPathSum(self, A):
-        result = [[0 for j in xrange(len(A[0]))] for i in xrange(len(A))]
+        result = [[0 for j in range(len(A[0]))] for i in range(len(A))]
 
-        for i in xrange(len(A)):
-            for j in xrange(len(A[0])):
+        for i in range(len(A)):
+            for j in range(len(A[0])):
                 if i == 0:
                     result[i][j] = A[i][j]
                 elif j == 0:

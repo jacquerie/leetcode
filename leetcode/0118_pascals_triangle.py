@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def generate(self, numRows):
@@ -10,9 +8,9 @@ class Solution(object):
             return result
 
         current = [1]
-        for row in xrange(numRows):
+        for row in range(numRows):
             next = []
-            for col in xrange(row + 1):
+            for col in range(row + 1):
                 if col == 0:
                     next.append(current[col])
                 elif col == row:

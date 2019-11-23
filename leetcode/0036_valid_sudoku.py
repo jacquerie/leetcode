@@ -1,21 +1,19 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 
 class Solution(object):
     def isValidSudoku(self, board):
-        for i in xrange(9):
-            if self.isInvalidSubset(board[i][j] for j in xrange(9)):
+        for i in range(9):
+            if self.isInvalidSubset(board[i][j] for j in range(9)):
                 return False
 
-        for j in xrange(9):
-            if self.isInvalidSubset(board[i][j] for i in xrange(9)):
+        for j in range(9):
+            if self.isInvalidSubset(board[i][j] for i in range(9)):
                 return False
 
-        for i in xrange(3):
-            for j in xrange(3):
-                if self.isInvalidSubset(board[3 * i + h][3 * j + k] for h in xrange(3) for k in xrange(3)):
+        for i in range(3):
+            for j in range(3):
+                if self.isInvalidSubset(board[3 * i + h][3 * j + k] for h in range(3) for k in range(3)):
                     return False
 
         return True

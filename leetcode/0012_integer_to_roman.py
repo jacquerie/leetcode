@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-
 NUMERAL_ROMAN_MAP = [
     (1000, 'M'),
     (900, 'CM'),
