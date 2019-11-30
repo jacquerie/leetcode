@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def oddCells(self, n, m, indices):
         row_counts = Counter()
         col_counts = Counter()

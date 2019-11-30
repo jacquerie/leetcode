@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def validMountainArray(self, A):
         if len(A) < 3:
             return False

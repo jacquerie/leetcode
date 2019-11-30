@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def firstMissingPositive(self, nums):
         i = 0
         while i < len(nums):

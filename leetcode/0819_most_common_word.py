@@ -4,7 +4,7 @@ import re
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def mostCommonWord(self, paragraph, banned):
         paragraph = paragraph.lower()
         paragraph = re.sub('[^a-z ]+', '', paragraph)

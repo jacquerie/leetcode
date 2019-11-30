@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def sortArrayByParityII(self, A):
         j = 1
         for i in range(0, len(A), 2):

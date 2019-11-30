@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def readBinaryWatch(self, num):
         result = []
         for combination in itertools.combinations(range(10), num):

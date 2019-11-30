@@ -3,7 +3,7 @@
 import re
 
 
-class Solution(object):
+class Solution:
     def maskPII(self, S):
         if self.isEmail(S):
             return self.maskEmail(S)

@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def compress(self, chars):
         result = []
         for char, group in itertools.groupby(chars):

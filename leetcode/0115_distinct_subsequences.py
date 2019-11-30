@@ -14,7 +14,7 @@ def memoize(f):
     return _memoize
 
 
-class Solution(object):
+class Solution:
     def numDistinct(self, s, t):
         return self._numDistinct(s, t, 0, 0)
 

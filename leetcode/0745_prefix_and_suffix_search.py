@@ -3,14 +3,14 @@
 from collections import deque
 
 
-class TrieNode(object):
+class TrieNode:
     def __init__(self):
         self.children = {}
         self.leaf = False
         self.value = None
 
 
-class Trie(object):
+class Trie:
     def __init__(self):
         self.root = TrieNode()
 
@@ -49,7 +49,7 @@ class Trie(object):
         return current
 
 
-class WordFilter(object):
+class WordFilter:
     def __init__(self, words):
         self.prefixes = Trie()
         self.suffixes = Trie()

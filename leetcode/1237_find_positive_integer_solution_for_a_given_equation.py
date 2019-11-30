@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 
-class CustomFunction(object):
+class CustomFunction:
     def __init__(self, f):
         self.f = f
 
 
-class Solution(object):
+class Solution:
     def findSolution(self, customfunction, z):
         result = []
 

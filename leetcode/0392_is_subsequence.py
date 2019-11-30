@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isSubsequence(self, s, t):
         if not s:
             return True

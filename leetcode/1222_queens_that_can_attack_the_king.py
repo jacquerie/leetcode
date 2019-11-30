@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def queensAttacktheKing(self, queens, king):
         directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)]
         queens_set = set((x, y) for x, y in queens)

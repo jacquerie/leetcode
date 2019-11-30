@@ -4,7 +4,7 @@ from unittest.mock import Mock, call
 from threading import Event, Thread
 
 
-class FooBar(object):
+class FooBar:
     def __init__(self, n):
         self.fe = Event()
         self.be = Event()

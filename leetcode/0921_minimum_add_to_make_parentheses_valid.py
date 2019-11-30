@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minAddToMakeValid(self, S):
         open_count, result = 0, 0
 

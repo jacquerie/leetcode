@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def largeGroupPositions(self, S):
         index = 0
         result = []

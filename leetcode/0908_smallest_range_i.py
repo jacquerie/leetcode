@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def smallestRangeI(self, A, K):
         minimum, maximum = self.findMinMax(A)
         return max((maximum - K) - (minimum + K), 0)

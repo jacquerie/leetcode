@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findAndReplacePattern(self, words, pattern):
         result = []
 

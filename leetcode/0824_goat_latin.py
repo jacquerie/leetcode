@@ -3,7 +3,7 @@
 VOWELS = 'AEIOUaeiou'
 
 
-class Solution(object):
+class Solution:
     def toGoatLatin(self, S):
         result = []
 

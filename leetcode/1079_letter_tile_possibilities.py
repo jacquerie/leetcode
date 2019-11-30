@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def numTilePossibilities(self, tiles):
         return sum(len(set(itertools.permutations(tiles, i))) for i in range(1, len(tiles) + 1))
 

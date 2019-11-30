@@ -3,7 +3,7 @@
 import string
 
 
-class Solution(object):
+class Solution:
     def convertToTitle(self, n):
         digits = []
 

@@ -3,7 +3,7 @@
 import os
 
 
-class Solution(object):
+class Solution:
     def longestCommonPrefix(self, strs):
         return os.path.commonprefix(strs)
 

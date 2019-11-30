@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def tribonacci(self, n):
         if n == 0:
             return 0

@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class MyStack(object):
+class MyStack:
     def __init__(self):
         self.queue = deque()
 

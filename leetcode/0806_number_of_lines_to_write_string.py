@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def numberOfLines(self, widths, S):
         current_line_number = 1
         current_line_length = 0

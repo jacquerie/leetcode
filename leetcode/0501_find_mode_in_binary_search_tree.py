@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def findMode(self, root):
         def _findMode(current, previous, count, max_count, result):
             if current is None:

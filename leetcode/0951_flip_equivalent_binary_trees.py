@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def flipEquiv(self, root1, root2):
         if root1 is None and root2 is None:
             return True

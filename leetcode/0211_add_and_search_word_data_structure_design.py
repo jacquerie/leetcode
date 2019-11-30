@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-class TrieNode(object):
+class TrieNode:
     def __init__(self):
         self.children = {}
         self.leaf = False
 
 
-class Trie(object):
+class Trie:
     def __init__(self):
         self.root = TrieNode()
 
@@ -35,7 +35,7 @@ class Trie(object):
         return current.leaf
 
 
-class WordDictionary(object):
+class WordDictionary:
     def __init__(self):
         self.trie = Trie()
 

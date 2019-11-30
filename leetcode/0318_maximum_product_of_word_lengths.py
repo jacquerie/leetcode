@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def maxProduct(self, words):
         lengths = [len(word) for word in words]
 

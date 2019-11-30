@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def subsets(self, nums):
         result = []
         self._subsets(nums, [], result)

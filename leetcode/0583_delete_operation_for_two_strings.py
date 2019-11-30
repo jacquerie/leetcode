@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minDistance(self, word1, word2):
         result = [[0 for j in range(len(word2) + 1)] for i in range(len(word1) + 1)]
 

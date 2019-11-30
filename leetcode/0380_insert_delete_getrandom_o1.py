@@ -3,7 +3,7 @@
 import random
 
 
-class RandomizedSet(object):
+class RandomizedSet:
     def __init__(self):
         self.indices = {}
         self.elements = []

@@ -3,7 +3,7 @@
 import os
 
 
-class Solution(object):
+class Solution:
     def simplifyPath(self, path):
         return os.path.realpath(path)
 

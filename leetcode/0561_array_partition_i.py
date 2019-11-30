@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def arrayPairSum(self, nums):
         return sum(n for i, n in enumerate(sorted(nums)) if i % 2 == 0)
 

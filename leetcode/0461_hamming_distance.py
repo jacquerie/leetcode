@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def hammingDistance(self, x, y):
         xs = format(x, '032b')
         ys = format(y, '032b')

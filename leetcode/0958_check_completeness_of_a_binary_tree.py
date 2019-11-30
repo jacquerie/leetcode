@@ -3,14 +3,14 @@
 from collections import deque
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def isCompleteTree(self, root):
         if not root:
             return True

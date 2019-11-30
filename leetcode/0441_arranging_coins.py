@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def arrangeCoins(self, n):
         i, total = 0, 0
 

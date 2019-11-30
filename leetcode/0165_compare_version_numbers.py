@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def versionStringToList(self, version):
         result = list(map(int, version.split('.')))
         while result and result[-1] == 0:

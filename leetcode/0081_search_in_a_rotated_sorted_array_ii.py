@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def search(self, nums, target):
         first, last = 0, len(nums) - 1
 

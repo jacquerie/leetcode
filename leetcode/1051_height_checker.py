@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def heightChecker(self, heights):
         return sum(x != y for x, y in zip(heights, sorted(heights)))
 

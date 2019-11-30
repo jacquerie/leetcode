@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def wordPattern(self, pattern, str):
         words = str.split()
         if len(pattern) != len(words):

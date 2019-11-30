@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def shortestSubarray(self, A, K):
         prefix_sums = [0] * (len(A) + 1)
         for i, el in enumerate(A):

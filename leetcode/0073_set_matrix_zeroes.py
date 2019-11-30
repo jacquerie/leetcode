@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def setZeroes(self, matrix):
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):

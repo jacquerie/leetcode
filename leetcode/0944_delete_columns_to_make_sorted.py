@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minDeletionSize(self, A):
         return len([col for col in zip(*A) if col != tuple(sorted(col))])
 

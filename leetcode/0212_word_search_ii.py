@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-class TrieNode(object):
+class TrieNode:
     def __init__(self):
         self.children = {}
         self.leaf = False
 
 
-class Trie(object):
+class Trie:
     def __init__(self):
         self.root = TrieNode()
 
@@ -20,7 +20,7 @@ class Trie(object):
         current.leaf = True
 
 
-class Solution(object):
+class Solution:
     def findWords(self, board, words):
         trie = Trie()
         for word in words:

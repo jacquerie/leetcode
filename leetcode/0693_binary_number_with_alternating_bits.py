@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def hasAlternatingBits(self, n):
         b = bin(n)
 

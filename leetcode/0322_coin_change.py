@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def coinChange(self, coins, amount):
         if amount == 0:
             return 0

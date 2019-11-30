@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def reverseStr(self, s, k):
         result = []
 

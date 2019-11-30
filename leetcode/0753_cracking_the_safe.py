@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def crackSafe(self, n, k):
         if k == 1:
             return '0' * n

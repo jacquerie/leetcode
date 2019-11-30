@@ -5,7 +5,7 @@ from collections import namedtuple
 Email = namedtuple('Email', ['local_name', 'domain_name'])
 
 
-class Solution(object):
+class Solution:
     def numUniqueEmails(self, emails):
         result = set()
         for email in emails:

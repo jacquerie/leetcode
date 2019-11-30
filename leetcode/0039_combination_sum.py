@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def combinationSum(self, candidates, target):
         result = [[[] for j in range(target + 1)] for i in range(len(candidates))]
 

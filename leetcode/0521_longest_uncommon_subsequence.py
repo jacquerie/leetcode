@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findLUSlength(self, a, b):
         if a == b:
             return -1

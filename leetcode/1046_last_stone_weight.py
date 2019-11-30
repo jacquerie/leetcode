@@ -3,7 +3,7 @@
 from heapq import heappop, heappush
 
 
-class MaxHeap(object):
+class MaxHeap:
     def __init__(self):
         self.count = 0
         self.els = []
@@ -25,7 +25,7 @@ class MaxHeap(object):
         heappush(self.els, (-el, el))
 
 
-class Solution(object):
+class Solution:
     def lastStoneWeight(self, stones):
         heap = MaxHeap()
         for stone in stones:

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isOneBitCharacter(self, bits):
         return self._isOneBitCharacter(bits, 0, len(bits))
 

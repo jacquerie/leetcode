@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findPoisonedDuration(self, timeSeries, duration):
         result = duration * len(timeSeries)
         for i in range(1, len(timeSeries)):

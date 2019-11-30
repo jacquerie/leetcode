@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def divisorGame(self, N):
         result = [False] * (N + 1)
 

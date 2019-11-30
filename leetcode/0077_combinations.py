@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def combine(self, n, k):
         return [list(el) for el in itertools.combinations(range(1, n + 1), k)]
 

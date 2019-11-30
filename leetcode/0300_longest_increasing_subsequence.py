@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def lengthOfLIS(self, nums):
         if not nums:
             return 0

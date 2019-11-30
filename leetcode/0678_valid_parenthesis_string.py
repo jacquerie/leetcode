@@ -14,7 +14,7 @@ def memoize(f):
     return _memoize
 
 
-class Solution(object):
+class Solution:
     def checkValidString(self, s):
         return self._checkValidString(s, 0, 0)
 

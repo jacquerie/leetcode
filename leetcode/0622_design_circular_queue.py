@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class MyCircularQueue(object):
+class MyCircularQueue:
     def __init__(self, k):
         self.capacity = k
         self.count = 0

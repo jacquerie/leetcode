@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class RecentCounter(object):
+class RecentCounter:
     def __init__(self):
         self.count = 0
         self.queue = deque()

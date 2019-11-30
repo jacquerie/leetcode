@@ -4,7 +4,7 @@ from bisect import bisect
 from collections import Counter
 
 
-class TopVotedCandidate(object):
+class TopVotedCandidate:
     def __init__(self, persons, times):
         self.leaders = []
         self.times = times

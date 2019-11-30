@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def uncommonFromSentences(self, A, B):
         counts = Counter(A.split())
         for word in B.split():

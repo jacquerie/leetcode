@@ -4,7 +4,7 @@ from collections import Counter
 from heapq import heappop, heappush
 
 
-class MaxHeap(object):
+class MaxHeap:
     def __init__(self):
         self.els = []
 
@@ -22,7 +22,7 @@ class MaxHeap(object):
         heappush(self.els, (count, el))
 
 
-class Solution(object):
+class Solution:
     def topKFrequent(self, nums, k):
         counter, heap = Counter(nums), MaxHeap()
         for el, count in counter.items():

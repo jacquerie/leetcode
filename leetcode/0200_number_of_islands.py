@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def numIslands(self, grid):
         if not grid:
             return 0

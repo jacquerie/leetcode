@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
 
     DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 

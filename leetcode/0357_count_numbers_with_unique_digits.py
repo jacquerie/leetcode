@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def countNumbersWithUniqueDigits(self, n):
         if n > 10:
             return 0

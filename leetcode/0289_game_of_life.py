@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def gameOfLife(self, board):
         m, n = len(board), len(board[0])
         for i in range(m):

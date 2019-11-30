@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def countPrimeSetBits(self, L, R):
         def countSetBits(n):
             result = 0

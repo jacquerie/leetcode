@@ -9,7 +9,7 @@ def rand7():
     return random.randint(1, 7)
 
 
-class Solution(object):
+class Solution:
     def rand10(self):
         x, y = 0, 0
 

@@ -3,7 +3,7 @@
 import string
 
 
-class Solution(object):
+class Solution:
     def reverseOnlyLetters(self, S):
         result = list(S)
 

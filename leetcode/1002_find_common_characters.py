@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def commonChars(self, A):
         result = Counter(A[0])
         for el in A:

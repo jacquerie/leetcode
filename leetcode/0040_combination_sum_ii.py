@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def combinationSum2(self, candidates, target):
         counts = Counter(candidates)
         candidates = sorted(counts.keys())

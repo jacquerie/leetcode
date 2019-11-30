@@ -5,7 +5,7 @@ from collections import namedtuple
 Occurrence = namedtuple('Occurrence', ['min', 'max', 'count'])
 
 
-class Solution(object):
+class Solution:
     def findShortestSubArray(self, nums):
         occurrences = {}
         for i, num in enumerate(nums):

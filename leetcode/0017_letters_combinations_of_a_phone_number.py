@@ -14,7 +14,7 @@ DIGIT_LETTERS_MAP = {
 }
 
 
-class Solution(object):
+class Solution:
     def letterCombinations(self, digits):
         if not digits:
             return []

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxSubArray(self, nums):
         best_max, current_max = float('-inf'), 0
         for num in nums:

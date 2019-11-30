@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def scoreOfParentheses(self, S):
         current_depth, result = 0, 0
 

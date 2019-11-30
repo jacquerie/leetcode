@@ -3,7 +3,7 @@
 import math
 
 
-class Solution(object):
+class Solution:
     def constructRectangle(self, area):
         w = int(math.sqrt(area))
         while area % w:

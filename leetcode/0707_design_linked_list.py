@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class ListNode(object):
+class ListNode:
     def __init__(self, val):
         self.val = val
         self.next = None
         self.prev = None
 
 
-class MyLinkedList(object):
+class MyLinkedList:
     def __init__(self):
         self.count = 0
         self.head = ListNode(None)

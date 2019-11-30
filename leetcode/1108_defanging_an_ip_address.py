@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def defangIPaddr(self, address):
         return address.replace('.', '[.]')
 

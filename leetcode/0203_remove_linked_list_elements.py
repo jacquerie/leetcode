@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class ListNode(object):
+class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -14,7 +14,7 @@ class ListNode(object):
         )
 
 
-class Solution(object):
+class Solution:
     def removeElements(self, head, val):
         dummy = ListNode(None)
         dummy.next = head

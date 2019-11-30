@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def allCellsDistOrder(self, R, C, r0, c0):
         queue, result, visited = deque([(r0, c0)]), [], set()
 

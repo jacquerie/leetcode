@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def backspaceCompare(self, s, t):
         return self.stringToStack(s) == self.stringToStack(t)
 

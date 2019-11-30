@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Iterator(object):
+class Iterator:
     def __init__(self, nums):
         self.nums = nums
 
@@ -12,7 +12,7 @@ class Iterator(object):
         return self.nums.pop()
 
 
-class PeekingIterator(object):
+class PeekingIterator:
     def __init__(self, iterator):
         self.cache = None
         self.iterator = iterator

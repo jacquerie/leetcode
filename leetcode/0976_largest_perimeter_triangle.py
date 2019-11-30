@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def largestPerimeter(self, A):
         A.sort(reverse=True)
         for i in range(len(A) - 2):

@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def isSubtree(self, s, t):
         if s is None and t is None:
             return True

@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Leaderboard(object):
+class Leaderboard:
     def __init__(self):
         self.scores = Counter()
 

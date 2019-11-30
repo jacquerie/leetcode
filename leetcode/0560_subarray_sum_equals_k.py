@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def subarraySum(self, nums, k):
         result = 0
 

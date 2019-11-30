@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findNthDigit(self, n):
         digits = 1
         while n > 9 * digits * (10 ** (digits - 1)):

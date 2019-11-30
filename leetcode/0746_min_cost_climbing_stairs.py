@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minCostClimbingStairs(self, cost):
         previous, current = cost[0], cost[1]
         for i in range(2, len(cost)):

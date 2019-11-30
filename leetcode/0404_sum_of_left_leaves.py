@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def sumOfLeftLeaves(self, root):
         def _sumOfLeftLeaves(root, is_left=False):
             if root is None:

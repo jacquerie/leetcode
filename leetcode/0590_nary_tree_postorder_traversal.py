@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-class Node(object):
+class Node:
     def __init__(self, val, children):
         self.val = val
         self.children = children
 
 
-class Solution(object):
+class Solution:
     def postorder(self, root):
         def _postorder(root, result):
             for child in root.children:

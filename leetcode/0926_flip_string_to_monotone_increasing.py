@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minFlipsMonoIncr(self, S):
         ones_count, result = 0, 0
 

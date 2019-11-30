@@ -5,7 +5,7 @@ import re
 RE_COMPLEX_NUMBER = re.compile(r'(?P<real>-?\d+)\+(?P<imaginary>-?\d+)i')
 
 
-class Complex(object):
+class Complex:
     def __init__(self, real, imaginary):
         self.real = real
         self.imaginary = imaginary
@@ -28,7 +28,7 @@ class Complex(object):
         return Complex(real, imaginary)
 
 
-class Solution(object):
+class Solution:
     def complexNumberMultiply(self, a, b):
         return str(Complex.loads(a) * Complex.loads(b))
 

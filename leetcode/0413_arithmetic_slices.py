@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def numberOfArithmeticSlices(self, A):
         result = 0
         if len(A) < 3:

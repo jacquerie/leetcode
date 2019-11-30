@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxCoins(self, nums):
         def _maxCoins(i, j):
             if i == j:

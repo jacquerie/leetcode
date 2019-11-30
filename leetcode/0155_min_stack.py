@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class MinStack(object):
+class MinStack:
     def __init__(self):
         self.mins = deque()
         self.stack = deque()

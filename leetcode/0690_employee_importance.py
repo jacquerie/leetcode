@@ -3,14 +3,14 @@
 from collections import deque
 
 
-class Employee(object):
+class Employee:
     def __init__(self, id, importance, subordinates):
         self.id = id
         self.importance = importance
         self.subordinates = subordinates
 
 
-class Solution(object):
+class Solution:
     def getImportance(self, employees, id):
         employees_map = {}
         for employee in employees:

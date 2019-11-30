@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def matrixReshape(self, nums, r, c):
         original_r, original_c = len(nums), len(nums[0])
         if r * c != original_r * original_c:

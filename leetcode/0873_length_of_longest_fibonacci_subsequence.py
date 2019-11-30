@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def lenLongestFibSubseq(self, A):
         result = 2
 

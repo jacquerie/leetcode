@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def repeatedSubstringPattern(self, s):
         length = len(s)
         for i in range(1, length // 2 + 1):

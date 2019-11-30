@@ -5,7 +5,7 @@ def isBadVersion(n):
     return n >= 3
 
 
-class Solution(object):
+class Solution:
     def firstBadVersion(self, n):
         first, last = 1, n
 

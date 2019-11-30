@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def flipAndInvertImage(self, A):
         return [[1 - el for el in row[::-1]] for row in A]
 

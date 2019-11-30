@@ -3,7 +3,7 @@
 from heapq import heappop, heappush
 
 
-class MaxHeap(object):
+class MaxHeap:
     def __init__(self):
         self.count = 0
         self.els = []
@@ -25,7 +25,7 @@ class MaxHeap(object):
         heappush(self.els, (-el, el))
 
 
-class MinHeap(object):
+class MinHeap:
     def __init__(self):
         self.count = 0
         self.els = []
@@ -45,7 +45,7 @@ class MinHeap(object):
         heappush(self.els, el)
 
 
-class MedianFinder(object):
+class MedianFinder:
     def __init__(self):
         self.small = MaxHeap()
         self.big = MinHeap()

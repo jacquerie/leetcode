@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def maxSlidingWindow(self, nums, k):
         result = []
         seen = deque()

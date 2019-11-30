@@ -14,7 +14,7 @@ def memoize(f):
     return _memoize
 
 
-class Solution(object):
+class Solution:
     def isInterleave(self, s1, s2, s3):
         return self._isInterleave(s1, s2, s3, 0, 0, 0)
 

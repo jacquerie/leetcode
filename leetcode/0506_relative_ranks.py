@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findRelativeRanks(self, nums):
         sorted_nums = sorted(nums, reverse=True)
         ranks = {num: rank for rank, num in enumerate(sorted_nums, 1)}

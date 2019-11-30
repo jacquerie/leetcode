@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def findPairs(self, nums, k):
         if k < 0:
             return 0

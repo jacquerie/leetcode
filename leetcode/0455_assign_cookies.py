@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findContentChildren(self, g, s):
         i, j = 0, 0
         ng, ns = len(g), len(s)

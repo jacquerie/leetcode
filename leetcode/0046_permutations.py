@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def permute(self, nums):
         return [list(el) for el in itertools.permutations(nums)]
 

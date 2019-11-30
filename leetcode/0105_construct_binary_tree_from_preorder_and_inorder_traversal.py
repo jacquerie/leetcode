@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -16,7 +16,7 @@ class TreeNode(object):
         )
 
 
-class Solution(object):
+class Solution:
     def buildTree(self, preorder, inorder):
         inorderLookup = self._buildInorderLookup(inorder)
         return self._buildTree(inorderLookup, preorder, 0, 0, len(inorder))

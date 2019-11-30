@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Node(object):
+class Node:
     def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
         self.val = val
         self.isLeaf = isLeaf
@@ -22,7 +22,7 @@ class Node(object):
         )
 
 
-class Solution(object):
+class Solution:
     def intersect(self, quadTree1, quadTree2):
         if quadTree1.isLeaf:
             return quadTree1 if quadTree1.val else quadTree2

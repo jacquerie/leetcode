@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def countPrimes(self, n):
         if n == 0 or n == 1:
             return 0

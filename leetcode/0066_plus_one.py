@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def plusOne(self, digits):
         number = int(''.join(str(digit) for digit in digits))
         return [int(digit) for digit in str(number + 1)]

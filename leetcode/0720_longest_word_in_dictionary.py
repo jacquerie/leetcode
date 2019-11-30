@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def longestWord(self, words):
         wordsSet = set(words)
         result = []

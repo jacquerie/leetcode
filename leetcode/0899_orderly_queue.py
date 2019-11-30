@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def orderlyQueue(self, S, K):
         if K == 1:
             return min((S + S)[i:i + len(S)] for i in range(len(S)))

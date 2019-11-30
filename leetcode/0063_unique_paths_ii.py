@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid):
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         result = [[0 for j in range(n)] for i in range(m)]

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def rotateString(self, A, B):
         return len(A) == len(B) and B in A * 2
 

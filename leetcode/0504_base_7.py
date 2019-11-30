@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def convertToBase7(self, num):
         if num == 0:
             return '0'

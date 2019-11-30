@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def parseBoolExpr(self, expression):
         stack = deque()
         for char in expression:

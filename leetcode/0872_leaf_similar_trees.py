@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
+class Solution:
     def leafSimilar(self, root1, root2):
         leaves1, leaves2 = [], []
         self._leafSimilar(root1, leaves1)

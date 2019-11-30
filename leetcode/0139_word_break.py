@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def wordBreak(self, s, wordDict):
         if not s:
             return True

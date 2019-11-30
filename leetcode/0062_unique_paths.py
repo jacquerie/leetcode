@@ -4,7 +4,7 @@ import functools
 import operator
 
 
-class Solution(object):
+class Solution:
     def choose(self, n, k):
         k = min(k, n - k)
         numerator = functools.reduce(operator.mul, range(n, n - k, -1), 1)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def strWithout3a3b(self, A, B):
         if A >= 2 * B:
             result = ['aab'] * B + ['a'] * (A - 2 * B)

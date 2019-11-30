@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def uniqueOccurrences(self, arr):
         counts = Counter(arr)
         return self.allDistinct(counts.values())

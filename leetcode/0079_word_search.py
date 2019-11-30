@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def exist(self, board, word):
         visited = set()
         for i in range(len(board)):

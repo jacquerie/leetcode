@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def canPlaceFlowers(self, flowerbed, n):
         for i in range(len(flowerbed)):
             previous = i == 0 or flowerbed[i - 1] == 0

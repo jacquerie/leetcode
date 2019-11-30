@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def thirdMax(self, nums):
         top = [float('-inf'), float('-inf'), float('-inf')]
 

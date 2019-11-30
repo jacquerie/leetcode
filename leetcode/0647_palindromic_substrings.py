@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def countSubstrings(self, s):
         return sum((el + 1) // 2 for el in self.manachersAlgorithm(s))
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def dominantIndex(self, nums):
         max_num = max(nums)
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def searchInsert(self, nums, target):
         for i, el in enumerate(nums):
             if el >= target:

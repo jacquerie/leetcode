@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def containsDuplicate(self, nums):
         seen = set()
         for num in nums:

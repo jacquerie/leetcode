@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def fromBase3(self, digits):
         return int(''.join(str(digit) for digit in reversed(digits)), 3)
 

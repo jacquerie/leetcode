@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class UnionFind(object):
+class UnionFind:
     def __init__(self, n):
         self.ids = list(range(n))
         self.sizes = [1] * n
@@ -27,7 +27,7 @@ class UnionFind(object):
         return self.root(p) == self.root(q)
 
 
-class Solution(object):
+class Solution:
     def findCircleNum(self, M):
         union_find = UnionFind(len(M))
         for i in range(len(M)):

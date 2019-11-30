@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def frequencySort(self, s):
         counter = Counter(s)
 

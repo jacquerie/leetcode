@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findDisappearedNumbers(self, nums):
         for num in nums:
             i = abs(num) - 1

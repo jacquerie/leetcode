@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def fairCandySwap(self, A, B):
         difference = (sum(A) - sum(B)) // 2
         setB = set(B)

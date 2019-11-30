@@ -3,7 +3,7 @@
 from heapq import heappop, heappush
 
 
-class ListNode(object):
+class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -22,7 +22,7 @@ class ListNode(object):
         )
 
 
-class ListHeap(object):
+class ListHeap:
     def __init__(self, lists):
         self.els = []
         for el in lists:
@@ -40,7 +40,7 @@ class ListHeap(object):
         heappush(self.els, (el.val, el))
 
 
-class Solution(object):
+class Solution:
     def mergeKLists(self, lists):
         dummy = ListNode(None)
         current = dummy

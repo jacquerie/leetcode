@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class MyHashSet(object):
+class MyHashSet:
     def __init__(self):
         self.data = [False] * (2 ** 20)
 

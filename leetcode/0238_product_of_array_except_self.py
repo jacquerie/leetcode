@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def productExceptSelf(self, nums):
         result = [1] * len(nums)
 

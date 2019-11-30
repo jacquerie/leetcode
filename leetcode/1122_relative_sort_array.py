@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def relativeSortArray(self, arr1, arr2):
         ranks = {el: i for i, el in enumerate(arr2)}
         return sorted(arr1, key=lambda el: (ranks.get(el, float('inf')), el))

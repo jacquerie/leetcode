@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def largestTimeFromDigits(self, A):
         for digits in itertools.permutations(sorted(A, reverse=True)):
             if self.isValidTime(digits):

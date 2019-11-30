@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def dailyTemperatures(self, temperatures):
         result = [0] * len(temperatures)
 

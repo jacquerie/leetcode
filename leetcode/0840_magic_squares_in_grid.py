@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isMagicSquareCenteredHere(self, grid, i, j):
         all_nine_numbers = sorted([
             grid[i - 1][j - 1], grid[i - 1][j], grid[i - 1][j + 1],

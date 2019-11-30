@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def reverseWords(self, s):
         return ' '.join(reversed(s.split()))
 

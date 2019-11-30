@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def licenseKeyFormatting(self, S, K):
         S = S.upper()
         S = ''.join(S.split('-'))

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minimumTotal(self, triangle):
         if not triangle:
             return 0

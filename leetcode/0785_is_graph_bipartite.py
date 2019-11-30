@@ -3,12 +3,12 @@
 from collections import deque
 
 
-class Color(object):
+class Color:
     BLACK = 0
     WHITE = 1
 
 
-class Solution(object):
+class Solution:
     def isBipartite(self, graph):
         color = {}
         for node in range(len(graph)):

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def calculateMinimumHP(self, dungeon):
         result = [float('inf') for _ in range(len(dungeon[0]))]
         result[-1] = 1

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class FenwickTree(object):
+class FenwickTree:
     def __init__(self, nums):
         self.els = [0] * (len(nums) + 2)
         for i, num in enumerate(nums, 1):
@@ -20,7 +20,7 @@ class FenwickTree(object):
         return result
 
 
-class NumArray(object):
+class NumArray:
     def __init__(self, nums):
         self.tree = FenwickTree(nums)
 

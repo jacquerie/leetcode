@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Environment(object):
+class Environment:
     def __init__(self, parent=None):
         self.bindings = {}
         self.parent = parent
@@ -13,7 +13,7 @@ class Environment(object):
         self.bindings[key] = value
 
 
-class Solution(object):
+class Solution:
     def evaluate(self, expression):
         return self.eval(self.parse(expression), Environment())
 

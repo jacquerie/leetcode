@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findMaxAverage(self, nums, k):
         current_sum = sum(nums[:k])
         current_max = current_sum

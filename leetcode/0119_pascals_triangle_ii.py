@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def getRow(self, rowIndex):
         current = [1]
         for row in range(rowIndex + 1):

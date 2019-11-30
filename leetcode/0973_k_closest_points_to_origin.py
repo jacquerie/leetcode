@@ -3,7 +3,7 @@
 import heapq
 
 
-class Solution(object):
+class Solution:
     def kClosest(self, points, K):
         return heapq.nsmallest(K, points, key=lambda xy: xy[0] * xy[0] + xy[1] * xy[1])
 

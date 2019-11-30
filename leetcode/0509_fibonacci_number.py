@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def fib(self, N):
         current, next = 0, 1
         for _ in range(N):

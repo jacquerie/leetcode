@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def twoSum(self, nums, target):
         numsMap = {num: i for i, num in enumerate(nums)}
         for i, num in enumerate(nums):

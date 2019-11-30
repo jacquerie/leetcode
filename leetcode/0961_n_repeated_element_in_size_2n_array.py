@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def repeatedNTimes(self, A):
         seen = set()
         for el in A:

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findRestaurant(self, list1, list2):
         dict1 = {name: i for i, name in enumerate(list1)}
         dict2 = {name: i for i, name in enumerate(list2)}

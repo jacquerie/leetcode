@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def validateStackSequences(self, pushed, popped):
         i, j, stack = 0, 0, deque()
         while i < len(pushed) or j < len(popped):

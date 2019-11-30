@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def validPalindrome(self, s):
         def _validPalindrome(s, first, last):
             while first < last:

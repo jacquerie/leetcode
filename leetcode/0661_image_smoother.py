@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def imageSmoother(self, M):
         result = [[0 for j in range(len(M[0]))] for i in range(len(M))]
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def longestPalindrome(self, s):
         if len(s) < 2:
             return s

@@ -3,7 +3,7 @@
 from itertools import product
 
 
-class Solution(object):
+class Solution:
     def letterCasePermutation(self, S):
         return list(set(''.join(s) for s in product(*zip(S.lower(), S.upper()))))
 

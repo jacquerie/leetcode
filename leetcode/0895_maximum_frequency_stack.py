@@ -3,7 +3,7 @@
 from collections import Counter, defaultdict
 
 
-class FreqStack(object):
+class FreqStack:
     def __init__(self):
         self.counter = Counter()
         self.elements = defaultdict(list)

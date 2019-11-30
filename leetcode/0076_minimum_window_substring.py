@@ -3,7 +3,7 @@
 from collections import Counter, defaultdict, deque
 
 
-class Solution(object):
+class Solution:
     def minWindow(self, s, t):
         best_first, best_last, best_length = 0, len(s) - 1, len(s) + 1
         counts, occurrences = Counter(t), defaultdict(deque)

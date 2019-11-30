@@ -3,12 +3,12 @@
 from collections import deque
 
 
-class Color(object):
+class Color:
     BLACK = 0
     WHITE = 1
 
 
-class Solution(object):
+class Solution:
     def possibleBipartition(self, N, dislikes):
         return self.isBipartite(self.toGraph(range(N), dislikes))
 

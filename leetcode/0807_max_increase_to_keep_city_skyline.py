@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxIncreaseKeepingSkyline(self, grid):
         top_bottom_skyline = [max(row) for row in zip(*grid)]
         left_right_skyline = [max(row) for row in grid]

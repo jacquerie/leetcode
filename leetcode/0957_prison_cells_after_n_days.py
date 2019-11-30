@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def prisonAfterNDays(self, cells, N):
         for i in range(N % 14 + 14):
             cells = tuple(

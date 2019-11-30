@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def rotateDigit(self, d):
         if d == '0':
             return '0'

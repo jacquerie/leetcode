@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def detectCapitalUse(self, word):
         if all(char.isupper() for char in word):
             return True

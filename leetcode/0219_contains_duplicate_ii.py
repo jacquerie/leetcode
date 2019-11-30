@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def containsNearbyDuplicate(self, nums, k):
         occurrences = {}
         for i, num in enumerate(nums):

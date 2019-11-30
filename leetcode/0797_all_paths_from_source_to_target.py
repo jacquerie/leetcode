@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def bfs(self, graph, start, goal):
         queue = [(start, [start])]
         while queue:

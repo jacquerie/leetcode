@@ -3,7 +3,7 @@
 import socket
 
 
-class Solution(object):
+class Solution:
     def validIPv4Address(self, IP):
         try:
             socket.inet_pton(socket.AF_INET, IP)

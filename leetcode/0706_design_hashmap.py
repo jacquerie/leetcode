@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class MyHashMap(object):
+class MyHashMap:
     def __init__(self):
         self.data = [-1] * (2 ** 20)
 

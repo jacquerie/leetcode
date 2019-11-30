@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def numSpecialEquivGroups(self, A):
         groups = set()
         for el in A:

@@ -17,7 +17,7 @@ NUMERAL_ROMAN_MAP = [
 ]
 
 
-class Solution(object):
+class Solution:
     def intToRoman(self, num):
         result = []
 

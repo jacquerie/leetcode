@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class ListNode(object):
+class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -14,7 +14,7 @@ class ListNode(object):
         )
 
 
-class Solution(object):
+class Solution:
     def addTwoNumbers(self, l1, l2):
         carry, val = divmod(l1.val + l2.val, 10)
         l1 = l1.next

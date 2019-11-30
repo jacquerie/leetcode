@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def reconstructQueue(self, people):
         people.sort(key=lambda person: (-person[0], person[1]))
 

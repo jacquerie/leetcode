@@ -14,7 +14,7 @@ def memoize(f):
     return _memoize
 
 
-class Solution(object):
+class Solution:
     def numDecodings(self, s):
         return self._numDecodings(s, 0)
 

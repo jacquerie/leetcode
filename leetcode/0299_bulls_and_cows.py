@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def getHint(self, secret, guess):
         bulls = [s == g for s, g in zip(secret, guess)]
         cows = (Counter(secret) & Counter(guess)).values()

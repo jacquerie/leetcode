@@ -4,7 +4,7 @@ import random
 from collections import defaultdict
 
 
-class RandomizedCollection(object):
+class RandomizedCollection:
     def __init__(self):
         self.indices = defaultdict(list)
         self.elements = []

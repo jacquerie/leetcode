@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def balancedStringSplit(self, s):
         r_count, result = 0, 0
 

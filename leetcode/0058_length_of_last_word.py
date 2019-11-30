@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def lengthOfLastWord(self, s):
         j = len(s) - 1
         while j >= 0 and s[j] == ' ':

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def missingNumber(self, arr):
         return ((arr[-1] + arr[0]) * (len(arr) + 1)) // 2 - sum(arr)
 

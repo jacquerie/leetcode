@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def isLongPressedName(self, name, typed):
         for name_group, typed_group in itertools.zip_longest(
                 itertools.groupby(name), itertools.groupby(typed)):

@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def maxAreaOfIsland(self, grid):
         result = 0
         if not grid:

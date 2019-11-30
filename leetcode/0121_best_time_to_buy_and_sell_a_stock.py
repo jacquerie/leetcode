@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxProfit(self, prices):
         minimum_price = float('inf')
         maximum_profit = 0

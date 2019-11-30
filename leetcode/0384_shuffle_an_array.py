@@ -3,7 +3,7 @@
 import random
 
 
-class Solution(object):
+class Solution:
     def __init__(self, nums):
         self.nums = nums
 

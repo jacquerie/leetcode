@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def isAlienSorted(self, words, order):
         for i in range(len(words) - 1):
             if not self.isAlienLessOrEqual(words[i], words[i + 1], order):

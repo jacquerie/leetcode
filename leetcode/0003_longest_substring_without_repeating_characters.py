@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def lengthOfLongestSubstring(self, s):
         current_first, result = 0, 0
 

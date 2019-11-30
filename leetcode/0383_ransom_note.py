@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def canConstruct(self, ransomNote, magazine):
         magazine_counter = Counter(magazine)
         ransomNote_counter = Counter(ransomNote)

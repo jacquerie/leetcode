@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def diStringMatch(self, S):
         i, j, result = 0, 0, [0]
 

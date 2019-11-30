@@ -3,7 +3,7 @@
 from collections import defaultdict
 
 
-class Solution(object):
+class Solution:
     def groupAnagrams(self, strs):
         anagrams = defaultdict(list)
 

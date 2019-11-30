@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minimumDeleteSum(self, s1, s2):
         result = [[0 for j in range(len(s2) + 1)] for i in range(len(s1) + 1)]
 

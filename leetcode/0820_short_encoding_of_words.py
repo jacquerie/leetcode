@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-class TrieNode(object):
+class TrieNode:
     def __init__(self):
         self.children = {}
         self.leaf = False
 
 
-class Trie(object):
+class Trie:
     def __init__(self):
         self.root = TrieNode()
 
@@ -35,7 +35,7 @@ class Trie(object):
         return result
 
 
-class Solution(object):
+class Solution:
     def minimumLengthEncoding(self, words):
         trie = Trie()
         for word in words:

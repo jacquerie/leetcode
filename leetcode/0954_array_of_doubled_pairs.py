@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def canReorderDoubled(self, A):
         counts = Counter(A)
         for el in sorted(counts, key=abs):

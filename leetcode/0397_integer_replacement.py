@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def integerReplacement(self, n):
         if n == 1:
             return 0

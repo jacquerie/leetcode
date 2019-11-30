@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def nextGreatestLetter(self, letters, target):
         new_letters = list(sorted(set(letters + [target])))
         double_new_letters = ''.join(new_letters * 2)

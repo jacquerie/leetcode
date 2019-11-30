@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def subsetsWithDup(self, nums):
         result = []
         self._subsetsWithDup(sorted(nums), [], result)

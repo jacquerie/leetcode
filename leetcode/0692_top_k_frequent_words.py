@@ -4,7 +4,7 @@ import heapq
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def topKFrequent(self, words, k):
         counter = Counter(words)
 

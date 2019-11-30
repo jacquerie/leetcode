@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minPathSum(self, grid):
         result = [[0 for j in range(len(grid[0]))] for i in range(len(grid))]
 

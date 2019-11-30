@@ -3,7 +3,7 @@
 import itertools
 
 
-class Solution(object):
+class Solution:
     def countBinarySubstrings(self, s):
         result = 0
 

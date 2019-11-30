@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxProduct(self, nums):
         best_max, current_max, current_min = float('-inf'), 1, 1
         for num in nums:

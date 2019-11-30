@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def checkPerfectNumber(self, num):
         return (
             num == 6 or

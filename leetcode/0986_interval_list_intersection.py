@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Interval(object):
+class Interval:
     def __init__(self, s=0, e=0):
         self.start = s
         self.end = e
@@ -10,7 +10,7 @@ class Interval(object):
         return self.start == other.start and self.end == other.end
 
 
-class Solution(object):
+class Solution:
     def intervalIntersection(self, A, B):
         result = []
 

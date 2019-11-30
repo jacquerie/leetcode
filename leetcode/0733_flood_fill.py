@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def floodFill(self, image, sr, sc, newColor):
         nr, nc = len(image), len(image[0])
         result = [[image[i][j] for j in range(nc)] for i in range(nr)]

@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def numSmallerByFrequency(self, queries, words):
         frequencies = [self.getFrequencyOfSmallest(word) for word in words]
         frequency_counts = Counter(frequencies)

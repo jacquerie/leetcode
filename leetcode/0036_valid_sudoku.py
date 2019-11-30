@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isValidSudoku(self, board):
         for i in range(9):
             if self.isInvalidSubset(board[i][j] for j in range(9)):

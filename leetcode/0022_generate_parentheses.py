@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def generateParenthesis(self, n):
         result = []
         self._generateParenthesis(n, 0, 0, '', result)

@@ -5,7 +5,7 @@ def almost_equal(x, y, rel_tol=1e-09, abs_tol=0.0):
     return abs(x - y) <= max(rel_tol * max(abs(x), abs(y)), abs_tol)
 
 
-class Solution(object):
+class Solution:
     def myPow(self, x, n):
         positive = True
         if n < 0:

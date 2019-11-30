@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minFallingPathSum(self, A):
         result = [[0 for j in range(len(A[0]))] for i in range(len(A))]
 

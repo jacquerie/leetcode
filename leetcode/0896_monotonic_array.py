@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isMonotonic(self, A):
         decreasing, increasing = False, False
         for i in range(1, len(A)):

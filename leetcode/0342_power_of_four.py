@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isPowerOfFour(self, num):
         return (
             num == 1 or

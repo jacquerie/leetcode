@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def distanceBetweenBusStops(self, distance, start, destination):
         if destination < start:
             start, destination = destination, start

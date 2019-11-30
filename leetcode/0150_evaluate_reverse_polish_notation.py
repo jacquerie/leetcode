@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def evalRPN(self, tokens):
         stack = deque()
 

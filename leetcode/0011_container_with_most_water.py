@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def maxArea(self, height):
         i, j, result = 0, len(height) - 1, 0
 

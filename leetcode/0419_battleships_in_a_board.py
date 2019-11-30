@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def countBattleships(self, board):
         result = 0
         if not board or not board[0]:

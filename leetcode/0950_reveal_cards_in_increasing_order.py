@@ -3,7 +3,7 @@
 from collections import deque
 
 
-class Solution(object):
+class Solution:
     def deckRevealedIncreasing(self, deck):
         queue = deque()
         for card in sorted(deck, reverse=True):

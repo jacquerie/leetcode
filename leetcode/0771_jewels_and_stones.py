@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def numJewelsInStones(self, J, S):
         return len([c for c in S if c in set(J)])
 

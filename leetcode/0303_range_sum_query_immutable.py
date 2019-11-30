@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class NumArray(object):
+class NumArray:
     def __init__(self, nums):
         self.sums = [0]
         for num in nums:

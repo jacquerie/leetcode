@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def shiftGrid(self, grid, k):
         m, n = len(grid), len(grid[0])
         elements = [grid[i][j] for i in range(m) for j in range(n)]

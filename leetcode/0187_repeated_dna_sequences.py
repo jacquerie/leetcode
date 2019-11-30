@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findRepeatedDnaSequences(self, s):
         result = set()
         if len(s) < 11:

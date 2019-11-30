@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def canJump(self, nums):
         last = 0
         for i, num in enumerate(nums):

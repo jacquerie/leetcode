@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def minCostToMoveChips(self, chips):
         count_even, count_odd = 0, 0
         for chip in chips:

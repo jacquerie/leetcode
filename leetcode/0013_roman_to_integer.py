@@ -11,7 +11,7 @@ ROMAN_NUMERAL_MAP = {
 }
 
 
-class Solution(object):
+class Solution:
     def romanToInt(self, s):
         result = 0
 

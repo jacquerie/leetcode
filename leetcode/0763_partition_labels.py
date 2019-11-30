@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def partitionLabels(self, S):
         last_occurrences = {c: i for i, c in enumerate(S)}
 

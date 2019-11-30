@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
 
     ROWS = [
         set(['Q', 'W', 'E', 'R', 'T', 'Y', 'I', 'U', 'O', 'P']),

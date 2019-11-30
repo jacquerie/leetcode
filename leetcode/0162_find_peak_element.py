@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def findPeakElement(self, nums):
         first, last = 0, len(nums) - 1
 

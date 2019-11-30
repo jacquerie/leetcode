@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def checkPossibility(self, nums):
         peak = None
         for i in range(len(nums) - 1):

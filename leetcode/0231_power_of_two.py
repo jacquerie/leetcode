@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def isPowerOfTwo(self, n):
         return (
             n == 1 or

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Solution(object):
+class Solution:
     def reverseBits(self, n):
         return int(''.join(reversed(format(n, '032b'))), 2)
 

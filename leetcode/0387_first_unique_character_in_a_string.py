@@ -3,7 +3,7 @@
 from collections import Counter
 
 
-class Solution(object):
+class Solution:
     def firstUniqChar(self, s):
         counter = Counter(s)
         for i, char in enumerate(s):
