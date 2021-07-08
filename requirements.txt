@@ -1,2 +1,2 @@
-cpplint==1.5.4
-flake8==3.8.4
+cpplint==1.5.5
+flake8==3.9.2
