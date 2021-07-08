@@ -2,8 +2,8 @@
  leetcode
 ==========
 
-.. image:: https://travis-ci.org/jacquerie/leetcode.svg?branch=master
-    :target: https://travis-ci.org/jacquerie/leetcode
+.. image:: https://travis-ci.com/jacquerie/leetcode.svg?branch=master
+    :target: https://travis-ci.com/jacquerie/leetcode
 
 
 About
