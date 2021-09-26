@@ -1,25 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from functools import wraps
-
-
-def memoize(f):
-    cache = f.cache = {}
-
-    @wraps(f)
-    def _memoize(*args, **kwargs):
-        if args not in cache:
-            cache[args] = f(*args, **kwargs)
-        return cache[args]
-    return _memoize
+from functools import lru_cache
 
 
 class Solution:
-    def checkValidString(self, s):
+    def checkValidString(self, s: str) -> bool:
         return self._checkValidString(s, 0, 0)
 
-    @memoize
-    def _checkValidString(self, s, i, c):
+    @lru_cache(maxsize=None)
+    def _checkValidString(self, s: str, i: int, c: int) -> bool:
         if i == len(s):
             return c == 0
         elif c < 0:

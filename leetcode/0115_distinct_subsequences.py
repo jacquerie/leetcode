@@ -1,25 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from functools import wraps
-
-
-def memoize(f):
-    cache = f.cache = {}
-
-    @wraps(f)
-    def _memoize(*args, **kwargs):
-        if args not in cache:
-            cache[args] = f(*args, **kwargs)
-        return cache[args]
-    return _memoize
+from functools import lru_cache
 
 
 class Solution:
-    def numDistinct(self, s, t):
+    def numDistinct(self, s: str, t: str) -> int:
         return self._numDistinct(s, t, 0, 0)
 
-    @memoize
-    def _numDistinct(self, s, t, i, j):
+    @lru_cache(maxsize=None)
+    def _numDistinct(self, s: str, t: str, i: int, j: int) -> bool:
         if i == len(s) and j < len(t):
             return 0
         elif j == len(t):

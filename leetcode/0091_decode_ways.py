@@ -1,25 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from functools import wraps
-
-
-def memoize(f):
-    cache = f.cache = {}
-
-    @wraps(f)
-    def _memoize(*args, **kwargs):
-        if args not in cache:
-            cache[args] = f(*args, **kwargs)
-        return cache[args]
-    return _memoize
+from functools import lru_cache
 
 
 class Solution:
-    def numDecodings(self, s):
+    def numDecodings(self, s: str) -> int:
         return self._numDecodings(s, 0)
 
-    @memoize
-    def _numDecodings(self, s, i):
+    @lru_cache(maxsize=None)
+    def _numDecodings(self, s: str, i: int) -> int:
         if i > len(s):
             return 0
         elif i == len(s):

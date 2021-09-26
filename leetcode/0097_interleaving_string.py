@@ -1,25 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from functools import wraps
-
-
-def memoize(f):
-    cache = f.cache = {}
-
-    @wraps(f)
-    def _memoize(*args, **kwargs):
-        if args not in cache:
-            cache[args] = f(*args, **kwargs)
-        return cache[args]
-    return _memoize
+from functools import lru_cache
 
 
 class Solution:
-    def isInterleave(self, s1, s2, s3):
+    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         return self._isInterleave(s1, s2, s3, 0, 0, 0)
 
-    @memoize
-    def _isInterleave(self, s1, s2, s3, i, j, k):
+    @lru_cache(maxsize=None)
+    def _isInterleave(self, s1: str, s2: str, s3: str, i: int, j: int, k: int) -> bool:
         if i == len(s1) and j == len(s2):
             return k == len(s3)
         elif k == len(s3):
