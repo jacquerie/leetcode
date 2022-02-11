@@ -17,7 +17,7 @@ class Solution:
         return 1 if negative_count % 2 == 0 else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.arraySign([-1, -2, -3, -4, 3, 2, 1])

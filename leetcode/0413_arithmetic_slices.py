@@ -17,7 +17,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.numberOfArithmeticSlices([1, 2, 3, 4])

@@ -3,11 +3,11 @@
 
 class Solution:
     def checkRecord(self, s):
-        return s.count('A') <= 1 and 'LLL' not in s
+        return s.count("A") <= 1 and "LLL" not in s
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.checkRecord('PPALLP')
-    assert not solution.checkRecord('PPALLL')
+    assert solution.checkRecord("PPALLP")
+    assert not solution.checkRecord("PPALLL")

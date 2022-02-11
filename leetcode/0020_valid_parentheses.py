@@ -8,13 +8,13 @@ class Solution:
         stack = deque()
 
         for c in s:
-            if c == '(':
-                stack.append(')')
-            elif c == '[':
-                stack.append(']')
-            elif c == '{':
-                stack.append('}')
-            elif c == ')' or c == ']' or c == '}':
+            if c == "(":
+                stack.append(")")
+            elif c == "[":
+                stack.append("]")
+            elif c == "{":
+                stack.append("}")
+            elif c == ")" or c == "]" or c == "}":
                 try:
                     top = stack.pop()
                     if top != c:
@@ -25,13 +25,13 @@ class Solution:
         return len(stack) == 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isValid('()')
-    assert solution.isValid('()[]{}')
-    assert not solution.isValid('(]')
-    assert not solution.isValid('([)]')
-    assert solution.isValid('{[]}')
-    assert not solution.isValid(']')
-    assert not solution.isValid('[')
+    assert solution.isValid("()")
+    assert solution.isValid("()[]{}")
+    assert not solution.isValid("(]")
+    assert not solution.isValid("([)]")
+    assert solution.isValid("{[]}")
+    assert not solution.isValid("]")
+    assert not solution.isValid("[")

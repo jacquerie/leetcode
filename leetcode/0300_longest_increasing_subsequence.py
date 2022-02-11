@@ -18,7 +18,7 @@ class Solution:
         return max(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])

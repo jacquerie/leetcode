@@ -4,18 +4,20 @@
 class Solution:
 
     ROWS = [
-        set(['Q', 'W', 'E', 'R', 'T', 'Y', 'I', 'U', 'O', 'P']),
-        set(['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L']),
-        set(['Z', 'X', 'C', 'V', 'B', 'N', 'M']),
+        set(["Q", "W", "E", "R", "T", "Y", "I", "U", "O", "P"]),
+        set(["A", "S", "D", "F", "G", "H", "J", "K", "L"]),
+        set(["Z", "X", "C", "V", "B", "N", "M"]),
     ]
 
     def findWords(self, words):
         return [
-            word for word in words if any(
-                all(char in row for char in word.upper()) for row in self.ROWS)]
+            word
+            for word in words
+            if any(all(char in row for char in word.upper()) for row in self.ROWS)
+        ]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['Alaska', 'Dad'] == solution.findWords(['Hello', 'Alaska', 'Dad', 'Peace'])
+    assert ["Alaska", "Dad"] == solution.findWords(["Hello", "Alaska", "Dad", "Peace"])

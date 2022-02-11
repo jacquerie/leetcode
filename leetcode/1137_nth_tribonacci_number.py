@@ -16,7 +16,7 @@ class Solution:
             return z
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.tribonacci(4)

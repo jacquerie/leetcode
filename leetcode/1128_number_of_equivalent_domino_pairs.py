@@ -14,7 +14,7 @@ class Solution:
         return sum(count * (count - 1) // 2 for count in counts.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.numEquivDominoPairs([[1, 2], [2, 1], [3, 4], [5, 6]])

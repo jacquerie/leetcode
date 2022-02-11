@@ -16,7 +16,7 @@ class Solution:
         return 1 + self.integerReplacement(n // 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.integerReplacement(8)

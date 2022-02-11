@@ -26,14 +26,14 @@ class FooBar:
             self.fe.set()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     mock = Mock(return_value=None)
 
     def printFoo():
-        mock('foo')
+        mock("foo")
 
     def printBar():
-        mock('bar')
+        mock("bar")
 
     foobar = FooBar(2)
     ft = Thread(target=foobar.foo, args=(printFoo,))
@@ -44,8 +44,8 @@ if __name__ == '__main__':
     ft.join()
     bt.join()
     assert [
-        call('foo'),
-        call('bar'),
-        call('foo'),
-        call('bar'),
+        call("foo"),
+        call("bar"),
+        call("foo"),
+        call("bar"),
     ] == mock.mock_calls

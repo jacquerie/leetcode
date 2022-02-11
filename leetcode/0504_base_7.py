@@ -4,7 +4,7 @@
 class Solution:
     def convertToBase7(self, num):
         if num == 0:
-            return '0'
+            return "0"
 
         sign = -1 if num < 0 else 1
 
@@ -16,13 +16,13 @@ class Solution:
             num //= 7
 
         if sign < 0:
-            digits.append('-')
+            digits.append("-")
 
-        return ''.join(reversed(digits))
+        return "".join(reversed(digits))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert '202' == solution.convertToBase7(100)
-    assert '-10' == solution.convertToBase7(-7)
+    assert "202" == solution.convertToBase7(100)
+    assert "-10" == solution.convertToBase7(-7)

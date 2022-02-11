@@ -10,12 +10,12 @@ class Solution:
 
     def coordinatesToCartesian(self, coordinates: str) -> Tuple[int, int]:
         column, row = coordinates
-        return int(row) - 1, ord(column) - ord('a')
+        return int(row) - 1, ord(column) - ord("a")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert not solution.squareIsWhite('a1')
-    assert solution.squareIsWhite('h3')
-    assert not solution.squareIsWhite('c7')
+    assert not solution.squareIsWhite("a1")
+    assert solution.squareIsWhite("h3")
+    assert not solution.squareIsWhite("c7")

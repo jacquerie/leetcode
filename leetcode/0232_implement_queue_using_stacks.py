@@ -25,7 +25,7 @@ class MyQueue:
         return not self.stack1 and not self.stack2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyQueue()
 
     obj.push(1)

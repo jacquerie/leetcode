@@ -13,7 +13,7 @@ class Solution:
                 return i
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.minSetSize([3, 3, 3, 3, 5, 5, 5, 2, 2, 7])

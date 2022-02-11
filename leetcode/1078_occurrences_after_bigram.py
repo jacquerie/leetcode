@@ -13,8 +13,12 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['girl', 'student'] == solution.findOcurrences('alice is a good girl she is a good student', 'a', 'good')
-    assert ['we', 'rock'] == solution.findOcurrences('we will we will rock you', 'we', 'will')
+    assert ["girl", "student"] == solution.findOcurrences(
+        "alice is a good girl she is a good student", "a", "good"
+    )
+    assert ["we", "rock"] == solution.findOcurrences(
+        "we will we will rock you", "we", "will"
+    )

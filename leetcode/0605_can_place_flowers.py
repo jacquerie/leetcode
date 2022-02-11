@@ -18,7 +18,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.canPlaceFlowers([1, 0, 0, 0, 1], 1)

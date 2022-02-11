@@ -6,20 +6,20 @@ class Solution:
         current_depth, result = 0, 0
 
         for i, c in enumerate(S):
-            if c == '(':
+            if c == "(":
                 current_depth += 1
             else:
                 current_depth -= 1
-                if S[i - 1] == '(':
-                    result += 2 ** current_depth
+                if S[i - 1] == "(":
+                    result += 2**current_depth
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 1 == solution.scoreOfParentheses('()')
-    assert 2 == solution.scoreOfParentheses('(())')
-    assert 2 == solution.scoreOfParentheses('()()')
-    assert 6 == solution.scoreOfParentheses('(()(()))')
+    assert 1 == solution.scoreOfParentheses("()")
+    assert 2 == solution.scoreOfParentheses("(())")
+    assert 2 == solution.scoreOfParentheses("()()")
+    assert 6 == solution.scoreOfParentheses("(()(()))")

@@ -3,10 +3,12 @@
 
 class Solution:
     def findComplement(self, num):
-        return int(''.join('1' if digit == '0' else '0' for digit in format(num, '32b')), 2)
+        return int(
+            "".join("1" if digit == "0" else "0" for digit in format(num, "32b")), 2
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findComplement(5)

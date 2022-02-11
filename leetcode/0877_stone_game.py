@@ -6,7 +6,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.stoneGame([5, 3, 4, 5])

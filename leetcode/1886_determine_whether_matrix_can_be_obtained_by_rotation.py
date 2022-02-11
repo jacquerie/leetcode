@@ -27,29 +27,38 @@ class Solution:
                 mat[i][j], mat[i][n - j - 1] = mat[i][n - j - 1], mat[i][j]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.findRotation([
-        [0, 1],
-        [1, 0],
-    ], [
-        [1, 0],
-        [0, 1],
-    ])
-    assert not solution.findRotation([
-        [0, 1],
-        [1, 1],
-    ], [
-        [1, 0],
-        [0, 1],
-    ])
-    assert solution.findRotation([
-        [0, 0, 0],
-        [0, 1, 0],
-        [1, 1, 1],
-    ], [
-        [1, 1, 1],
-        [0, 1, 0],
-        [0, 0, 0],
-    ])
+    assert solution.findRotation(
+        [
+            [0, 1],
+            [1, 0],
+        ],
+        [
+            [1, 0],
+            [0, 1],
+        ],
+    )
+    assert not solution.findRotation(
+        [
+            [0, 1],
+            [1, 1],
+        ],
+        [
+            [1, 0],
+            [0, 1],
+        ],
+    )
+    assert solution.findRotation(
+        [
+            [0, 0, 0],
+            [0, 1, 0],
+            [1, 1, 1],
+        ],
+        [
+            [1, 1, 1],
+            [0, 1, 0],
+            [0, 0, 0],
+        ],
+    )

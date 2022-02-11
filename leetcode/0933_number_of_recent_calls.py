@@ -17,7 +17,7 @@ class RecentCounter:
         return self.count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = RecentCounter()
 
     assert 1 == obj.ping(1)

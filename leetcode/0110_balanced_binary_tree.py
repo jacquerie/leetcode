@@ -17,7 +17,9 @@ class Solution:
             leftBalanced, leftDepth = _isBalanced(root.left, depth)
             rightBalanced, rightDepth = _isBalanced(root.right, depth)
 
-            balanced = leftBalanced and rightBalanced and abs(leftDepth - rightDepth) <= 1
+            balanced = (
+                leftBalanced and rightBalanced and abs(leftDepth - rightDepth) <= 1
+            )
             depth = 1 + max(leftDepth, rightDepth)
 
             return balanced, depth
@@ -26,7 +28,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

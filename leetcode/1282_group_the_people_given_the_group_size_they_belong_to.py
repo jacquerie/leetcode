@@ -13,11 +13,11 @@ class Solution:
         result = []
         for size, ids in sorted(counts.items()):
             for i in range(0, len(ids), size):
-                result.append(ids[i:i + size])
+                result.append(ids[i : i + size])
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [[5], [0, 1, 2], [3, 4, 6]] == solution.groupThePeople([3, 3, 3, 3, 3, 1, 3])

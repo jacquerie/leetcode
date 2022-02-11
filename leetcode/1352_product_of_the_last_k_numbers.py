@@ -17,7 +17,7 @@ class ProductOfNumbers:
         return self.prefix_products[-1] // self.prefix_products[-(k + 1)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = ProductOfNumbers()
     obj.add(3)
     obj.add(0)

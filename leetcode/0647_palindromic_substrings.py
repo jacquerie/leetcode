@@ -7,7 +7,7 @@ class Solution:
 
     def manachersAlgorithm(self, s):
         c, r = 0, 0
-        s = '^#' + '#'.join(s) + '#$'
+        s = "^#" + "#".join(s) + "#$"
         p = [0] * len(s)
 
         for i in range(1, len(s) - 1):
@@ -21,8 +21,8 @@ class Solution:
         return p
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.countSubstrings('abc')
-    assert 6 == solution.countSubstrings('aaa')
+    assert 3 == solution.countSubstrings("abc")
+    assert 6 == solution.countSubstrings("aaa")

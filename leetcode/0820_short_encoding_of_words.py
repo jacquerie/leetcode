@@ -43,8 +43,8 @@ class Solution:
         return trie.minimumLengthEncoding()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 10 == solution.minimumLengthEncoding(['time', 'me', 'bell'])
-    assert 12 == solution.minimumLengthEncoding(['time', 'atime', 'btime'])
+    assert 10 == solution.minimumLengthEncoding(["time", "me", "bell"])
+    assert 12 == solution.minimumLengthEncoding(["time", "atime", "btime"])

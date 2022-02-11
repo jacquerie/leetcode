@@ -18,8 +18,10 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['sour', 'sweet'] == sorted(solution.uncommonFromSentences('this apple is sweet', 'this apple is sour'))
-    assert ['banana'] == sorted(solution.uncommonFromSentences('apple apple', 'banana'))
+    assert ["sour", "sweet"] == sorted(
+        solution.uncommonFromSentences("this apple is sweet", "this apple is sour")
+    )
+    assert ["banana"] == sorted(solution.uncommonFromSentences("apple apple", "banana"))

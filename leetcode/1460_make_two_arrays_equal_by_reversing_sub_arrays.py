@@ -9,7 +9,7 @@ class Solution:
         return Counter(target) == Counter(arr)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.canBeEqual([1, 2, 3, 4], [2, 4, 1, 3])

@@ -12,7 +12,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findNumbers([12, 345, 2, 6, 7896])

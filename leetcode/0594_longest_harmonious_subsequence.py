@@ -15,7 +15,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 5 == solution.findLHS([1, 3, 2, 2, 5, 2, 3, 7])

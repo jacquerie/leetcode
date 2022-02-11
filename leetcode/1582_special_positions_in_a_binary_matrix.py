@@ -22,29 +22,37 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 1 == solution.numSpecial([
-        [1, 0, 0],
-        [0, 0, 1],
-        [1, 0, 0],
-    ])
-    assert 3 == solution.numSpecial([
-        [1, 0, 0],
-        [0, 1, 0],
-        [0, 0, 1],
-    ])
-    assert 2 == solution.numSpecial([
-        [0, 0, 0, 1],
-        [1, 0, 0, 0],
-        [0, 1, 1, 0],
-        [0, 0, 0, 0],
-    ])
-    assert 3 == solution.numSpecial([
-        [0, 0, 0, 0, 0],
-        [1, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0],
-        [0, 0, 1, 0, 0],
-        [0, 0, 0, 1, 1],
-    ])
+    assert 1 == solution.numSpecial(
+        [
+            [1, 0, 0],
+            [0, 0, 1],
+            [1, 0, 0],
+        ]
+    )
+    assert 3 == solution.numSpecial(
+        [
+            [1, 0, 0],
+            [0, 1, 0],
+            [0, 0, 1],
+        ]
+    )
+    assert 2 == solution.numSpecial(
+        [
+            [0, 0, 0, 1],
+            [1, 0, 0, 0],
+            [0, 1, 1, 0],
+            [0, 0, 0, 0],
+        ]
+    )
+    assert 3 == solution.numSpecial(
+        [
+            [0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0],
+            [0, 0, 1, 0, 0],
+            [0, 0, 0, 1, 1],
+        ]
+    )

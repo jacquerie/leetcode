@@ -15,12 +15,14 @@ class Solution:
                 return 0
             elif root.left is None and root.right is None and is_left:
                 return root.val
-            return _sumOfLeftLeaves(root.left, is_left=True) + _sumOfLeftLeaves(root.right)
+            return _sumOfLeftLeaves(root.left, is_left=True) + _sumOfLeftLeaves(
+                root.right
+            )
 
         return _sumOfLeftLeaves(root)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

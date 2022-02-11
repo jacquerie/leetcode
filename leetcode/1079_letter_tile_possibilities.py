@@ -5,11 +5,13 @@ import itertools
 
 class Solution:
     def numTilePossibilities(self, tiles):
-        return sum(len(set(itertools.permutations(tiles, i))) for i in range(1, len(tiles) + 1))
+        return sum(
+            len(set(itertools.permutations(tiles, i))) for i in range(1, len(tiles) + 1)
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 8 == solution.numTilePossibilities('AAB')
-    assert 188 == solution.numTilePossibilities('AAABBC')
+    assert 8 == solution.numTilePossibilities("AAB")
+    assert 188 == solution.numTilePossibilities("AAABBC")

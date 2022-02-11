@@ -14,7 +14,9 @@ class Solution:
         return list(queue)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [2, 13, 3, 11, 5, 17, 7] == solution.deckRevealedIncreasing([17, 13, 11, 2, 3, 5, 7])
+    assert [2, 13, 3, 11, 5, 17, 7] == solution.deckRevealedIncreasing(
+        [17, 13, 11, 2, 3, 5, 7]
+    )

@@ -27,13 +27,13 @@ class Solution:
                 best_last = current_last
                 best_length = current_last - current_first
 
-        return s[best_first:best_last] if best_length != len(s) + 1 else ''
+        return s[best_first:best_last] if best_length != len(s) + 1 else ""
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'BANC' == solution.minWindow('ADOBECODEBANC', 'ABC')
-    assert 'aa' == solution.minWindow('aa', 'aa')
-    assert '' == solution.minWindow('a', 'b')
-    assert 'cwae' == solution.minWindow('cabwefgewcwaefgcf', 'cae')
+    assert "BANC" == solution.minWindow("ADOBECODEBANC", "ABC")
+    assert "aa" == solution.minWindow("aa", "aa")
+    assert "" == solution.minWindow("a", "b")
+    assert "cwae" == solution.minWindow("cabwefgewcwaefgcf", "cae")

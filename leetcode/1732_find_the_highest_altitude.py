@@ -9,7 +9,7 @@ class Solution:
         return max(0, max(itertools.accumulate(gain)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.largestAltitude([-5, 1, 5, 0, -7])

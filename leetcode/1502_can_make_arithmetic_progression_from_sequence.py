@@ -11,7 +11,7 @@ class Solution:
         return all(el == arr[0] + i * diff for i, el in enumerate(arr))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.canMakeArithmeticProgression([3, 5, 1])

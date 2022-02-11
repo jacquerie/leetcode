@@ -11,7 +11,7 @@ class Solution:
         return original
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 24 == solution.findFinalValue([5, 3, 6, 1, 12], 3)

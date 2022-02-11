@@ -16,7 +16,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [4, 2, 4, 2, 3] == solution.finalPrices([8, 4, 6, 2, 3])

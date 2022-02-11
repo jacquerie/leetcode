@@ -24,9 +24,9 @@ class Trie:
 
     def _search(self, word, current):
         for i, char in enumerate(word):
-            if char == '.':
+            if char == ".":
                 for child in current.children:
-                    if self._search(word[i + 1:], current.children[child]):
+                    if self._search(word[i + 1 :], current.children[child]):
                         return True
                 return False
             elif char not in current.children:
@@ -46,12 +46,12 @@ class WordDictionary:
         return self.trie.search(word)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = WordDictionary()
 
-    obj.addWord('bad')
-    obj.addWord('dad')
-    obj.addWord('mad')
-    assert not obj.search('pad')
-    assert obj.search('bad')
-    assert obj.search('.ad')
+    obj.addWord("bad")
+    obj.addWord("dad")
+    obj.addWord("mad")
+    assert not obj.search("pad")
+    assert obj.search("bad")
+    assert obj.search(".ad")

@@ -16,12 +16,12 @@ class Solution:
                 k -= 1
             elif el not in seen_twice:
                 return el
-        return ''
+        return ""
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'a' == solution.kthDistinct(['d', 'b', 'c', 'b', 'c', 'a'], 2)
-    assert 'aaa' == solution.kthDistinct(['aaa', 'aa', 'a'], 1)
-    assert '' == solution.kthDistinct(['a', 'b', 'a'], 3)
+    assert "a" == solution.kthDistinct(["d", "b", "c", "b", "c", "a"], 2)
+    assert "aaa" == solution.kthDistinct(["aaa", "aa", "a"], 1)
+    assert "" == solution.kthDistinct(["a", "b", "a"], 3)

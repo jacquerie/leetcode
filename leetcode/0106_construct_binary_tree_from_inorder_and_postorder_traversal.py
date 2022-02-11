@@ -9,17 +9,19 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
 class Solution:
     def buildTree(self, inorder, postorder):
         inorderLookup = self._buildInorderLookup(inorder)
-        return self._buildTree(inorderLookup, postorder, len(postorder), 0, len(inorder))
+        return self._buildTree(
+            inorderLookup, postorder, len(postorder), 0, len(inorder)
+        )
 
     def _buildInorderLookup(self, inorder):
         result = {}
@@ -40,7 +42,7 @@ class Solution:
         return node
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

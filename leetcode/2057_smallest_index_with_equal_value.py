@@ -11,7 +11,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 0 == solution.smallestEqual([0, 1, 2])

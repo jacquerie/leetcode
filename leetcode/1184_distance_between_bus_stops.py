@@ -8,11 +8,11 @@ class Solution:
 
         return min(
             sum(distance[start:destination]),
-            sum(distance[:start]) + sum(distance[destination:])
+            sum(distance[:start]) + sum(distance[destination:]),
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 1)

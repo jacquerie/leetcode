@@ -11,7 +11,7 @@ class Solution:
         return current
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.rob([1, 2, 3, 1])

@@ -9,7 +9,7 @@ class Solution:
 
         for k, _ in enumerate(nums):
             i, j = 0, len(nums) - 1
-            while (i < k and j > k):
+            while i < k and j > k:
                 if nums[i] + nums[j] + nums[k] == 0:
                     result.add((nums[i], nums[k], nums[j]))
                     i += 1
@@ -22,7 +22,7 @@ class Solution:
         return [list(el) for el in result]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     nums = [-1, 0, 1, 2, -1, -4]

@@ -27,8 +27,9 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['mee', 'aqq'] == solution.findAndReplacePattern([
-        'abc', 'deq', 'mee', 'aqq', 'dkd', 'ccc'], 'abb')
+    assert ["mee", "aqq"] == solution.findAndReplacePattern(
+        ["abc", "deq", "mee", "aqq", "dkd", "ccc"], "abb"
+    )

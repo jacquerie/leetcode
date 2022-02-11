@@ -14,7 +14,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.maxChunksToSorted([4, 3, 2, 1, 0])

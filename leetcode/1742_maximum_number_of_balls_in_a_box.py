@@ -14,7 +14,7 @@ class Solution:
         return sum(int(digit) for digit in str(n))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.countBalls(1, 10)

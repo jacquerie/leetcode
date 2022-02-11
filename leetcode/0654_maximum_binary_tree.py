@@ -11,10 +11,10 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
@@ -26,12 +26,12 @@ class Solution:
         i, maximum = max(enumerate(nums), key=operator.itemgetter(1))
         node = TreeNode(maximum)
         node.left = self.constructMaximumBinaryTree(nums[:i])
-        node.right = self.constructMaximumBinaryTree(nums[i + 1:])
+        node.right = self.constructMaximumBinaryTree(nums[i + 1 :])
 
         return node
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(6)

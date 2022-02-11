@@ -12,13 +12,13 @@ class Node:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.isLeaf == other.isLeaf and
-            self.topLeft == other.topLeft and
-            self.topRight == other.topRight and
-            self.bottomLeft == other.bottomLeft and
-            self.bottomRight == other.bottomRight
+            other is not None
+            and self.val == other.val
+            and self.isLeaf == other.isLeaf
+            and self.topLeft == other.topLeft
+            and self.topRight == other.topRight
+            and self.bottomLeft == other.bottomLeft
+            and self.bottomRight == other.bottomRight
         )
 
 
@@ -34,13 +34,18 @@ class Solution:
         bottomLeft = self.intersect(quadTree1.bottomLeft, quadTree2.bottomLeft)
         bottomRight = self.intersect(quadTree1.bottomRight, quadTree2.bottomRight)
 
-        if topLeft.isLeaf and topRight.isLeaf and bottomLeft.isLeaf and bottomRight.isLeaf:
+        if (
+            topLeft.isLeaf
+            and topRight.isLeaf
+            and bottomLeft.isLeaf
+            and bottomRight.isLeaf
+        ):
             if topLeft.val == topRight.val == bottomLeft.val == bottomRight.val:
                 return Node(topLeft.val, True, None, None, None, None)
         return Node(None, False, topLeft, topRight, bottomLeft, bottomRight)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_4 = Node(False, True, None, None, None, None)

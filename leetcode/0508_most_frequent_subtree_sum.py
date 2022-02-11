@@ -33,7 +33,7 @@ class Solution:
         return [sum for sum, count in counts.items() if count == max_count]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(5)

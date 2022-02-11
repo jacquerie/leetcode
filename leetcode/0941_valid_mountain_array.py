@@ -14,7 +14,7 @@ class Solution:
         return 0 < i == j < len(A) - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert not solution.validMountainArray([2, 1])

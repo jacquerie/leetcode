@@ -11,7 +11,7 @@ class Solution:
         return [area // w, w]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [2, 2] == solution.constructRectangle(4)

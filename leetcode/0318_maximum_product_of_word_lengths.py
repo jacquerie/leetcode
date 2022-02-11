@@ -10,7 +10,7 @@ class Solution:
         bits = [0] * len(words)
         for i, word in enumerate(words):
             for c in word:
-                bits[i] |= 1 << (ord(c) - ord('a'))
+                bits[i] |= 1 << (ord(c) - ord("a"))
 
         result = 0
 
@@ -21,9 +21,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 16 == solution.maxProduct(['abcw', 'baz', 'foo', 'bar', 'xtfn', 'abcdef'])
-    assert 4 == solution.maxProduct(['a', 'ab', 'abc', 'd', 'cd', 'bcd', 'abcd'])
-    assert 0 == solution.maxProduct(['a', 'aa', 'aaa', 'aaaa'])
+    assert 16 == solution.maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"])
+    assert 4 == solution.maxProduct(["a", "ab", "abc", "d", "cd", "bcd", "abcd"])
+    assert 0 == solution.maxProduct(["a", "aa", "aaa", "aaaa"])

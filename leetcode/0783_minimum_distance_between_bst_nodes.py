@@ -19,11 +19,11 @@ class Solution:
                 result = min(result, root.val - previous.val)
             return _inOrderTraversal(root.right, root, result)
 
-        _, result = _inOrderTraversal(root, None, float('inf'))
+        _, result = _inOrderTraversal(root, None, float("inf"))
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(4)

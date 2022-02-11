@@ -10,31 +10,31 @@ class Foo:
         self.fb = Barrier(2)
         self.sb = Barrier(2)
 
-    def first(self, printFirst: 'Callable[[], None]') -> None:
+    def first(self, printFirst: "Callable[[], None]") -> None:
         printFirst()
         self.fb.wait()
 
-    def second(self, printSecond: 'Callable[[], None]') -> None:
+    def second(self, printSecond: "Callable[[], None]") -> None:
         self.fb.wait()
         printSecond()
         self.sb.wait()
 
-    def third(self, printThird: 'Callable[[], None]') -> None:
+    def third(self, printThird: "Callable[[], None]") -> None:
         self.sb.wait()
         printThird()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     mock = Mock(return_value=None)
 
     def printFirst():
-        mock('first')
+        mock("first")
 
     def printSecond():
-        mock('second')
+        mock("second")
 
     def printThird():
-        mock('third')
+        mock("third")
 
     foo = Foo()
     ft = Thread(target=foo.first, args=(printFirst,))
@@ -48,9 +48,9 @@ if __name__ == '__main__':
     st.join()
     tt.join()
     assert [
-        call('first'),
-        call('second'),
-        call('third'),
+        call("first"),
+        call("second"),
+        call("third"),
     ] == mock.mock_calls
 
     mock.reset_mock()
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     st.join()
     tt.join()
     assert [
-        call('first'),
-        call('second'),
-        call('third'),
+        call("first"),
+        call("second"),
+        call("third"),
     ] == mock.mock_calls

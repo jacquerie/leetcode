@@ -6,7 +6,7 @@ class Solution:
         return min(len(candies) / 2, len(set(candies)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.distributeCandies([1, 1, 2, 2, 3, 3])

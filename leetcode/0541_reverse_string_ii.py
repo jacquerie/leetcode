@@ -11,7 +11,7 @@ class Solution:
             result.append(reversed(chunk[:k]))
             result.append(chunk[k:])
 
-        return ''.join(self.flattenLst(result))
+        return "".join(self.flattenLst(result))
 
     def chunkStr(self, s, k):
         for i in range((len(s) // k) + 1):
@@ -22,7 +22,7 @@ class Solution:
         return itertools.chain.from_iterable(l)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'bacdfeg' == solution.reverseStr('abcdefg', 2)
+    assert "bacdfeg" == solution.reverseStr("abcdefg", 2)

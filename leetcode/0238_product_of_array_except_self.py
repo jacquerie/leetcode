@@ -18,7 +18,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [24, 12, 8, 6] == solution.productExceptSelf([1, 2, 3, 4])

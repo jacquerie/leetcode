@@ -18,7 +18,7 @@ class Solution:
         return i == len(pushed) and j == len(popped)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.validateStackSequences([1, 2, 3, 4, 5], [4, 5, 3, 2, 1])

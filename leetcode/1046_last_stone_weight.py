@@ -40,7 +40,7 @@ class Solution:
         return heap.pop() if len(heap) == 1 else 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.lastStoneWeight([2, 7, 4, 1, 8, 1])

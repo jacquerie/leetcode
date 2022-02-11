@@ -8,7 +8,7 @@ class Solution:
         return [nums[nums[i]] for i in range(len(nums))]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [0, 1, 2, 4, 5, 3] == solution.buildArray([0, 2, 1, 5, 3, 4])

@@ -21,7 +21,9 @@ class Solution:
         rightLength, rightResult = self._longestUnivaluePath(root.right)
 
         leftLength = leftLength + 1 if root.left and root.val == root.left.val else 0
-        rightLength = rightLength + 1 if root.right and root.val == root.right.val else 0
+        rightLength = (
+            rightLength + 1 if root.right and root.val == root.right.val else 0
+        )
 
         length = max(leftLength, rightLength)
         result = max(leftResult, rightResult, leftLength + rightLength)
@@ -29,7 +31,7 @@ class Solution:
         return length, result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(5)

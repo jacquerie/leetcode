@@ -15,7 +15,9 @@ class Solution:
                     prod *= nums[j]
 
                 cache[i * n + j] = max(
-                    _maxCoins(i, k) + prod * nums[k] + _maxCoins(k + 1, j) for k in range(i, j))
+                    _maxCoins(i, k) + prod * nums[k] + _maxCoins(k + 1, j)
+                    for k in range(i, j)
+                )
 
             return cache[i * n + j]
 
@@ -24,7 +26,7 @@ class Solution:
         return _maxCoins(0, len(nums))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 167 == solution.maxCoins([3, 1, 5, 8])

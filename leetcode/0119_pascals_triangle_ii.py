@@ -17,7 +17,7 @@ class Solution:
         return current
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 3, 3, 1] == solution.getRow(3)

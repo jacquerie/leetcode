@@ -19,7 +19,7 @@ class Solution:
                 return el
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 6 == solution.findSpecialInteger([1, 2, 2, 6, 6, 6, 6, 7, 10])

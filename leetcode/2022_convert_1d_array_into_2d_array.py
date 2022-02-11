@@ -15,7 +15,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [[1, 2], [3, 4]] == solution.construct2DArray([1, 2, 3, 4], 2, 2)

@@ -11,7 +11,7 @@ class Solution:
         return current_max / float(k)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 12.75 == solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4)

@@ -3,7 +3,7 @@
 
 class Solution:
     def versionStringToList(self, version):
-        result = list(map(int, version.split('.')))
+        result = list(map(int, version.split(".")))
         while result and result[-1] == 0:
             result.pop()
         return result
@@ -19,10 +19,10 @@ class Solution:
         return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert -1 == solution.compareVersion('0.1', '1.1')
-    assert 1 == solution.compareVersion('1.0.1', '1')
-    assert -1 == solution.compareVersion('7.5.2.4', '7.5.3')
-    assert 0 == solution.compareVersion('1', '1.0')
+    assert -1 == solution.compareVersion("0.1", "1.1")
+    assert 1 == solution.compareVersion("1.0.1", "1")
+    assert -1 == solution.compareVersion("7.5.2.4", "7.5.3")
+    assert 0 == solution.compareVersion("1", "1.0")

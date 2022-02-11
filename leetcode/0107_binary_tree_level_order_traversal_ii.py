@@ -28,7 +28,7 @@ class Solution:
         return list(reversed(result))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

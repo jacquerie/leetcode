@@ -9,7 +9,7 @@ class Solution:
         return sum(count * (count - 1) // 2 for _, count in Counter(nums).items())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.numIdenticalPairs([1, 2, 3, 1, 1, 3])

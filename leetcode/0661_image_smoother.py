@@ -19,28 +19,28 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [
-        [0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0],
-    ] == solution.imageSmoother([
-        [1, 1, 1],
-        [1, 0, 1],
-        [1, 1, 1],
-    ])
+    assert [[0, 0, 0], [0, 0, 0], [0, 0, 0],] == solution.imageSmoother(
+        [
+            [1, 1, 1],
+            [1, 0, 1],
+            [1, 1, 1],
+        ]
+    )
     assert [
         [4, 4, 5],
         [5, 6, 6],
         [8, 9, 9],
         [11, 12, 12],
         [13, 13, 14],
-    ] == solution.imageSmoother([
-        [2, 3, 4],
-        [5, 6, 7],
-        [8, 9, 10],
-        [11, 12, 13],
-        [14, 15, 16],
-    ])
+    ] == solution.imageSmoother(
+        [
+            [2, 3, 4],
+            [5, 6, 7],
+            [8, 9, 10],
+            [11, 12, 13],
+            [14, 15, 16],
+        ]
+    )

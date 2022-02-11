@@ -16,23 +16,31 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 8 == solution.countNegatives([
-        [4, 3, 2, -1],
-        [3, 2, 1, -1],
-        [1, 1, -1, -2],
-        [-1, -1, -2, -3],
-    ])
-    assert 0 == solution.countNegatives([
-        [3, 2],
-        [1, 0],
-    ])
-    assert 3 == solution.countNegatives([
-        [1, -1],
-        [-1, -1],
-    ])
-    assert 1 == solution.countNegatives([
-        [-1],
-    ])
+    assert 8 == solution.countNegatives(
+        [
+            [4, 3, 2, -1],
+            [3, 2, 1, -1],
+            [1, 1, -1, -2],
+            [-1, -1, -2, -3],
+        ]
+    )
+    assert 0 == solution.countNegatives(
+        [
+            [3, 2],
+            [1, 0],
+        ]
+    )
+    assert 3 == solution.countNegatives(
+        [
+            [1, -1],
+            [-1, -1],
+        ]
+    )
+    assert 1 == solution.countNegatives(
+        [
+            [-1],
+        ]
+    )

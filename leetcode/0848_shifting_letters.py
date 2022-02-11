@@ -15,13 +15,13 @@ class Solution:
             current_shift -= shifts[i]
             current_shift %= 26
 
-        return ''.join(result)
+        return "".join(result)
 
     def shiftLetter(self, c, shift):
-        return chr(ord('a') + (ord(c) + shift - ord('a')) % 26)
+        return chr(ord("a") + (ord(c) + shift - ord("a")) % 26)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'rpl' == solution.shiftingLetters('abc', [3, 5, 9])
+    assert "rpl" == solution.shiftingLetters("abc", [3, 5, 9])

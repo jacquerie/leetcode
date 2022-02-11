@@ -5,13 +5,13 @@ class Solution:
     def isPathCrossing(self, path: str) -> bool:
         x, y, visited = 0, 0, set([(0, 0)])
         for char in path:
-            if char == 'N':
+            if char == "N":
                 x += 1
-            elif char == 'E':
+            elif char == "E":
                 y += 1
-            elif char == 'S':
+            elif char == "S":
                 x -= 1
-            elif char == 'W':
+            elif char == "W":
                 y -= 1
             if (x, y) in visited:
                 return True
@@ -19,8 +19,8 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert not solution.isPathCrossing('NES')
-    assert solution.isPathCrossing('NESWW')
+    assert not solution.isPathCrossing("NES")
+    assert solution.isPathCrossing("NESWW")

@@ -9,10 +9,10 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
@@ -35,12 +35,14 @@ class Solution:
 
         node = TreeNode(preorder[i])
         node.left = self._buildTree(lookup, preorder, i + 1, in_start, j)
-        node.right = self._buildTree(lookup, preorder, i + 1 + j - in_start, j + 1, in_end)
+        node.right = self._buildTree(
+            lookup, preorder, i + 1 + j - in_start, j + 1, in_end
+        )
 
         return node
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

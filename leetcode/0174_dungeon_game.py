@@ -3,7 +3,7 @@
 
 class Solution:
     def calculateMinimumHP(self, dungeon):
-        result = [float('inf') for _ in range(len(dungeon[0]))]
+        result = [float("inf") for _ in range(len(dungeon[0]))]
         result[-1] = 1
 
         for i in reversed(range(len(dungeon))):
@@ -14,11 +14,13 @@ class Solution:
         return result[0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 7 == solution.calculateMinimumHP([
-        [-2, -3, 3],
-        [-5, -10, 1],
-        [10, 30, -5],
-    ])
+    assert 7 == solution.calculateMinimumHP(
+        [
+            [-2, -3, 3],
+            [-5, -10, 1],
+            [10, 30, -5],
+        ]
+    )

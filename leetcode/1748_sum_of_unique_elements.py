@@ -9,7 +9,7 @@ class Solution:
         return sum(el for el, count in Counter(nums).items() if count == 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.sumOfUnique([1, 2, 3, 2])

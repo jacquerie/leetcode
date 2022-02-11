@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
     def numDifferentIntegers(self, word: str) -> int:
         result = set()
@@ -20,9 +21,9 @@ class Solution:
         return len(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.numDifferentIntegers('a123bc34d8ef34')
-    assert 2 == solution.numDifferentIntegers('leet1234code234')
-    assert 1 == solution.numDifferentIntegers('a1b01c001')
+    assert 3 == solution.numDifferentIntegers("a123bc34d8ef34")
+    assert 2 == solution.numDifferentIntegers("leet1234code234")
+    assert 1 == solution.numDifferentIntegers("a1b01c001")

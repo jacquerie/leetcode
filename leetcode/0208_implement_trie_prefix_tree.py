@@ -36,12 +36,12 @@ class Trie:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Trie()
 
-    obj.insert('apple')
-    assert obj.search('apple')
-    assert not obj.search('app')
-    assert obj.startsWith('app')
-    obj.insert('app')
-    assert obj.search('app')
+    obj.insert("apple")
+    assert obj.search("apple")
+    assert not obj.search("app")
+    assert obj.startsWith("app")
+    obj.insert("app")
+    assert obj.search("app")

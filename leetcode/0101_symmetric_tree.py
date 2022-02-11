@@ -18,13 +18,13 @@ class Solution:
         if left is None or right is None:
             return left is None and right is None
         return (
-            left.val == right.val and
-            self._isSymmetric(left.left, right.right) and
-            self._isSymmetric(left.right, right.left)
+            left.val == right.val
+            and self._isSymmetric(left.left, right.right)
+            and self._isSymmetric(left.right, right.left)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)

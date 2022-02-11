@@ -3,7 +3,7 @@
 
 class Solution:
     def thirdMax(self, nums):
-        top = [float('-inf'), float('-inf'), float('-inf')]
+        top = [float("-inf"), float("-inf"), float("-inf")]
 
         for num in nums:
             if num > top[0]:
@@ -13,12 +13,12 @@ class Solution:
             elif num != top[0] and num != top[1] and num > top[2]:
                 top[2] = num
 
-        if any(el == float('-inf') for el in top):
+        if any(el == float("-inf") for el in top):
             return top[0]
         return top[2]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.thirdMax([3, 2, 1])

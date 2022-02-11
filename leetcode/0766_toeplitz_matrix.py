@@ -11,15 +11,19 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isToeplitzMatrix([
-        [1, 2, 3, 4],
-        [5, 1, 2, 3],
-        [9, 5, 1, 2],
-    ])
-    assert not solution.isToeplitzMatrix([
-        [1, 2],
-        [2, 2],
-    ])
+    assert solution.isToeplitzMatrix(
+        [
+            [1, 2, 3, 4],
+            [5, 1, 2, 3],
+            [9, 5, 1, 2],
+        ]
+    )
+    assert not solution.isToeplitzMatrix(
+        [
+            [1, 2],
+            [2, 2],
+        ]
+    )

@@ -12,10 +12,14 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [True, False, False] == solution.prefixesDivBy5([0, 1, 1])
     assert [False, False, False] == solution.prefixesDivBy5([1, 1, 1])
-    assert [True, False, False, False, True, False] == solution.prefixesDivBy5([0, 1, 1, 1, 1, 1])
-    assert [False, False, False, False, False] == solution.prefixesDivBy5([1, 1, 1, 0, 1])
+    assert [True, False, False, False, True, False] == solution.prefixesDivBy5(
+        [0, 1, 1, 1, 1, 1]
+    )
+    assert [False, False, False, False, False] == solution.prefixesDivBy5(
+        [1, 1, 1, 0, 1]
+    )

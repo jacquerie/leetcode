@@ -34,7 +34,7 @@ class Solution:
         board[i][j] >>= 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     board = [

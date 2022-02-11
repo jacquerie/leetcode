@@ -17,7 +17,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 14 == solution.maxSatisfaction([-1, -8, 0, 5, -9])

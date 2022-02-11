@@ -10,7 +10,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.hammingWeight(11)

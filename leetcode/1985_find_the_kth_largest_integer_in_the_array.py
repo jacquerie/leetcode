@@ -33,9 +33,9 @@ class Solution:
         return str(heap._min())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert '3' == solution.kthLargestNumber(['3', '6', '7', '10'], 4)
-    assert '2' == solution.kthLargestNumber(['2', '21', '12', '1'], 3)
-    assert '0' == solution.kthLargestNumber(['0', '0'], 2)
+    assert "3" == solution.kthLargestNumber(["3", "6", "7", "10"], 4)
+    assert "2" == solution.kthLargestNumber(["2", "21", "12", "1"], 3)
+    assert "0" == solution.kthLargestNumber(["0", "0"], 2)

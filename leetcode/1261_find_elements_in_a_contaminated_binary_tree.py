@@ -24,7 +24,7 @@ class FindElements:
         return target in self.elements
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t0_0 = TreeNode(-1)
     t0_1 = TreeNode(-1)
     t0_0.right = t0_1

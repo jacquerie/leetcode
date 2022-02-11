@@ -7,7 +7,7 @@ from collections import Counter
 class Solution:
     def mostCommonWord(self, paragraph, banned):
         paragraph = paragraph.lower()
-        paragraph = re.sub('[^a-z ]+', '', paragraph)
+        paragraph = re.sub("[^a-z ]+", "", paragraph)
 
         words = Counter(paragraph.split())
         banned = set(banned)
@@ -17,7 +17,9 @@ class Solution:
                 return word
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'ball' == solution.mostCommonWord('Bob hit a ball, the hit BALL flew far after it was hit.', ['hit'])
+    assert "ball" == solution.mostCommonWord(
+        "Bob hit a ball, the hit BALL flew far after it was hit.", ["hit"]
+    )

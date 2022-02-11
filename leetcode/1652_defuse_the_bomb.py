@@ -8,15 +8,15 @@ class Solution:
         doubled_code, length, result = code + code, len(code), []
         for i, _ in enumerate(code):
             if k > 0:
-                result.append(sum(doubled_code[i + 1:i + k + 1]))
+                result.append(sum(doubled_code[i + 1 : i + k + 1]))
             elif k < 0:
-                result.append(sum(doubled_code[length + i + k:length + i]))
+                result.append(sum(doubled_code[length + i + k : length + i]))
             else:
                 result.append(0)
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [12, 10, 16, 13] == solution.decrypt([5, 7, 1, 4], 3)

@@ -6,7 +6,7 @@ class Solution:
         return numBottles + (numBottles - 1) // (numExchange - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 13 == solution.numWaterBottles(9, 3)

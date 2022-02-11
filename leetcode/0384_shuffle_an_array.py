@@ -16,7 +16,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Solution([1, 2, 3])
 
     assert [1, 2, 3] == obj.reset()

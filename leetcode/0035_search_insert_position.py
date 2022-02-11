@@ -9,7 +9,7 @@ class Solution:
         return i + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.searchInsert([1, 3, 5, 6], 5)

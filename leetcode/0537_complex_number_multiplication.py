@@ -2,7 +2,7 @@
 
 import re
 
-RE_COMPLEX_NUMBER = re.compile(r'(?P<real>-?\d+)\+(?P<imaginary>-?\d+)i')
+RE_COMPLEX_NUMBER = re.compile(r"(?P<real>-?\d+)\+(?P<imaginary>-?\d+)i")
 
 
 class Complex:
@@ -17,13 +17,13 @@ class Complex:
         )
 
     def __str__(self):
-        return '%d+%di' % (self.real, self.imaginary)
+        return "%d+%di" % (self.real, self.imaginary)
 
     @staticmethod
     def loads(s):
         match = RE_COMPLEX_NUMBER.match(s)
-        real = int(match.group('real'))
-        imaginary = int(match.group('imaginary'))
+        real = int(match.group("real"))
+        imaginary = int(match.group("imaginary"))
 
         return Complex(real, imaginary)
 
@@ -33,8 +33,8 @@ class Solution:
         return str(Complex.loads(a) * Complex.loads(b))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert '0+2i' == solution.complexNumberMultiply('1+1i', '1+1i')
-    assert '0+-2i' == solution.complexNumberMultiply('1+-1i', '1+-1i')
+    assert "0+2i" == solution.complexNumberMultiply("1+1i", "1+1i")
+    assert "0+-2i" == solution.complexNumberMultiply("1+-1i", "1+-1i")

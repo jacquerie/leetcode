@@ -14,8 +14,8 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 8 == solution.countLetters('aaaba')
-    assert 55 == solution.countLetters('aaaaaaaaaa')
+    assert 8 == solution.countLetters("aaaba")
+    assert 55 == solution.countLetters("aaaaaaaaaa")

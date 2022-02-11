@@ -17,7 +17,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [1, 1, 4, 2, 1, 1, 0, 0] == solution.dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73])
+    assert [1, 1, 4, 2, 1, 1, 0, 0] == solution.dailyTemperatures(
+        [73, 74, 75, 71, 69, 72, 76, 73]
+    )

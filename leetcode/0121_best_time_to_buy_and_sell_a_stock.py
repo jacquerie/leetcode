@@ -3,7 +3,7 @@
 
 class Solution:
     def maxProfit(self, prices):
-        minimum_price = float('inf')
+        minimum_price = float("inf")
         maximum_profit = 0
 
         for price in prices:
@@ -15,7 +15,7 @@ class Solution:
         return maximum_profit
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 5 == solution.maxProfit([7, 1, 5, 3, 6, 4])

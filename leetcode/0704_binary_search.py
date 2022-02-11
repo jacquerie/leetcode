@@ -17,7 +17,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.search([-1, 0, 3, 5, 9, 12], 9)

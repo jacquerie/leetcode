@@ -9,9 +9,8 @@ class Solution:
         return min(previous, current)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 15 == solution.minCostClimbingStairs([10, 15, 20])
-    assert 6 == solution.minCostClimbingStairs([
-        1, 100, 1, 1, 1, 100, 1, 1, 100, 1])
+    assert 6 == solution.minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])

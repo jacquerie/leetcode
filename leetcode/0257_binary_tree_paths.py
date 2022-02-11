@@ -36,10 +36,10 @@ class Solution:
 
         if root is None:
             return []
-        return ['->'.join(reversed(path)) for path in _binaryTreePaths(root)]
+        return ["->".join(reversed(path)) for path in _binaryTreePaths(root)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)
@@ -50,4 +50,4 @@ if __name__ == '__main__':
     t0_0.right = t0_2
     t0_0.left = t0_1
 
-    assert ['1->2->5', '1->3'] == solution.binaryTreePaths(t0_0)
+    assert ["1->2->5", "1->3"] == solution.binaryTreePaths(t0_0)

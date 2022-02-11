@@ -8,7 +8,7 @@ class Solution:
         return heapq.nsmallest(K, points, key=lambda xy: xy[0] * xy[0] + xy[1] * xy[1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [[-2, 2]] == solution.kClosest([[1, 3], [-2, 2]], 1)

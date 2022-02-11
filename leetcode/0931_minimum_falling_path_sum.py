@@ -15,16 +15,19 @@ class Solution:
                     result[i][j] = A[i][j] + min(result[i - 1][j - 1], result[i - 1][j])
                 else:
                     result[i][j] = A[i][j] + min(
-                        result[i - 1][j - 1], result[i - 1][j], result[i - 1][j + 1])
+                        result[i - 1][j - 1], result[i - 1][j], result[i - 1][j + 1]
+                    )
 
         return min(result[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 12 == solution.minFallingPathSum([
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ])
+    assert 12 == solution.minFallingPathSum(
+        [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ]
+    )

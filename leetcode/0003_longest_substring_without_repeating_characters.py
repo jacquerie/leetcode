@@ -16,10 +16,10 @@ class Solution:
         return max(result, len(s) - current_first)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.lengthOfLongestSubstring('abcabcbb')
-    assert 1 == solution.lengthOfLongestSubstring('bbbbb')
-    assert 3 == solution.lengthOfLongestSubstring('pwwkew')
-    assert 2 == solution.lengthOfLongestSubstring('aab')
+    assert 3 == solution.lengthOfLongestSubstring("abcabcbb")
+    assert 1 == solution.lengthOfLongestSubstring("bbbbb")
+    assert 3 == solution.lengthOfLongestSubstring("pwwkew")
+    assert 2 == solution.lengthOfLongestSubstring("aab")

@@ -28,7 +28,7 @@ class Solution:
         return [sorted(counter.elements()) for counter in solution]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [[2, 2, 3], [7]] == solution.combinationSum([2, 3, 6, 7], 7)

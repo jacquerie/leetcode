@@ -19,13 +19,14 @@ class Solution:
         current = [root]
         while current:
             result.append([node.val for node in current])
-            current = list(itertools.chain.from_iterable([
-                node.children for node in current]))
+            current = list(
+                itertools.chain.from_iterable([node.children for node in current])
+            )
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_5 = Node(6, [])

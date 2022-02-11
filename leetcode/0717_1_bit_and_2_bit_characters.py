@@ -15,7 +15,7 @@ class Solution:
         return self._isOneBitCharacter(bits, i + 1, l)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.isOneBitCharacter([1, 0, 0])

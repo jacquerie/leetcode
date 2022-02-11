@@ -24,9 +24,11 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isAlienSorted(['hello', 'leetcode'], 'hlabcdefgijkmnopqrstuvwxyz')
-    assert not solution.isAlienSorted(['word', 'world', 'row'], 'worldabcefghijkmnpqstuvxyz')
-    assert not solution.isAlienSorted(['apple', 'app'], 'abcdefghijklmnopqrstuvwxyz')
+    assert solution.isAlienSorted(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
+    assert not solution.isAlienSorted(
+        ["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"
+    )
+    assert not solution.isAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz")

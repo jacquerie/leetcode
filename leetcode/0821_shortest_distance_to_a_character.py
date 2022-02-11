@@ -12,7 +12,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0] == solution.shortestToChar('loveleetcode', 'e')
+    assert [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0] == solution.shortestToChar(
+        "loveleetcode", "e"
+    )

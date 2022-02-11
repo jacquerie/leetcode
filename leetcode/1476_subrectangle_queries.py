@@ -8,7 +8,9 @@ class SubrectangleQueries:
         self.rectangle = rectangle
         self.updates = []
 
-    def updateSubrectangle(self, row1: int, col1: int, row2: int, col2: int, newValue: int) -> None:
+    def updateSubrectangle(
+        self, row1: int, col1: int, row2: int, col2: int, newValue: int
+    ) -> None:
         self.updates.append((row1, col1, row2, col2, newValue))
 
     def getValue(self, row: int, col: int) -> int:
@@ -19,13 +21,15 @@ class SubrectangleQueries:
         return result
 
 
-if __name__ == '__main__':
-    obj = SubrectangleQueries([
-        [1, 2, 1],
-        [4, 3, 4],
-        [3, 2, 1],
-        [1, 1, 1],
-    ])
+if __name__ == "__main__":
+    obj = SubrectangleQueries(
+        [
+            [1, 2, 1],
+            [4, 3, 4],
+            [3, 2, 1],
+            [1, 1, 1],
+        ]
+    )
     assert 1 == obj.getValue(0, 2)
     obj.updateSubrectangle(0, 0, 3, 2, 5)
     assert 5 == obj.getValue(0, 2)
@@ -34,11 +38,13 @@ if __name__ == '__main__':
     assert 10 == obj.getValue(3, 1)
     assert 5 == obj.getValue(0, 2)
 
-    obj = SubrectangleQueries([
-        [1, 1, 1],
-        [2, 2, 2],
-        [3, 3, 3],
-    ])
+    obj = SubrectangleQueries(
+        [
+            [1, 1, 1],
+            [2, 2, 2],
+            [3, 3, 3],
+        ]
+    )
     assert 1 == obj.getValue(0, 0)
     obj.updateSubrectangle(0, 0, 2, 2, 100)
     assert 100 == obj.getValue(0, 0)

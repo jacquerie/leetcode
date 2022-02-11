@@ -13,7 +13,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert not solution.canReorderDoubled([3, 1, 3, 6])

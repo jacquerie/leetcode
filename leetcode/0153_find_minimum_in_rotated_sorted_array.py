@@ -16,7 +16,7 @@ class Solution:
         return nums[first]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.findMin([3, 4, 5, 1, 2])

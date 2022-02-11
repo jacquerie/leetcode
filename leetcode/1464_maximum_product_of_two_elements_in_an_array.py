@@ -9,7 +9,7 @@ class Solution:
         return max((x - 1) * (y - 1) for x, y in itertools.combinations(nums, 2))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 12 == solution.maxProduct([3, 4, 5, 2])

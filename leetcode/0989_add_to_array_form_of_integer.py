@@ -18,10 +18,12 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2, 3, 4] == solution.addToArrayForm([1, 2, 0, 0], 34)
     assert [4, 5, 5] == solution.addToArrayForm([2, 7, 4], 181)
     assert [1, 0, 2, 1] == solution.addToArrayForm([2, 1, 5], 806)
-    assert [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] == solution.addToArrayForm([9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 1)
+    assert [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] == solution.addToArrayForm(
+        [9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 1
+    )

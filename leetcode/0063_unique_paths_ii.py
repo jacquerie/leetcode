@@ -22,15 +22,19 @@ class Solution:
         return result[-1][-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.uniquePathsWithObstacles([
-        [0, 0, 0],
-        [0, 1, 0],
-        [0, 0, 0],
-    ])
-    assert 1 == solution.uniquePathsWithObstacles([
-        [0],
-        [0],
-    ])
+    assert 2 == solution.uniquePathsWithObstacles(
+        [
+            [0, 0, 0],
+            [0, 1, 0],
+            [0, 0, 0],
+        ]
+    )
+    assert 1 == solution.uniquePathsWithObstacles(
+        [
+            [0],
+            [0],
+        ]
+    )

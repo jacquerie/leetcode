@@ -24,7 +24,7 @@ class LRUCache:
         self.cache[key] = value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = LRUCache(2)
 
     obj.put(1, 1)

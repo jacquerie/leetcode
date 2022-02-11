@@ -3,7 +3,7 @@
 
 class Solution:
     def findMinDifference(self, timePoints):
-        result = float('inf')
+        result = float("inf")
 
         times = sorted(self.toTimes(timePoints))
         for i in range(len(times)):
@@ -17,14 +17,14 @@ class Solution:
     def toTimes(self, timePoints):
         result = []
         for timePoint in timePoints:
-            hour, minute = map(int, timePoint.split(':'))
+            hour, minute = map(int, timePoint.split(":"))
             result.append(60 * hour + minute)
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 1 == solution.findMinDifference(['23:59', '00:00'])
-    assert 0 == solution.findMinDifference(['00:00', '23:59', '00:00'])
-    assert 60 == solution.findMinDifference(['01:01', '02:01'])
+    assert 1 == solution.findMinDifference(["23:59", "00:00"])
+    assert 0 == solution.findMinDifference(["00:00", "23:59", "00:00"])
+    assert 60 == solution.findMinDifference(["01:01", "02:01"])

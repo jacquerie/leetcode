@@ -16,13 +16,13 @@ class Solution:
         if root is None:
             return 0
         return (
-            self._sumEvenGrandparent(root.left, root.val, parent) +
-            self._sumEvenGrandparent(root.right, root.val, parent) +
-            (root.val if grandparent % 2 == 0 else 0)
+            self._sumEvenGrandparent(root.left, root.val, parent)
+            + self._sumEvenGrandparent(root.right, root.val, parent)
+            + (root.val if grandparent % 2 == 0 else 0)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(6)

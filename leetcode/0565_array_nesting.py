@@ -19,7 +19,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.arrayNesting([5, 4, 0, 3, 1, 6, 2])

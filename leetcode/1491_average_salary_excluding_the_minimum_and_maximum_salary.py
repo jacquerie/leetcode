@@ -8,7 +8,7 @@ class Solution:
         return (sum(salary) - min(salary) - max(salary)) / (len(salary) - 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2500.0 == solution.average([4000, 3000, 1000, 2000])

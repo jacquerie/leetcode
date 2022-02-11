@@ -14,7 +14,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.pivotIndex([1, 7, 3, 6, 5, 6])

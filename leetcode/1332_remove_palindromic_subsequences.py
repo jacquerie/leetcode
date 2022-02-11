@@ -10,10 +10,10 @@ class Solution:
         return 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 1 == solution.removePalindromeSub('ababa')
-    assert 2 == solution.removePalindromeSub('abb')
-    assert 2 == solution.removePalindromeSub('baabb')
-    assert 0 == solution.removePalindromeSub('')
+    assert 1 == solution.removePalindromeSub("ababa")
+    assert 2 == solution.removePalindromeSub("abb")
+    assert 2 == solution.removePalindromeSub("baabb")
+    assert 0 == solution.removePalindromeSub("")

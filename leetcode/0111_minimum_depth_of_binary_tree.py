@@ -19,7 +19,7 @@ class Solution:
         return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

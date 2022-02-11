@@ -19,11 +19,11 @@ class OrderedStream:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = OrderedStream(5)
 
-    assert [] == obj.insert(3, 'ccccc')
-    assert ['aaaaa'] == obj.insert(1, 'aaaaa')
-    assert ['bbbbb', 'ccccc'] == obj.insert(2, 'bbbbb')
-    assert [] == obj.insert(5, 'eeeee')
-    assert ['ddddd', 'eeeee'] == obj.insert(4, 'ddddd')
+    assert [] == obj.insert(3, "ccccc")
+    assert ["aaaaa"] == obj.insert(1, "aaaaa")
+    assert ["bbbbb", "ccccc"] == obj.insert(2, "bbbbb")
+    assert [] == obj.insert(5, "eeeee")
+    assert ["ddddd", "eeeee"] == obj.insert(4, "ddddd")

@@ -18,11 +18,13 @@ class Solution:
         return result[-1][-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 7 == solution.minPathSum([
-        [1, 3, 1],
-        [1, 5, 1],
-        [4, 2, 1],
-    ])
+    assert 7 == solution.minPathSum(
+        [
+            [1, 3, 1],
+            [1, 5, 1],
+            [4, 2, 1],
+        ]
+    )

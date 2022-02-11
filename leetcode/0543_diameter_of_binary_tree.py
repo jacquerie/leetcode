@@ -19,7 +19,9 @@ class Solution:
 
         return diameter - 1
 
-    def diameterAndHeightOfBinaryTree(self, root: Optional[TreeNode]) -> Tuple[int, int]:
+    def diameterAndHeightOfBinaryTree(
+        self, root: Optional[TreeNode]
+    ) -> Tuple[int, int]:
         if root is None:
             return (0, 0)
 
@@ -32,7 +34,7 @@ class Solution:
         return (diameter, height)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_4 = TreeNode(5)

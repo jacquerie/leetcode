@@ -11,7 +11,7 @@ class Solution:
                 return [a, a - difference]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2] == solution.fairCandySwap([1, 1], [2, 2])

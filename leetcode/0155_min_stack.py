@@ -25,7 +25,7 @@ class MinStack:
         return self.mins[-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MinStack()
 
     obj.push(-2)

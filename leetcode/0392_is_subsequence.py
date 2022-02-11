@@ -14,10 +14,10 @@ class Solution:
         return i == len(s)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isSubsequence('abc', 'ahbgdc')
-    assert not solution.isSubsequence('axc', 'ahbgdc')
-    assert solution.isSubsequence('', 'ahbgdc')
-    assert solution.isSubsequence('a', 'ab')
+    assert solution.isSubsequence("abc", "ahbgdc")
+    assert not solution.isSubsequence("axc", "ahbgdc")
+    assert solution.isSubsequence("", "ahbgdc")
+    assert solution.isSubsequence("a", "ab")

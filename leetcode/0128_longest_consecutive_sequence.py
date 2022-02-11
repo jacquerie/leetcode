@@ -16,7 +16,7 @@ class Solution:
         return max(lengths.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.longestConsecutive([100, 4, 200, 1, 3, 2])

@@ -16,7 +16,7 @@ class Solution:
             self._subsetsWithDup(nums[1:], current + [nums[0]], result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [

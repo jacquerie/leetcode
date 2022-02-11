@@ -18,7 +18,7 @@ class Solution:
         return result // 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.numPairsDivisibleBy60([30, 20, 150, 100, 40])

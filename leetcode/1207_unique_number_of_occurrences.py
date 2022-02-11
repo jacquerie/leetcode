@@ -12,7 +12,7 @@ class Solution:
         return len(arr) == len(set(arr))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.uniqueOccurrences([1, 2, 2, 1, 1, 3])

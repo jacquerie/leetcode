@@ -18,13 +18,13 @@ class Solution:
                     result.append(c)
                     counts[~i][1] -= 1
 
-        return ''.join(result)
+        return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'abccbaabccba' == solution.sortString('aaaabbbbcccc')
-    assert 'art' == solution.sortString('rat')
-    assert 'cdelotee' == solution.sortString('leetcode')
-    assert 'ggggggg' == solution.sortString('ggggggg')
+    assert "abccbaabccba" == solution.sortString("aaaabbbbcccc")
+    assert "art" == solution.sortString("rat")
+    assert "cdelotee" == solution.sortString("leetcode")
+    assert "ggggggg" == solution.sortString("ggggggg")

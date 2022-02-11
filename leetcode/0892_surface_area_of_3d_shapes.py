@@ -37,25 +37,33 @@ class Solution:
         return grid[i][j]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 10 == solution.surfaceArea([[2]])
-    assert 34 == solution.surfaceArea([
-        [1, 2],
-        [3, 4],
-    ])
-    assert 16 == solution.surfaceArea([
-        [1, 0],
-        [0, 2],
-    ])
-    assert 32 == solution.surfaceArea([
-        [1, 1, 1],
-        [1, 0, 1],
-        [1, 1, 1],
-    ])
-    assert 46 == solution.surfaceArea([
-        [2, 2, 2],
-        [2, 1, 2],
-        [2, 2, 2],
-    ])
+    assert 34 == solution.surfaceArea(
+        [
+            [1, 2],
+            [3, 4],
+        ]
+    )
+    assert 16 == solution.surfaceArea(
+        [
+            [1, 0],
+            [0, 2],
+        ]
+    )
+    assert 32 == solution.surfaceArea(
+        [
+            [1, 1, 1],
+            [1, 0, 1],
+            [1, 1, 1],
+        ]
+    )
+    assert 46 == solution.surfaceArea(
+        [
+            [2, 2, 2],
+            [2, 1, 2],
+            [2, 2, 2],
+        ]
+    )

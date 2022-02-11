@@ -10,9 +10,9 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.repeatedSubstringPattern('abab')
-    assert not solution.repeatedSubstringPattern('aba')
-    assert solution.repeatedSubstringPattern('abcabcabcabc')
+    assert solution.repeatedSubstringPattern("abab")
+    assert not solution.repeatedSubstringPattern("aba")
+    assert solution.repeatedSubstringPattern("abcabcabcabc")

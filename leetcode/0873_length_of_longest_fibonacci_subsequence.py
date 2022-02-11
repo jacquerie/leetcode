@@ -18,7 +18,7 @@ class Solution:
         return result if result > 2 else 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 5 == solution.lenLongestFibSubseq([1, 2, 3, 4, 5, 6, 7, 8])

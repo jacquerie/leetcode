@@ -16,7 +16,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.checkIfExist([10, 2, 5, 3])

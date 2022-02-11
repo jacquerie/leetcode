@@ -14,7 +14,7 @@ class Solution:
         return list(range(count_smaller, count_smaller + count_equal))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2] == solution.targetIndices([1, 2, 5, 2, 3], 2)

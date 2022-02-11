@@ -10,7 +10,7 @@ class Solution:
             seen.add(el)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.repeatedNTimes([1, 2, 3, 3])

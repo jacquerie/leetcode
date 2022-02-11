@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
     def findMinFibonacciNumbers(self, k: int) -> int:
         if k == 0:
@@ -15,7 +16,7 @@ class Solution:
         return 1 + self.findMinFibonacciNumbers(k - a)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findMinFibonacciNumbers(7)

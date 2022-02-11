@@ -6,14 +6,14 @@ class Solution:
         r_count, result = 0, 0
 
         for char in s:
-            r_count += 1 if char == 'R' else -1
+            r_count += 1 if char == "R" else -1
             if r_count == 0:
                 result += 1
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.balancedStringSplit("RLRRLLRLRL")

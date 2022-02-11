@@ -15,18 +15,20 @@ class Solution:
 
     def _maxPathSum(self, root):
         if root is None:
-            return 0, float('-inf')
+            return 0, float("-inf")
 
         leftMaxPathSum, leftResult = self._maxPathSum(root.left)
         rightMaxPathSum, rightResult = self._maxPathSum(root.right)
 
         maxPathSum = max(max(leftMaxPathSum, rightMaxPathSum) + root.val, 0)
-        result = max(leftResult, leftMaxPathSum + root.val + rightMaxPathSum, rightResult)
+        result = max(
+            leftResult, leftMaxPathSum + root.val + rightMaxPathSum, rightResult
+        )
 
         return maxPathSum, result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)

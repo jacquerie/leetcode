@@ -15,7 +15,7 @@ class Solution:
         return digits
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 9 == solution.sumBase(34, 6)

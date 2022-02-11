@@ -16,7 +16,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.subarraySum([1, 1, 1], 2)

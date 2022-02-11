@@ -20,8 +20,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [3, 3, 5, 5, 6, 7] == solution.maxSlidingWindow([
-        1, 3, -1, -3, 5, 3, 6, 7], 3)
+    assert [3, 3, 5, 5, 6, 7] == solution.maxSlidingWindow(
+        [1, 3, -1, -3, 5, 3, 6, 7], 3
+    )

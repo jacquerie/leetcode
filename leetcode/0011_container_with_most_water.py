@@ -19,7 +19,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 49 == solution.maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])

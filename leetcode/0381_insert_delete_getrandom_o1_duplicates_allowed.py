@@ -36,7 +36,7 @@ class RandomizedCollection:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = RandomizedCollection()
 
     assert obj.insert(1)

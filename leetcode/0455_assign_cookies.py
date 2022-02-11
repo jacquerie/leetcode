@@ -22,7 +22,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.findContentChildren([1, 2, 3], [1, 1])

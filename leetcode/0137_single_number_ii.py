@@ -5,7 +5,7 @@ import itertools
 
 class Solution:
     def fromBase3(self, digits):
-        return int(''.join(str(digit) for digit in reversed(digits)), 3)
+        return int("".join(str(digit) for digit in reversed(digits)), 3)
 
     def sumBase3(self, digits):
         return sum(digit for digit in digits if digit) % 3
@@ -22,12 +22,14 @@ class Solution:
         nums = [num + abs(min_num) for num in nums]
 
         nums_in_base3 = [self.toBase3(num) for num in nums]
-        sums_in_base3 = [self.sumBase3(el) for el in itertools.zip_longest(*nums_in_base3)]
+        sums_in_base3 = [
+            self.sumBase3(el) for el in itertools.zip_longest(*nums_in_base3)
+        ]
 
         return self.fromBase3(sums_in_base3) - abs(min_num)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.singleNumber([2, 2, 3, 2])

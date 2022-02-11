@@ -17,7 +17,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.containsNearbyAlmostDuplicate([1, 2, 3, 1], 3, 0)

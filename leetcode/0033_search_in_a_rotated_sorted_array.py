@@ -9,8 +9,9 @@ class Solution:
             mid = (first + last) // 2
             if nums[mid] == target:
                 return mid
-            elif ((nums[first] <= nums[mid] and nums[first] <= target < nums[mid]) or
-                  (nums[first] > nums[mid] and not (nums[mid] < target <= nums[last]))):
+            elif (nums[first] <= nums[mid] and nums[first] <= target < nums[mid]) or (
+                nums[first] > nums[mid] and not (nums[mid] < target <= nums[last])
+            ):
                 last = mid - 1
             else:
                 first = mid + 1
@@ -18,7 +19,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.search([4, 5, 6, 7, 0, 1, 2], 0)

@@ -9,7 +9,7 @@ class Solution:
         return math.gcd(min(nums), max(nums))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findGCD([2, 5, 6, 9, 10])

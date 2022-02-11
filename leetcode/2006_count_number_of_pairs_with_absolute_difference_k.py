@@ -12,7 +12,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.countKDifference([1, 2, 2, 1], 1)

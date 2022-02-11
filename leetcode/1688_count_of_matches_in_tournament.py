@@ -6,7 +6,7 @@ class Solution:
         return n - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 6 == solution.numberOfMatches(7)

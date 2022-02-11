@@ -8,9 +8,9 @@ class Solution:
         return sum(pattern in word for pattern in patterns)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.numOfStrings(['a', 'abc', 'bc', 'd'], 'abc')
-    assert 2 == solution.numOfStrings(['a', 'b', 'c'], 'aaaaabbbbb')
-    assert 3 == solution.numOfStrings(['a', 'a', 'a'], 'ab')
+    assert 3 == solution.numOfStrings(["a", "abc", "bc", "d"], "abc")
+    assert 2 == solution.numOfStrings(["a", "b", "c"], "aaaaabbbbb")
+    assert 3 == solution.numOfStrings(["a", "a", "a"], "ab")

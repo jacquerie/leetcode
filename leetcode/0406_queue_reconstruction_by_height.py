@@ -11,7 +11,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [
@@ -21,11 +21,13 @@ if __name__ == '__main__':
         [6, 1],
         [4, 4],
         [7, 1],
-    ] == solution.reconstructQueue([
-        [7, 0],
-        [4, 4],
-        [7, 1],
-        [5, 0],
-        [6, 1],
-        [5, 2],
-    ])
+    ] == solution.reconstructQueue(
+        [
+            [7, 0],
+            [4, 4],
+            [7, 1],
+            [5, 0],
+            [6, 1],
+            [5, 2],
+        ]
+    )

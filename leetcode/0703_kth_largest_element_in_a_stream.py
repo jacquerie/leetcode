@@ -17,7 +17,7 @@ class KthLargest:
         return self.heap[0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = KthLargest(3, [4, 5, 8, 2])
 
     assert 4 == obj.add(3)

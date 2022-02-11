@@ -17,13 +17,13 @@ class Solution:
         elif p is None or q is None:
             return False
         return (
-            p.val == q.val and
-            self.isSameTree(p.left, q.left) and
-            self.isSameTree(p.right, q.right)
+            p.val == q.val
+            and self.isSameTree(p.left, q.left)
+            and self.isSameTree(p.right, q.right)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_2 = TreeNode(3)

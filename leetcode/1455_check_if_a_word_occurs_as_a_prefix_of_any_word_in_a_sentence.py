@@ -9,10 +9,10 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 4 == solution.isPrefixOfWord('i love eating burger', 'burg')
-    assert 2 == solution.isPrefixOfWord('this problem is an easy problem', 'pro')
-    assert - 1 == solution.isPrefixOfWord('i am tired', 'you')
-    assert 4 == solution.isPrefixOfWord('i use triple pillow', 'pill')
+    assert 4 == solution.isPrefixOfWord("i love eating burger", "burg")
+    assert 2 == solution.isPrefixOfWord("this problem is an easy problem", "pro")
+    assert -1 == solution.isPrefixOfWord("i am tired", "you")
+    assert 4 == solution.isPrefixOfWord("i use triple pillow", "pill")

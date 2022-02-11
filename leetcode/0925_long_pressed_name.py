@@ -6,7 +6,8 @@ import itertools
 class Solution:
     def isLongPressedName(self, name, typed):
         for name_group, typed_group in itertools.zip_longest(
-                itertools.groupby(name), itertools.groupby(typed)):
+            itertools.groupby(name), itertools.groupby(typed)
+        ):
             if name_group is None or typed_group is None:
                 return False
             elif name_group[0] != typed_group[0]:
@@ -16,10 +17,10 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isLongPressedName('alex', 'aaleex')
-    assert not solution.isLongPressedName('saeed', 'ssaaedd')
-    assert solution.isLongPressedName('leelee', 'lleeelee')
-    assert solution.isLongPressedName('laiden', 'laiden')
+    assert solution.isLongPressedName("alex", "aaleex")
+    assert not solution.isLongPressedName("saeed", "ssaaedd")
+    assert solution.isLongPressedName("leelee", "lleeelee")
+    assert solution.isLongPressedName("laiden", "laiden")

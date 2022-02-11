@@ -9,7 +9,7 @@ class Solution:
         return sum(min_num < num < max_num for num in nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.countElements([11, 7, 2, 15])

@@ -6,11 +6,11 @@ class Solution:
         return len(s.split())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 5 == solution.countSegments('Hello, my name is John')
-    assert 5 == solution.countSegments(' Hello, my name is John')
-    assert 5 == solution.countSegments('Hello, my name is John ')
-    assert 5 == solution.countSegments('Hello, my  name is John')
-    assert 0 == solution.countSegments('')
+    assert 5 == solution.countSegments("Hello, my name is John")
+    assert 5 == solution.countSegments(" Hello, my name is John")
+    assert 5 == solution.countSegments("Hello, my name is John ")
+    assert 5 == solution.countSegments("Hello, my  name is John")
+    assert 0 == solution.countSegments("")

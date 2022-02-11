@@ -9,10 +9,10 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
@@ -25,12 +25,12 @@ class Solution:
 
         result = TreeNode(nums[mid])
         result.left = self.sortedArrayToBST(nums[:mid])
-        result.right = self.sortedArrayToBST(nums[mid + 1:])
+        result.right = self.sortedArrayToBST(nums[mid + 1 :])
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(0)

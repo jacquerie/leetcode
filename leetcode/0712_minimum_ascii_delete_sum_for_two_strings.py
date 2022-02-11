@@ -25,8 +25,8 @@ class Solution:
         return result[len(s1)][len(s2)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 231 == solution.minimumDeleteSum('sea', 'eat')
-    assert 403 == solution.minimumDeleteSum('delete', 'leet')
+    assert 231 == solution.minimumDeleteSum("sea", "eat")
+    assert 403 == solution.minimumDeleteSum("delete", "leet")

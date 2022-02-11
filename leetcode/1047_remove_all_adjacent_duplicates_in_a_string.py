@@ -13,10 +13,10 @@ class Solution:
             else:
                 result.append(char)
 
-        return ''.join(result)
+        return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'ca' == solution.removeDuplicates('abbaca')
+    assert "ca" == solution.removeDuplicates("abbaca")

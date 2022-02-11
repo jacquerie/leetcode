@@ -13,7 +13,7 @@ class Solution:
         return result[N]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.divisorGame(2)

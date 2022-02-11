@@ -3,8 +3,8 @@
 
 class Solution:
     def maximumProduct(self, nums):
-        min1, min2 = float('inf'), float('inf')
-        max1, max2, max3 = float('-inf'), float('-inf'), float('-inf')
+        min1, min2 = float("inf"), float("inf")
+        max1, max2, max3 = float("-inf"), float("-inf"), float("-inf")
 
         for num in nums:
             if num <= min1:
@@ -26,7 +26,7 @@ class Solution:
         return max(max1 * max2 * max3, max1 * min1 * min2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 6 == solution.maximumProduct([1, 2, 3])

@@ -11,8 +11,9 @@ class Solution:
                 return True
             elif nums[first] == nums[mid]:
                 first += 1
-            elif ((nums[first] < nums[mid] and nums[first] <= target < nums[mid]) or
-                  (nums[first] > nums[mid] and not (nums[mid] < target <= nums[last]))):
+            elif (nums[first] < nums[mid] and nums[first] <= target < nums[mid]) or (
+                nums[first] > nums[mid] and not (nums[mid] < target <= nums[last])
+            ):
                 last = mid - 1
             else:
                 first = mid + 1
@@ -20,7 +21,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.search([2, 5, 6, 0, 0, 1, 2], 0)

@@ -26,10 +26,12 @@ class Solution:
         return tuple(sorted(c.items()))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.numSpecialEquivGroups(['a', 'b', 'c', 'a', 'c', 'c'])
-    assert 4 == solution.numSpecialEquivGroups(['aa', 'bb', 'ab', 'ba'])
-    assert 3 == solution.numSpecialEquivGroups(['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
-    assert 1 == solution.numSpecialEquivGroups(['abcd', 'cdab', 'adcb', 'cbad'])
+    assert 3 == solution.numSpecialEquivGroups(["a", "b", "c", "a", "c", "c"])
+    assert 4 == solution.numSpecialEquivGroups(["aa", "bb", "ab", "ba"])
+    assert 3 == solution.numSpecialEquivGroups(
+        ["abc", "acb", "bac", "bca", "cab", "cba"]
+    )
+    assert 1 == solution.numSpecialEquivGroups(["abcd", "cdab", "adcb", "cbad"])

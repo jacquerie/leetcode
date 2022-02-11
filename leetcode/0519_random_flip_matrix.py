@@ -21,7 +21,7 @@ class Solution:
         self.elements = {}
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Solution(2, 3)
 
     assert obj.flip() in [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2)]

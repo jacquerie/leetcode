@@ -8,7 +8,7 @@ class Solution:
         return min(abs(i - start) for i, el in enumerate(nums) if el == target)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.getMinDistance([1, 2, 3, 4, 5], 5, 3)

@@ -11,7 +11,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 7 == solution.maxProfit([7, 1, 5, 3, 6, 4])

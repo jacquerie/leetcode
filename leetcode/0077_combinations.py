@@ -8,7 +8,7 @@ class Solution:
         return [list(el) for el in itertools.combinations(range(1, n + 1), k)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [

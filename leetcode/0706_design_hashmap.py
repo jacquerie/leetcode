@@ -3,7 +3,7 @@
 
 class MyHashMap:
     def __init__(self):
-        self.data = [-1] * (2 ** 20)
+        self.data = [-1] * (2**20)
 
     def put(self, key, value):
         self.data[key] = value
@@ -15,7 +15,7 @@ class MyHashMap:
         self.data[key] = -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyHashMap()
 
     obj.put(1, 1)

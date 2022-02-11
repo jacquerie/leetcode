@@ -11,7 +11,7 @@ class Solution:
         return last >= len(nums) - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.canJump([2, 3, 1, 1, 4])

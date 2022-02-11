@@ -17,7 +17,7 @@ class Leaderboard:
         self.scores[playerId] = 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Leaderboard()
 
     obj.addScore(1, 73)

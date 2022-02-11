@@ -13,7 +13,7 @@ class Solution:
         return A
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [4, 5, 2, 7] == solution.sortArrayByParityII([4, 2, 5, 7])

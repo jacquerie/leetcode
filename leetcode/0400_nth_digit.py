@@ -14,7 +14,7 @@ class Solution:
         return int(num[digit])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.findNthDigit(3)

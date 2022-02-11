@@ -9,7 +9,7 @@ class Solution:
         return list(itertools.accumulate(nums))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 3, 6, 10] == solution.runningSum([1, 2, 3, 4])

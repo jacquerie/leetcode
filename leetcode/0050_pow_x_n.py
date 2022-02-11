@@ -21,7 +21,7 @@ class Solution:
         return result if positive else 1.0 / result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert almost_equal(1024.0, solution.myPow(2.0, 10))

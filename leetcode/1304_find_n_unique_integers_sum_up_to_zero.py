@@ -12,7 +12,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [0, 1, -1, 2, -2] == solution.sumZero(5)

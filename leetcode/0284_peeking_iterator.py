@@ -35,7 +35,7 @@ class PeekingIterator:
         return self.iterator.next()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     iterator = PeekingIterator(Iterator([1, 2, 3]))
     assert iterator.hasNext()
     assert 3 == iterator.peek()

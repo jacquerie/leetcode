@@ -14,7 +14,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [2, 1, 2, 1] == solution.processQueries([3, 1, 2, 1], 5)

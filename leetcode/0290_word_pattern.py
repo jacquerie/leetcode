@@ -19,13 +19,13 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.wordPattern('abba', 'dog cat cat dog')
-    assert not solution.wordPattern('abba', 'dog cat cat fish')
-    assert not solution.wordPattern('aaaa', 'dog cat cat dog')
-    assert not solution.wordPattern('abba', 'dog dog dog dog')
-    assert not solution.wordPattern('abba', 'dog cat cat')
-    assert not solution.wordPattern('abb', 'dog cat cat dog')
-    assert not solution.wordPattern('', 'beef')
+    assert solution.wordPattern("abba", "dog cat cat dog")
+    assert not solution.wordPattern("abba", "dog cat cat fish")
+    assert not solution.wordPattern("aaaa", "dog cat cat dog")
+    assert not solution.wordPattern("abba", "dog dog dog dog")
+    assert not solution.wordPattern("abba", "dog cat cat")
+    assert not solution.wordPattern("abb", "dog cat cat dog")
+    assert not solution.wordPattern("", "beef")

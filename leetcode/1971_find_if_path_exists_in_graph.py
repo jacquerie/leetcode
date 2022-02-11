@@ -37,7 +37,7 @@ class Solution:
         return union_find.find(start, end)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.validPath(3, [[0, 1], [1, 2], [2, 0]], 0, 2)

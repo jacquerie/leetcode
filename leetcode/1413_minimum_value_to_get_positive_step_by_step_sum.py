@@ -12,7 +12,7 @@ class Solution:
         return result + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 5 == solution.minStartValue([-3, 2, -3, 4, 2])

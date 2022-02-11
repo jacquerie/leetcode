@@ -31,7 +31,7 @@ class NumArray:
         return self.tree.sumPrefix(j + 1) - self.tree.sumPrefix(i)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = NumArray([1, 3, 5])
 
     assert 9 == obj.sumRange(0, 2)

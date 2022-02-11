@@ -8,7 +8,7 @@ class Solution:
         return max(len(a), len(b))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.findLUSlength('aba', 'cdc')
+    assert 3 == solution.findLUSlength("aba", "cdc")

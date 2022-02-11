@@ -23,7 +23,7 @@ class Solution:
         return target_sum in possible_sums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.canPartition([1, 5, 11, 5])

@@ -11,7 +11,7 @@ class Solution:
         stack = deque()
 
         for c in s:
-            if c == '#':
+            if c == "#":
                 if stack:
                     stack.pop()
             else:
@@ -20,10 +20,10 @@ class Solution:
         return stack
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.backspaceCompare('ab#c', 'ad#c')
-    assert solution.backspaceCompare('ab##', 'c#d#')
-    assert solution.backspaceCompare('a##c', '#a#c')
-    assert not solution.backspaceCompare('a#c', 'b')
+    assert solution.backspaceCompare("ab#c", "ad#c")
+    assert solution.backspaceCompare("ab##", "c#d#")
+    assert solution.backspaceCompare("a##c", "#a#c")
+    assert not solution.backspaceCompare("a#c", "b")

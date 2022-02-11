@@ -17,7 +17,7 @@ class Solution:
         return result[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [0, 1, 9, 16, 100] == solution.sortedSquares([-4, -1, 0, 3, 10])

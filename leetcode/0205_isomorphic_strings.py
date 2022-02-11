@@ -16,9 +16,9 @@ class Solution:
         return sorted(self.toOccurrences(s)) == sorted(self.toOccurrences(t))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isIsomorphic('egg', 'add')
-    assert not solution.isIsomorphic('foo', 'bar')
-    assert solution.isIsomorphic('paper', 'title')
+    assert solution.isIsomorphic("egg", "add")
+    assert not solution.isIsomorphic("foo", "bar")
+    assert solution.isIsomorphic("paper", "title")

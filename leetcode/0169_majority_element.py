@@ -8,7 +8,7 @@ class Solution:
         return Counter(nums).most_common(1)[0][0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.majorityElement([1])

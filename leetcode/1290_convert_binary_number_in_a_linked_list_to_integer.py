@@ -16,7 +16,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     l0_0 = ListNode(1)

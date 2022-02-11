@@ -12,7 +12,7 @@ class Solution:
         return list(reversed(result))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [18, 6, 6, 6, 1, -1] == solution.replaceElements([17, 18, 5, 4, 6, 1])

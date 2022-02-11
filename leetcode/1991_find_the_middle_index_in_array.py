@@ -13,7 +13,7 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.findMiddleIndex([2, 3, -1, 8, 4])

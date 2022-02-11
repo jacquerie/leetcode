@@ -15,7 +15,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2] == solution.findDuplicates([1, 1, 2, 3, 2])

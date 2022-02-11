@@ -8,8 +8,8 @@ class Solution:
         return all(letter in sentence for letter in string.ascii_lowercase)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.checkIfPangram('thequickbrownfoxjumpsoverthelazydog')
-    assert not solution.checkIfPangram('leetcode')
+    assert solution.checkIfPangram("thequickbrownfoxjumpsoverthelazydog")
+    assert not solution.checkIfPangram("leetcode")

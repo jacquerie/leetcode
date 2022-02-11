@@ -13,10 +13,10 @@ class Solution:
         if not nums:
             result.append(current)
         for i in range(len(nums)):
-            self._permute(nums[:i] + nums[i + 1:], current + [nums[i]], result)
+            self._permute(nums[:i] + nums[i + 1 :], current + [nums[i]], result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [

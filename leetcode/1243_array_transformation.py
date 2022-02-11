@@ -19,7 +19,7 @@ class Solution:
         return current
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [6, 3, 3, 4] == solution.transformArray([6, 2, 3, 4])

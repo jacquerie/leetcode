@@ -14,7 +14,7 @@ class Solution:
         return min(dx, dy) + abs(dx - dy)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 7 == solution.minTimeToVisitAllPoints([[1, 1], [3, 4], [-1, 0]])

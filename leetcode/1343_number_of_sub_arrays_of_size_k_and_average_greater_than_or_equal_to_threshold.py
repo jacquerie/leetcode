@@ -21,7 +21,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.numOfSubarrays([2, 2, 2, 2, 5, 5, 5, 8], 3, 4)

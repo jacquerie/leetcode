@@ -8,7 +8,7 @@ class Solution:
         return nums + nums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2, 1, 1, 2, 1] == solution.getConcatenation([1, 2, 1])

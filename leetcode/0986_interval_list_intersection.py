@@ -22,10 +22,7 @@ class Solution:
                 j += 1
             else:
                 result.append(
-                    Interval(
-                        max(A[i].start, B[j].start),
-                        min(A[i].end, B[j].end)
-                    )
+                    Interval(max(A[i].start, B[j].start), min(A[i].end, B[j].end))
                 )
 
                 if A[i].end < B[j].end:
@@ -36,7 +33,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     A = [

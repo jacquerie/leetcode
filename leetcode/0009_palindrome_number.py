@@ -14,7 +14,7 @@ class Solution:
         return digits == digits[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.isPalindrome(121)

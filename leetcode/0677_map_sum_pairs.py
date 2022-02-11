@@ -60,10 +60,10 @@ class MapSum:
         return self.trie.sum(prefix)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MapSum()
 
-    obj.insert('apple', 3)
-    assert 3 == obj.sum('ap')
-    obj.insert('app', 2)
-    assert 5 == obj.sum('ap')
+    obj.insert("apple", 3)
+    assert 3 == obj.sum("ap")
+    obj.insert("app", 2)
+    assert 5 == obj.sum("ap")

@@ -17,7 +17,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [9, 7, 8] == solution.partitionLabels('ababcbacadefegdehijhklij')
+    assert [9, 7, 8] == solution.partitionLabels("ababcbacadefegdehijhklij")

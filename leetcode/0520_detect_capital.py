@@ -12,10 +12,10 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.detectCapitalUse('USA')
-    assert solution.detectCapitalUse('leetcode')
-    assert solution.detectCapitalUse('Google')
-    assert not solution.detectCapitalUse('FlaG')
+    assert solution.detectCapitalUse("USA")
+    assert solution.detectCapitalUse("leetcode")
+    assert solution.detectCapitalUse("Google")
+    assert not solution.detectCapitalUse("FlaG")

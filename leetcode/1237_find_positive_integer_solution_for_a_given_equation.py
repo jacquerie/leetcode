@@ -21,8 +21,12 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [[1, 4], [2, 3], [3, 2], [4, 1]] == solution.findSolution(CustomFunction(lambda x, y: x + y), 5)
-    assert [[1, 5], [5, 1]] == solution.findSolution(CustomFunction(lambda x, y: x * y), 5)
+    assert [[1, 4], [2, 3], [3, 2], [4, 1]] == solution.findSolution(
+        CustomFunction(lambda x, y: x + y), 5
+    )
+    assert [[1, 5], [5, 1]] == solution.findSolution(
+        CustomFunction(lambda x, y: x * y), 5
+    )

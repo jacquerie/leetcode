@@ -13,7 +13,7 @@ class Solution:
         return min(count_even, count_odd)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.minCostToMoveChips([1, 2, 3])

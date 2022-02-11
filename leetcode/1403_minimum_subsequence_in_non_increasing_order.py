@@ -12,10 +12,10 @@ class Solution:
         for i, num in enumerate(nums):
             current_sum += num
             if 2 * current_sum > total_sum:
-                return nums[:i + 1]
+                return nums[: i + 1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [10, 9] == solution.minSubsequence([4, 3, 10, 9, 8])

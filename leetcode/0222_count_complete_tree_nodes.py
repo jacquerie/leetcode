@@ -15,7 +15,7 @@ class Solution:
 
         depth = self.getDepth(root)
 
-        first, last = 1, 2 ** depth
+        first, last = 1, 2**depth
         while first < last:
             mid = (first + last) // 2
             if self.exists(root, mid, depth):
@@ -23,7 +23,7 @@ class Solution:
             else:
                 last = mid
 
-        return 2 ** depth + first - 1
+        return 2**depth + first - 1
 
     def getDepth(self, root):
         current, depth = root, 0
@@ -34,9 +34,9 @@ class Solution:
     def exists(self, root, value, depth):
         current = root
         for bit in self.toBinary(value, depth):
-            if bit == '0' and current.left is not None:
+            if bit == "0" and current.left is not None:
                 current = current.left
-            elif bit == '1' and current.right is not None:
+            elif bit == "1" and current.right is not None:
                 current = current.right
             else:
                 return False
@@ -46,7 +46,7 @@ class Solution:
         return bin(value)[2:].zfill(depth)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)

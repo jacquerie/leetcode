@@ -6,7 +6,7 @@ class Solution:
         i, j, result = 0, 0, [0]
 
         for c in S:
-            if c == 'I':
+            if c == "I":
                 i += 1
                 result.append(i)
             else:
@@ -16,9 +16,9 @@ class Solution:
         return [el - j for el in result]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [2, 3, 1, 4, 0] == solution.diStringMatch('IDID')
-    assert [0, 1, 2, 3] == solution.diStringMatch('III')
-    assert [2, 1, 0, 3] == solution.diStringMatch('DDI')
+    assert [2, 3, 1, 4, 0] == solution.diStringMatch("IDID")
+    assert [0, 1, 2, 3] == solution.diStringMatch("III")
+    assert [2, 1, 0, 3] == solution.diStringMatch("DDI")

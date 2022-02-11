@@ -9,17 +9,10 @@ class ListNode:
         self.next = None
 
     def __eq__(self, other):
-        return (
-            other is not None and
-            self.val == other.val and
-            self.next == other.next
-        )
+        return other is not None and self.val == other.val and self.next == other.next
 
     def __lt__(self, other):
-        return (
-            other is not None and
-            self.val < other.val
-        )
+        return other is not None and self.val < other.val
 
 
 class ListHeap:
@@ -56,7 +49,7 @@ class Solution:
         return dummy.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     l0_0 = ListNode(1)

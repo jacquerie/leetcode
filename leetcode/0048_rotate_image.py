@@ -14,7 +14,7 @@ class Solution:
                 matrix[i][j], matrix[i][n - j - 1] = matrix[i][n - j - 1], matrix[i][j]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     matrix = [

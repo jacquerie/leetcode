@@ -16,7 +16,7 @@ class Solution:
         return result
 
 
-if __name__ == '__solution__':
+if __name__ == "__solution__":
     solution = Solution()
 
     assert 2 == solution.removeCoveredIntervals([[1, 4], [3, 6], [2, 8]])

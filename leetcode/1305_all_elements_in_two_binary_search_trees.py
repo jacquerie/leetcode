@@ -24,7 +24,7 @@ class Solution:
             self.inorderTraversal(root.right, result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(2)

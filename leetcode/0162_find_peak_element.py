@@ -15,7 +15,7 @@ class Solution:
         return first
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findPeakElement([1, 2, 3, 1])

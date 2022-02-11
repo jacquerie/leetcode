@@ -7,15 +7,15 @@ class Solution:
     def parseBoolExpr(self, expression):
         stack = deque()
         for char in expression:
-            if char == 't':
+            if char == "t":
                 stack.append(True)
-            elif char == 'f':
+            elif char == "f":
                 stack.append(False)
-            elif char in ('!', '|', '&'):
+            elif char in ("!", "|", "&"):
                 stack.append(char)
-            elif char == ')':
+            elif char == ")":
                 values = []
-                while stack[-1] not in ('!', '|', '&'):
+                while stack[-1] not in ("!", "|", "&"):
                     values.append(stack.pop())
                 operation = stack.pop()
                 result = self.evalBoolExpr(operation, values)
@@ -23,18 +23,18 @@ class Solution:
         return stack[-1]
 
     def evalBoolExpr(self, operation, values):
-        if operation == '!':
+        if operation == "!":
             return not values[0]
-        elif operation == '|':
+        elif operation == "|":
             return any(values)
-        elif operation == '&':
+        elif operation == "&":
             return all(values)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.parseBoolExpr('!(f)')
-    assert solution.parseBoolExpr('|(t,f)')
-    assert not solution.parseBoolExpr('&(t,f)')
-    assert not solution.parseBoolExpr('|(&(t,f,t),!(t))')
+    assert solution.parseBoolExpr("!(f)")
+    assert solution.parseBoolExpr("|(t,f)")
+    assert not solution.parseBoolExpr("&(t,f)")
+    assert not solution.parseBoolExpr("|(&(t,f,t),!(t))")

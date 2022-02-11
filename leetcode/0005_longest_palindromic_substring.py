@@ -16,7 +16,7 @@ class Solution:
 
     def manachersAlgorithm(self, s):
         c, r = 0, 0
-        s = '^#' + '#'.join(s) + '#$'
+        s = "^#" + "#".join(s) + "#$"
         p = [0] * len(s)
 
         for i in range(1, len(s) - 1):
@@ -37,10 +37,10 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'bab' == solution.longestPalindrome('babad')
-    assert 'bb' == solution.longestPalindrome('cbbd')
-    assert 'a' == solution.longestPalindrome('a')
-    assert 'ccc' == solution.longestPalindrome('ccc')
+    assert "bab" == solution.longestPalindrome("babad")
+    assert "bb" == solution.longestPalindrome("cbbd")
+    assert "a" == solution.longestPalindrome("a")
+    assert "ccc" == solution.longestPalindrome("ccc")

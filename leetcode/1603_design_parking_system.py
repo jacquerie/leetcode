@@ -10,7 +10,7 @@ class ParkingSystem:
         return self.availabities[carType - 1] >= 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = ParkingSystem(1, 1, 0)
     assert obj.addCar(1)
     assert obj.addCar(2)

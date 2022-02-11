@@ -39,7 +39,7 @@ class MyCircularQueue:
         return self.capacity == self.count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyCircularQueue(3)
 
     assert obj.enQueue(1)

@@ -16,7 +16,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert not solution.threeConsecutiveOdds([2, 6, 4, 1])

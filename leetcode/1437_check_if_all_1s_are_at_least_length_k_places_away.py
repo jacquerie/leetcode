@@ -15,7 +15,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.kLengthApart([1, 0, 0, 0, 1, 0, 0, 1], 2)

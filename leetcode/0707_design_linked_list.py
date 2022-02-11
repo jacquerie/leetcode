@@ -71,7 +71,7 @@ class MyLinkedList:
         return current
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyLinkedList()
 
     obj.addAtHead(1)

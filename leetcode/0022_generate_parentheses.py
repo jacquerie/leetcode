@@ -4,7 +4,7 @@
 class Solution:
     def generateParenthesis(self, n):
         result = []
-        self._generateParenthesis(n, 0, 0, '', result)
+        self._generateParenthesis(n, 0, 0, "", result)
         return result
 
     def _generateParenthesis(self, n, i, p, current, result):
@@ -15,17 +15,17 @@ class Solution:
         elif p < 0 or p > n:
             return
 
-        self._generateParenthesis(n, i + 1, p + 1, current + '(', result)
-        self._generateParenthesis(n, i + 1, p - 1, current + ')', result)
+        self._generateParenthesis(n, i + 1, p + 1, current + "(", result)
+        self._generateParenthesis(n, i + 1, p - 1, current + ")", result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [
-        '((()))',
-        '(()())',
-        '(())()',
-        '()(())',
-        '()()()',
+        "((()))",
+        "(()())",
+        "(())()",
+        "()(())",
+        "()()()",
     ] == solution.generateParenthesis(3)

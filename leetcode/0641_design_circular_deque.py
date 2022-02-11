@@ -53,7 +53,7 @@ class MyCircularDeque:
         return self.capacity == self.count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyCircularDeque(3)
 
     assert obj.insertLast(1)

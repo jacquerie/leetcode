@@ -15,7 +15,7 @@ class Solution:
         return sum(counts.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 0 == solution.countStudents([1, 1, 0, 0], [0, 1, 0, 1])

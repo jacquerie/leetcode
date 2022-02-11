@@ -11,12 +11,12 @@ class Solution:
         for letter, count in counter.most_common():
             result.extend([letter] * count)
 
-        return ''.join(result)
+        return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'eetr' == solution.frequencySort('tree')
-    assert 'cccaaa' == solution.frequencySort('cccaaa')
-    assert 'bbAa' == solution.frequencySort('Aabb')
+    assert "eetr" == solution.frequencySort("tree")
+    assert "cccaaa" == solution.frequencySort("cccaaa")
+    assert "bbAa" == solution.frequencySort("Aabb")

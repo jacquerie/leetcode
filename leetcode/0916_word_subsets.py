@@ -30,16 +30,21 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['facebook', 'google', 'leetcode'] == solution.wordSubsets([
-        'amazon', 'apple', 'facebook', 'google', 'leetcode'], ['e', 'o'])
-    assert ['apple', 'google', 'leetcode'] == solution.wordSubsets([
-        'amazon', 'apple', 'facebook', 'google', 'leetcode'], ['l', 'e'])
-    assert ['facebook', 'google'] == solution.wordSubsets([
-        'amazon', 'apple', 'facebook', 'google', 'leetcode'], ['e', 'oo'])
-    assert ['google', 'leetcode'] == solution.wordSubsets([
-        'amazon', 'apple', 'facebook', 'google', 'leetcode'], ['lo', 'eo'])
-    assert ['facebook', 'leetcode'] == solution.wordSubsets([
-        'amazon', 'apple', 'facebook', 'google', 'leetcode'], ['ec', 'oc', 'ceo'])
+    assert ["facebook", "google", "leetcode"] == solution.wordSubsets(
+        ["amazon", "apple", "facebook", "google", "leetcode"], ["e", "o"]
+    )
+    assert ["apple", "google", "leetcode"] == solution.wordSubsets(
+        ["amazon", "apple", "facebook", "google", "leetcode"], ["l", "e"]
+    )
+    assert ["facebook", "google"] == solution.wordSubsets(
+        ["amazon", "apple", "facebook", "google", "leetcode"], ["e", "oo"]
+    )
+    assert ["google", "leetcode"] == solution.wordSubsets(
+        ["amazon", "apple", "facebook", "google", "leetcode"], ["lo", "eo"]
+    )
+    assert ["facebook", "leetcode"] == solution.wordSubsets(
+        ["amazon", "apple", "facebook", "google", "leetcode"], ["ec", "oc", "ceo"]
+    )

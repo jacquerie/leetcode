@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
     SQUARES_OF_PRIMES_UNDER_100 = [
         4,
@@ -33,7 +34,7 @@ class Solution:
         return n in self.SQUARES_OF_PRIMES_UNDER_100
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert not solution.isThree(2)

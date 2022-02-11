@@ -11,15 +11,15 @@ class Solution:
                 peak = i
 
         return (
-            peak is None or
-            peak == 0 or
-            peak == len(nums) - 2 or
-            nums[peak - 1] <= nums[peak + 1] or
-            nums[peak] <= nums[peak + 2]
+            peak is None
+            or peak == 0
+            or peak == len(nums) - 2
+            or nums[peak - 1] <= nums[peak + 1]
+            or nums[peak] <= nums[peak + 2]
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.checkPossibility([4, 2, 3])

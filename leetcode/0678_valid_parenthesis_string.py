@@ -13,20 +13,20 @@ class Solution:
             return c == 0
         elif c < 0:
             return False
-        elif s[i] == '(':
+        elif s[i] == "(":
             return self._checkValidString(s, i + 1, c + 1)
-        elif s[i] == ')':
+        elif s[i] == ")":
             return self._checkValidString(s, i + 1, c - 1)
         return (
-            self._checkValidString(s, i + 1, c - 1) or
-            self._checkValidString(s, i + 1, c) or
-            self._checkValidString(s, i + 1, c + 1)
+            self._checkValidString(s, i + 1, c - 1)
+            or self._checkValidString(s, i + 1, c)
+            or self._checkValidString(s, i + 1, c + 1)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.checkValidString('()')
-    assert solution.checkValidString('(*)')
-    assert solution.checkValidString('(*))')
+    assert solution.checkValidString("()")
+    assert solution.checkValidString("(*)")
+    assert solution.checkValidString("(*))")

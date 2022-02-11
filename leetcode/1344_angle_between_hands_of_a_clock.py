@@ -9,7 +9,7 @@ class Solution:
         return angle if angle <= 180 else 360 - angle
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 165 == solution.angleClock(12, 30)

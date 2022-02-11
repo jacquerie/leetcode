@@ -11,8 +11,8 @@ class Solution:
         return list(result.elements())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['e', 'l', 'l'] == solution.commonChars(['bella', 'label', 'roller'])
-    assert ['c', 'o'] == solution.commonChars(['cool', 'lock', 'cook'])
+    assert ["e", "l", "l"] == solution.commonChars(["bella", "label", "roller"])
+    assert ["c", "o"] == solution.commonChars(["cool", "lock", "cook"])

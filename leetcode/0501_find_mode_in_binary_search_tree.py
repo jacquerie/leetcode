@@ -15,7 +15,8 @@ class Solution:
                 return previous, count, max_count
 
             previous, count, max_count = _findMode(
-                current.left, previous, count, max_count, result)
+                current.left, previous, count, max_count, result
+            )
 
             if previous is not None:
                 if previous.val == current.val:
@@ -40,7 +41,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)

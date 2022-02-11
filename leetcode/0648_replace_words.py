@@ -41,11 +41,12 @@ class Solution:
         for word in sentence.split():
             result.append(trie.firstMatch(word))
 
-        return ' '.join(result)
+        return " ".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'the cat was rat by the bat' == solution.replaceWords(
-        ['cat', 'bat', 'rat'], 'the cattle was rattled by the battery')
+    assert "the cat was rat by the bat" == solution.replaceWords(
+        ["cat", "bat", "rat"], "the cattle was rattled by the battery"
+    )

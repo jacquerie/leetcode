@@ -40,7 +40,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.possibleBipartition(4, [[1, 2], [1, 3], [2, 4]])

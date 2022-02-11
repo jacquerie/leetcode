@@ -13,8 +13,10 @@ class Solution:
         return min(result, key=lambda el: (-len(el), el))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'world' == solution.longestWord(['w', 'wo', 'wor', 'worl', 'world'])
-    assert 'apple' == solution.longestWord(['a', 'banana', 'app', 'appl', 'ap', 'apply', 'apple'])
+    assert "world" == solution.longestWord(["w", "wo", "wor", "worl", "world"])
+    assert "apple" == solution.longestWord(
+        ["a", "banana", "app", "appl", "ap", "apply", "apple"]
+    )

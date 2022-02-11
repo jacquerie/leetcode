@@ -34,10 +34,10 @@ class Solution:
 
     def numPrimeArrangements(self, n: int) -> int:
         p = len([_ for _ in self.PRIMES if _ <= n])
-        return (factorial(p) * factorial(n - p)) % (10 ** 9 + 7)
+        return (factorial(p) * factorial(n - p)) % (10**9 + 7)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 12 == solution.numPrimeArrangements(5)

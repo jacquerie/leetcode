@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
     def secondHighest(self, s: str) -> int:
         digits = {int(c) for c in s if c.isdigit()}
@@ -9,9 +10,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.secondHighest('dfa12321afd')
-    assert -1 == solution.secondHighest('abc1111')
-    assert 0 == solution.secondHighest('ck077')
+    assert 2 == solution.secondHighest("dfa12321afd")
+    assert -1 == solution.secondHighest("abc1111")
+    assert 0 == solution.secondHighest("ck077")

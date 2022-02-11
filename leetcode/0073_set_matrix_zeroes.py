@@ -21,7 +21,7 @@ class Solution:
                     matrix[i][j] = 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     matrix = [

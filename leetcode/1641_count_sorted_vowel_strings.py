@@ -8,7 +8,7 @@ class Solution:
         return math.comb(n + 4, n)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 5 == solution.countVowelStrings(1)

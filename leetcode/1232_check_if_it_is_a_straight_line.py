@@ -11,8 +11,10 @@ class Solution:
         return all(y == m * x + q for x, y in coordinates)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.checkStraightLine([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]])
-    assert not solution.checkStraightLine([[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]])
+    assert not solution.checkStraightLine(
+        [[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]]
+    )

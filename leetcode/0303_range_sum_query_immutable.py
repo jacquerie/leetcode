@@ -11,7 +11,7 @@ class NumArray:
         return self.sums[j + 1] - self.sums[i]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = NumArray([-2, 0, 3, -5, 2, -1])
 
     assert 1 == obj.sumRange(0, 2)

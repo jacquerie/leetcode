@@ -12,7 +12,7 @@ class Solution:
         return nums.index(max_num)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.dominantIndex([3, 6, 1, 0])

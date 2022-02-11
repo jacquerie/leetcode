@@ -6,7 +6,7 @@ class Solution:
         return sorted(nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2, 3, 5] == solution.sortArray([5, 2, 3, 1])

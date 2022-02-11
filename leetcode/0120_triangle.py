@@ -21,12 +21,14 @@ class Solution:
         return min(current)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 11 == solution.minimumTotal([
-        [2],
-        [3, 4],
-        [6, 5, 7],
-        [4, 1, 8, 3],
-    ])
+    assert 11 == solution.minimumTotal(
+        [
+            [2],
+            [3, 4],
+            [6, 5, 7],
+            [4, 1, 8, 3],
+        ]
+    )

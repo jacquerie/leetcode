@@ -9,10 +9,10 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
@@ -35,7 +35,7 @@ class Solution:
         return current_sum
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(5)

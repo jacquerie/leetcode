@@ -2,7 +2,7 @@
 
 from collections import namedtuple
 
-Occurrence = namedtuple('Occurrence', ['min', 'max', 'count'])
+Occurrence = namedtuple("Occurrence", ["min", "max", "count"])
 
 
 class Solution:
@@ -12,11 +12,12 @@ class Solution:
             if num in occurrences:
                 occurrence = occurrences[num]
                 occurrences[num] = Occurrence(
-                    min=occurrence.min, max=i, count=occurrence.count + 1)
+                    min=occurrence.min, max=i, count=occurrence.count + 1
+                )
             else:
                 occurrences[num] = Occurrence(min=i, max=i, count=1)
 
-        result = float('inf')
+        result = float("inf")
 
         max_count = max(occurrence.count for occurrence in occurrences.values())
         for occurrence in occurrences.values():
@@ -26,7 +27,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.findShortestSubArray([1, 2, 2, 3, 1])

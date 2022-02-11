@@ -18,7 +18,7 @@ class Solution:
         return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.hIndex([3, 0, 6, 1, 5])

@@ -6,7 +6,7 @@ class Solution:
         return len(nums) * (len(nums) + 1) // 2 - sum(nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.missingNumber([3, 0, 1])

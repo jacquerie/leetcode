@@ -21,15 +21,13 @@ class Solution:
         return mat
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [
-        [1, 1, 1, 1],
-        [1, 2, 2, 2],
-        [1, 2, 3, 3],
-    ] == solution.diagonalSort([
-        [3, 3, 1, 1],
-        [2, 2, 1, 2],
-        [1, 1, 1, 2],
-    ])
+    assert [[1, 1, 1, 1], [1, 2, 2, 2], [1, 2, 3, 3],] == solution.diagonalSort(
+        [
+            [3, 3, 1, 1],
+            [2, 2, 1, 2],
+            [1, 1, 1, 2],
+        ]
+    )

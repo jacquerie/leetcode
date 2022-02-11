@@ -5,7 +5,7 @@ from typing import List
 
 class Solution:
     def maxProductDifference(self, nums: List[int]) -> int:
-        a, b, c, d = float('-inf'), float('-inf'), float('inf'), float('inf')
+        a, b, c, d = float("-inf"), float("-inf"), float("inf"), float("inf")
 
         for num in nums:
             if num > a:
@@ -20,7 +20,7 @@ class Solution:
         return a * b - c * d
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 34 == solution.maxProductDifference([5, 6, 2, 7, 4])

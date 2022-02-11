@@ -26,13 +26,13 @@ class Solution:
         elif s is None or t is None:
             return False
         return (
-            s.val == t.val and
-            self.isSameTree(s.left, t.left) and
-            self.isSameTree(s.right, t.right)
+            s.val == t.val
+            and self.isSameTree(s.left, t.left)
+            and self.isSameTree(s.right, t.right)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

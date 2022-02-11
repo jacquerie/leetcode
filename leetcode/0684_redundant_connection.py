@@ -29,7 +29,7 @@ class UnionFind:
 
 class Solution:
     def findRedundantConnection(self, edges):
-        n = float('-inf')
+        n = float("-inf")
         for u, v in edges:
             n = max(n, u, v)
 
@@ -44,15 +44,39 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [2, 3] == solution.findRedundantConnection([[1, 2], [1, 3], [2, 3]])
-    assert [1, 4] == solution.findRedundantConnection([
-        [1, 2], [2, 3], [3, 4], [1, 4], [1, 5]])
-    assert [5, 25] == solution.findRedundantConnection([
-        [6, 13], [15, 22], [10, 13], [12, 24], [3, 23], [19, 20],
-        [3, 12], [2, 16], [19, 23], [2, 11], [18, 23], [1, 25],
-        [2, 17], [4, 5], [14, 19], [2, 3], [1, 7], [4, 6], [9, 10],
-        [8, 22], [7, 22], [13, 18], [13, 21], [15, 23], [5, 25],
-    ])
+    assert [1, 4] == solution.findRedundantConnection(
+        [[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]
+    )
+    assert [5, 25] == solution.findRedundantConnection(
+        [
+            [6, 13],
+            [15, 22],
+            [10, 13],
+            [12, 24],
+            [3, 23],
+            [19, 20],
+            [3, 12],
+            [2, 16],
+            [19, 23],
+            [2, 11],
+            [18, 23],
+            [1, 25],
+            [2, 17],
+            [4, 5],
+            [14, 19],
+            [2, 3],
+            [1, 7],
+            [4, 6],
+            [9, 10],
+            [8, 22],
+            [7, 22],
+            [13, 18],
+            [13, 21],
+            [15, 23],
+            [5, 25],
+        ]
+    )

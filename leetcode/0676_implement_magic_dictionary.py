@@ -26,7 +26,9 @@ class Trie:
         for i, char in enumerate(word):
             if not error:
                 for child in current.children:
-                    if self._search(word[i + 1:], current.children[child], char != child):
+                    if self._search(
+                        word[i + 1 :], current.children[child], char != child
+                    ):
                         return True
                 return False
             elif error and char not in current.children:
@@ -47,17 +49,17 @@ class MagicDictionary:
         return self.trie.search(word)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MagicDictionary()
 
-    obj.buildDict(['hello', 'leetcode'])
-    assert not obj.search('hello')
-    assert obj.search('hhllo')
-    assert not obj.search('hllo')
-    assert not obj.search('leetcoded')
+    obj.buildDict(["hello", "leetcode"])
+    assert not obj.search("hello")
+    assert obj.search("hhllo")
+    assert not obj.search("hllo")
+    assert not obj.search("leetcoded")
 
-    obj.buildDict(['hello', 'hallo', 'hell', 'leetcoded'])
-    assert obj.search('hello')
-    assert obj.search('hhllo')
-    assert not obj.search('hllo')
-    assert not obj.search('leetcoded')
+    obj.buildDict(["hello", "hallo", "hell", "leetcoded"])
+    assert obj.search("hello")
+    assert obj.search("hhllo")
+    assert not obj.search("hllo")
+    assert not obj.search("leetcoded")

@@ -6,7 +6,7 @@ class Solution:
         return sum(n for i, n in enumerate(sorted(nums)) if i % 2 == 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 4 == solution.arrayPairSum([1, 4, 3, 2])

@@ -21,7 +21,8 @@ class Solution:
         while i < len(intervals) and intervals[i].start <= newInterval.end:
             newInterval = Interval(
                 min(newInterval.start, intervals[i].start),
-                max(newInterval.end, intervals[i].end))
+                max(newInterval.end, intervals[i].end),
+            )
             i += 1
         result.append(newInterval)
         result.extend(intervals[i:])
@@ -29,24 +30,23 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [
-        Interval(1, 5),
-        Interval(6, 9),
-    ] == solution.insert([
-        Interval(1, 3),
-        Interval(6, 9),
-    ], Interval(2, 5))
-    assert [
-        Interval(1, 2),
-        Interval(3, 10),
-        Interval(12, 16),
-    ] == solution.insert([
-        Interval(1, 2),
-        Interval(3, 5),
-        Interval(6, 7),
-        Interval(8, 10),
-        Interval(12, 16),
-    ], Interval(4, 8))
+    assert [Interval(1, 5), Interval(6, 9),] == solution.insert(
+        [
+            Interval(1, 3),
+            Interval(6, 9),
+        ],
+        Interval(2, 5),
+    )
+    assert [Interval(1, 2), Interval(3, 10), Interval(12, 16),] == solution.insert(
+        [
+            Interval(1, 2),
+            Interval(3, 5),
+            Interval(6, 7),
+            Interval(8, 10),
+            Interval(12, 16),
+        ],
+        Interval(4, 8),
+    )

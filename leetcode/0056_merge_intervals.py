@@ -23,36 +23,34 @@ class Solution:
             while i < len(intervals) and intervals[i].start <= newInterval.end:
                 newInterval = Interval(
                     min(newInterval.start, intervals[i].start),
-                    max(newInterval.end, intervals[i].end))
+                    max(newInterval.end, intervals[i].end),
+                )
                 i += 1
             result.append(newInterval)
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert [
-        Interval(1, 6),
-        Interval(8, 10),
-        Interval(15, 18),
-    ] == solution.merge([
-        Interval(1, 3),
-        Interval(2, 6),
-        Interval(8, 10),
-        Interval(15, 18),
-    ])
-    assert [
-        Interval(1, 5),
-    ] == solution.merge([
-        Interval(1, 4),
-        Interval(4, 5),
-    ])
-    assert [
-        Interval(0, 0),
-        Interval(1, 4),
-    ] == solution.merge([
-        Interval(1, 4),
-        Interval(0, 0),
-    ])
+    assert [Interval(1, 6), Interval(8, 10), Interval(15, 18),] == solution.merge(
+        [
+            Interval(1, 3),
+            Interval(2, 6),
+            Interval(8, 10),
+            Interval(15, 18),
+        ]
+    )
+    assert [Interval(1, 5),] == solution.merge(
+        [
+            Interval(1, 4),
+            Interval(4, 5),
+        ]
+    )
+    assert [Interval(0, 0), Interval(1, 4),] == solution.merge(
+        [
+            Interval(1, 4),
+            Interval(0, 0),
+        ]
+    )

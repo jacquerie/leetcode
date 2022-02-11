@@ -9,10 +9,10 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
@@ -21,7 +21,7 @@ class Solution:
         if not preorder:
             return None
 
-        root, _ = self._bstFromPreorder(float('-inf'), float('inf'), 0, preorder)
+        root, _ = self._bstFromPreorder(float("-inf"), float("inf"), 0, preorder)
         return root
 
     def _bstFromPreorder(self, minimum, maximum, index, preorder):
@@ -38,7 +38,7 @@ class Solution:
         return node, index
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(8)

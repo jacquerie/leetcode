@@ -7,13 +7,13 @@ class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         nums.sort()
 
-        result = float('inf')
+        result = float("inf")
         for i in range(len(nums) - k + 1):
             result = min(result, nums[i + k - 1] - nums[i])
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 0 == solution.minimumDifference([90], 1)

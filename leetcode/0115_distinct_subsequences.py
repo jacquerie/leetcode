@@ -14,13 +14,14 @@ class Solution:
         elif j == len(t):
             return 1
         elif s[i] == t[j]:
-            return self._numDistinct(s, t, i + 1, j) +\
-                self._numDistinct(s, t, i + 1, j + 1)
+            return self._numDistinct(s, t, i + 1, j) + self._numDistinct(
+                s, t, i + 1, j + 1
+            )
         return self._numDistinct(s, t, i + 1, j)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 3 == solution.numDistinct('rabbbit', 'rabbit')
-    assert 5 == solution.numDistinct('babgbag', 'bag')
+    assert 3 == solution.numDistinct("rabbbit", "rabbit")
+    assert 5 == solution.numDistinct("babgbag", "bag")

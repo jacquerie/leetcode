@@ -13,7 +13,7 @@ class Solution:
         return [index[num] for num in nums]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [4, 0, 1, 1, 3] == solution.smallerNumbersThanCurrent([8, 1, 2, 2, 3])

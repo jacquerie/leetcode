@@ -9,24 +9,26 @@ class TreeNode:
 
     def __eq__(self, other):
         return (
-            other is not None and
-            self.val == other.val and
-            self.left == other.left and
-            self.right == other.right
+            other is not None
+            and self.val == other.val
+            and self.left == other.left
+            and self.right == other.right
         )
 
 
 class Codec:
     def serialize(self, root):
         if root is None:
-            return '()'
-        return ''.join([
-            '(',
-            str(root.val),
-            self.serialize(root.left),
-            self.serialize(root.right),
-            ')',
-        ])
+            return "()"
+        return "".join(
+            [
+                "(",
+                str(root.val),
+                self.serialize(root.left),
+                self.serialize(root.right),
+                ")",
+            ]
+        )
 
     def deserialize(self, data):
         if len(data) == 2:
@@ -43,7 +45,7 @@ class Codec:
 
     def parseVal(self, data):
         i = 1
-        while data[i].isdigit() or data[i] == '-':
+        while data[i].isdigit() or data[i] == "-":
             i += 1
         return i, int(data[1:i])
 
@@ -51,14 +53,14 @@ class Codec:
         n = 1
         while n:
             i += 1
-            if data[i] == '(':
+            if data[i] == "(":
                 n += 1
-            elif data[i] == ')':
+            elif data[i] == ")":
                 n -= 1
         return i + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Codec()
 
     t0_0 = TreeNode(1)
@@ -71,8 +73,8 @@ if __name__ == '__main__':
     t0_0.right = t0_2
     t0_0.left = t0_1
 
-    assert '(1(2()())(3(4()())(5()())))' == obj.serialize(t0_0)
-    assert t0_0 == obj.deserialize('(1(2()())(3(4()())(5()())))')
+    assert "(1(2()())(3(4()())(5()())))" == obj.serialize(t0_0)
+    assert t0_0 == obj.deserialize("(1(2()())(3(4()())(5()())))")
 
     t1_0 = TreeNode(-1)
     t1_1 = TreeNode(0)
@@ -80,5 +82,5 @@ if __name__ == '__main__':
     t1_0.right = t1_2
     t1_0.left = t1_1
 
-    assert '(-1(0()())(1()()))' == obj.serialize(t1_0)
-    assert t1_0 == obj.deserialize('(-1(0()())(1()()))')
+    assert "(-1(0()())(1()()))" == obj.serialize(t1_0)
+    assert t1_0 == obj.deserialize("(-1(0()())(1()()))")

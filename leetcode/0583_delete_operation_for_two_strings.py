@@ -22,7 +22,7 @@ class Solution:
         return result[len(word1)][len(word2)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.minDistance('sea', 'eat')
+    assert 2 == solution.minDistance("sea", "eat")

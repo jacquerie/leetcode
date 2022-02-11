@@ -20,7 +20,7 @@ class TopVotedCandidate:
         return self.leaders[bisect(self.times, t) - 1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = TopVotedCandidate([0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30])
 
     assert 0 == obj.q(3)

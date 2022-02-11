@@ -23,7 +23,7 @@ class FreqStack:
         return x
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = FreqStack()
 
     obj.push(5)

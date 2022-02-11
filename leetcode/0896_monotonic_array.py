@@ -12,7 +12,7 @@ class Solution:
         return not (decreasing and increasing)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.isMonotonic([1, 2, 2, 3])

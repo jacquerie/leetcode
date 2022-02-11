@@ -9,7 +9,7 @@ class Solution:
                 return [i, numsMap[target - num]]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [0, 1] == solution.twoSum([2, 7, 11, 15], 9)

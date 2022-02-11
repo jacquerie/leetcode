@@ -14,8 +14,8 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 6 == solution.countBinarySubstrings('00110011')
-    assert 4 == solution.countBinarySubstrings('10101')
+    assert 6 == solution.countBinarySubstrings("00110011")
+    assert 4 == solution.countBinarySubstrings("10101")

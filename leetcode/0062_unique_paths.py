@@ -16,7 +16,7 @@ class Solution:
         return self.choose(m + n - 2, m - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 3 == solution.uniquePaths(3, 2)

@@ -6,7 +6,7 @@ class Solution:
         return 1 if n == 1 else 0.5
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.nthPersonGetsNthSeat(1)

@@ -25,31 +25,40 @@ class Solution:
 
         visited.add((i, j))
         result = (
-            self.startsHere(board, word, visited, current + 1, i - 1, j) or
-            self.startsHere(board, word, visited, current + 1, i, j - 1) or
-            self.startsHere(board, word, visited, current + 1, i + 1, j) or
-            self.startsHere(board, word, visited, current + 1, i, j + 1)
+            self.startsHere(board, word, visited, current + 1, i - 1, j)
+            or self.startsHere(board, word, visited, current + 1, i, j - 1)
+            or self.startsHere(board, word, visited, current + 1, i + 1, j)
+            or self.startsHere(board, word, visited, current + 1, i, j + 1)
         )
         visited.remove((i, j))
 
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.exist([
-        ['A', 'B', 'C', 'E'],
-        ['S', 'F', 'C', 'S'],
-        ['A', 'D', 'E', 'E'],
-    ], 'ABCCED')
-    assert solution.exist([
-        ['A', 'B', 'C', 'E'],
-        ['S', 'F', 'C', 'S'],
-        ['A', 'D', 'E', 'E'],
-    ], 'SEE')
-    assert not solution.exist([
-        ['A', 'B', 'C', 'E'],
-        ['S', 'F', 'C', 'S'],
-        ['A', 'D', 'E', 'E'],
-    ], 'ABCB')
+    assert solution.exist(
+        [
+            ["A", "B", "C", "E"],
+            ["S", "F", "C", "S"],
+            ["A", "D", "E", "E"],
+        ],
+        "ABCCED",
+    )
+    assert solution.exist(
+        [
+            ["A", "B", "C", "E"],
+            ["S", "F", "C", "S"],
+            ["A", "D", "E", "E"],
+        ],
+        "SEE",
+    )
+    assert not solution.exist(
+        [
+            ["A", "B", "C", "E"],
+            ["S", "F", "C", "S"],
+            ["A", "D", "E", "E"],
+        ],
+        "ABCB",
+    )

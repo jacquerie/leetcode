@@ -10,19 +10,19 @@ class TreeNode:
 
 class Solution:
     def isValidBST(self, root):
-        return self._isValidBST(root, float('-inf'), float('inf'))
+        return self._isValidBST(root, float("-inf"), float("inf"))
 
     def _isValidBST(self, root, minimum, maximum):
         if root is None:
             return True
         return (
-            minimum < root.val < maximum and
-            self._isValidBST(root.left, minimum, root.val) and
-            self._isValidBST(root.right, root.val, maximum)
+            minimum < root.val < maximum
+            and self._isValidBST(root.left, minimum, root.val)
+            and self._isValidBST(root.right, root.val, maximum)
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(2)

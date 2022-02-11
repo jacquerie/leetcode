@@ -11,15 +11,15 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(char)
-        return ''.join(stack)
+        return "".join(stack)
 
     def areLettersEqualButDifferentCase(self, char1: str, char2: str) -> bool:
         return abs(ord(char1) - ord(char2)) == 32
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'leetcode' == solution.makeGood('leEeetcode')
-    assert '' == solution.makeGood('abBAcC')
-    assert 's' == solution.makeGood('s')
+    assert "leetcode" == solution.makeGood("leEeetcode")
+    assert "" == solution.makeGood("abBAcC")
+    assert "s" == solution.makeGood("s")

@@ -18,12 +18,12 @@ class Solution:
                 i += 1
                 j -= 1
 
-        return ''.join(result)
+        return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'dc-ba' == solution.reverseOnlyLetters('ab-cd')
-    assert 'j-Ih-gfE-dCba' == solution.reverseOnlyLetters('a-bC-dEf-ghIj')
-    assert 'Qedo1ct-eeLg=ntse-T!' == solution.reverseOnlyLetters('Test1ng-Leet=code-Q!')
+    assert "dc-ba" == solution.reverseOnlyLetters("ab-cd")
+    assert "j-Ih-gfE-dCba" == solution.reverseOnlyLetters("a-bC-dEf-ghIj")
+    assert "Qedo1ct-eeLg=ntse-T!" == solution.reverseOnlyLetters("Test1ng-Leet=code-Q!")

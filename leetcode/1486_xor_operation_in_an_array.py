@@ -9,7 +9,7 @@ class Solution:
         return functools.reduce(operator.xor, (start + 2 * i for i in range(n)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 8 == solution.xorOperation(5, 0)

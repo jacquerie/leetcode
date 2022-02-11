@@ -7,11 +7,7 @@ class ListNode:
         self.next = None
 
     def __eq__(self, other):
-        return (
-            other is not None and
-            self.val == other.val and
-            self.next == other.next
-        )
+        return other is not None and self.val == other.val and self.next == other.next
 
 
 class Solution:
@@ -25,7 +21,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     l0_0 = ListNode(1)

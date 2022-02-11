@@ -36,7 +36,7 @@ class Solution:
         return result[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [1, 2] == solution.topKFrequent([1, 1, 1, 2, 2, 3], 2)

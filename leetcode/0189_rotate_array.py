@@ -3,10 +3,10 @@
 
 class Solution:
     def rotate(self, nums, k):
-        nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
+        nums[:] = nums[len(nums) - k :] + nums[: len(nums) - k]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     nums = [1, 2, 3, 4, 5, 6, 7]

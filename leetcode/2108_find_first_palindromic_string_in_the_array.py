@@ -8,15 +8,15 @@ class Solution:
         for word in words:
             if self.isPalindrome(word):
                 return word
-        return ''
+        return ""
 
     def isPalindrome(self, word: str) -> bool:
         return word == word[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'ada' == solution.firstPalindrome(['abc', 'car', 'ada', 'racecar', 'cool'])
-    assert 'racecar' == solution.firstPalindrome(['notapalindrome', 'racecar'])
-    assert '' == solution.firstPalindrome(['def', 'ghi'])
+    assert "ada" == solution.firstPalindrome(["abc", "car", "ada", "racecar", "cool"])
+    assert "racecar" == solution.firstPalindrome(["notapalindrome", "racecar"])
+    assert "" == solution.firstPalindrome(["def", "ghi"])

@@ -20,8 +20,10 @@ class Solution:
         return year_with_max_population
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1993 == solution.maximumPopulation([[1993, 1999], [2000, 2010]])
-    assert 1960 == solution.maximumPopulation([[1950, 1961], [1960, 1971], [1970, 1981]])
+    assert 1960 == solution.maximumPopulation(
+        [[1950, 1961], [1960, 1971], [1970, 1981]]
+    )

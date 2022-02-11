@@ -15,7 +15,7 @@ class Solution:
         return current_result + k - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 9 == solution.findKthPositive([2, 3, 4, 7, 11], 5)

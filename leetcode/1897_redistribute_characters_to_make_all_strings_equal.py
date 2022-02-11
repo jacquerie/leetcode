@@ -13,8 +13,8 @@ class Solution:
         return all(count % len(words) == 0 for count in counts.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.makeEqual(['abc', 'aabc', 'bc'])
-    assert not solution.makeEqual(['ab', 'a'])
+    assert solution.makeEqual(["abc", "aabc", "bc"])
+    assert not solution.makeEqual(["ab", "a"])

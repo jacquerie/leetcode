@@ -3,7 +3,7 @@
 
 class MyHashSet:
     def __init__(self):
-        self.data = [False] * (2 ** 20)
+        self.data = [False] * (2**20)
 
     def add(self, key):
         self.data[key] = True
@@ -15,7 +15,7 @@ class MyHashSet:
         self.data[key] = False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyHashSet()
 
     obj.add(1)

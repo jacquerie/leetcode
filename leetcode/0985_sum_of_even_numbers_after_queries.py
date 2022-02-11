@@ -23,8 +23,9 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [8, 6, 2, 4] == solution.sumEvenAfterQueries(
-        [1, 2, 3, 4], [[1, 0], [-3, 1], [-4, 0], [2, 3]])
+        [1, 2, 3, 4], [[1, 0], [-3, 1], [-4, 0], [2, 3]]
+    )

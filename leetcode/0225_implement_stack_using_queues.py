@@ -22,7 +22,7 @@ class MyStack:
         return not self.queue
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MyStack()
 
     obj.push(1)

@@ -8,8 +8,8 @@ class Solution:
         return len(set(Counter(s).values())) == 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.areOccurrencesEqual('abcabc')
-    assert not solution.areOccurrencesEqual('aaabb')
+    assert solution.areOccurrencesEqual("abcabc")
+    assert not solution.areOccurrencesEqual("aaabb")

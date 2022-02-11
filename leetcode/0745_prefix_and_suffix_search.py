@@ -61,12 +61,12 @@ class WordFilter:
         return max(self.prefixes.filter(prefix) & self.suffixes.filter(suffix[::-1]))
 
 
-if __name__ == '__main__':
-    obj = WordFilter(['apple'])
+if __name__ == "__main__":
+    obj = WordFilter(["apple"])
 
-    assert 0 == obj.f('a', 'e')
-    assert -1 == obj.f('b', '')
+    assert 0 == obj.f("a", "e")
+    assert -1 == obj.f("b", "")
 
-    obj = WordFilter(['pop'])
+    obj = WordFilter(["pop"])
 
-    assert 0 == obj.f('', 'op')
+    assert 0 == obj.f("", "op")

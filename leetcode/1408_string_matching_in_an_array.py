@@ -14,9 +14,11 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert ['as', 'hero'] == solution.stringMatching(['mass', 'as', 'hero', 'superhero'])
-    assert ['et', 'code'] == solution.stringMatching(['leetcode', 'et', 'code'])
-    assert [] == solution.stringMatching(['blue', 'green', 'bu'])
+    assert ["as", "hero"] == solution.stringMatching(
+        ["mass", "as", "hero", "superhero"]
+    )
+    assert ["et", "code"] == solution.stringMatching(["leetcode", "et", "code"])
+    assert [] == solution.stringMatching(["blue", "green", "bu"])

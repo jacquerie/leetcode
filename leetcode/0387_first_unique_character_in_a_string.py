@@ -12,9 +12,9 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 0 == solution.firstUniqChar('leetcode')
-    assert 2 == solution.firstUniqChar('loveleetcode')
-    assert -1 == solution.firstUniqChar('')
+    assert 0 == solution.firstUniqChar("leetcode")
+    assert 2 == solution.firstUniqChar("loveleetcode")
+    assert -1 == solution.firstUniqChar("")

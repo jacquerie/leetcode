@@ -5,7 +5,7 @@ from typing import List
 
 class Solution:
     def nearestValidPoint(self, x: int, y: int, points: List[List[int]]) -> int:
-        current_index, current_min_distance = -1, float('inf')
+        current_index, current_min_distance = -1, float("inf")
         for index, (x1, y1) in enumerate(points):
             if x1 != x and y1 != y:
                 continue
@@ -15,9 +15,11 @@ class Solution:
         return current_index
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.nearestValidPoint(3, 4, [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]])
+    assert 2 == solution.nearestValidPoint(
+        3, 4, [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]]
+    )
     assert 0 == solution.nearestValidPoint(3, 4, [[3, 4]])
     assert -1 == solution.nearestValidPoint(3, 4, [[2, 3]])

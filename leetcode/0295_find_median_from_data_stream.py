@@ -66,7 +66,7 @@ class MedianFinder:
         return self.big._min()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = MedianFinder()
 
     obj.addNum(1)

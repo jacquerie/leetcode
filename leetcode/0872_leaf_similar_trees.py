@@ -26,7 +26,7 @@ class Solution:
             self._leafSimilar(root.right, leaves)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(3)

@@ -20,12 +20,14 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 16 == solution.islandPerimeter([
-        [0, 1, 0, 0],
-        [1, 1, 1, 0],
-        [0, 1, 0, 0],
-        [1, 1, 0, 0],
-    ])
+    assert 16 == solution.islandPerimeter(
+        [
+            [0, 1, 0, 0],
+            [1, 1, 1, 0],
+            [0, 1, 0, 0],
+            [1, 1, 0, 0],
+        ]
+    )

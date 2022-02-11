@@ -12,9 +12,11 @@ class Solution:
         return ends.difference(starts).pop()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'Sao Paulo' == solution.destCity([['London', 'New York'], ['New York', 'Lima'], ['Lima', 'Sao Paulo']])
-    assert 'A' == solution.destCity([['B', 'C'], ['D', 'B'], ['C', 'A']])
-    assert 'Z' == solution.destCity([['A', 'Z']])
+    assert "Sao Paulo" == solution.destCity(
+        [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]]
+    )
+    assert "A" == solution.destCity([["B", "C"], ["D", "B"], ["C", "A"]])
+    assert "Z" == solution.destCity([["A", "Z"]])

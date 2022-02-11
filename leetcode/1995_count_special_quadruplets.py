@@ -9,7 +9,7 @@ class Solution:
         return sum(a + b + c == d for a, b, c, d in itertools.combinations(nums, 4))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.countQuadruplets([1, 2, 3, 6])

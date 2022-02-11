@@ -9,7 +9,7 @@ class Solution:
         for i, el in enumerate(A):
             prefix_sums[i + 1] = prefix_sums[i] + A[i]
 
-        result = float('inf')
+        result = float("inf")
         seen = deque()
 
         for i, prefix_sum in enumerate(prefix_sums):
@@ -19,10 +19,10 @@ class Solution:
                 result = min(result, i - seen.popleft())
             seen.append(i)
 
-        return result if result != float('inf') else -1
+        return result if result != float("inf") else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 1 == solution.shortestSubarray([1], 1)

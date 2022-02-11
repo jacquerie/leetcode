@@ -21,10 +21,12 @@ class Solution:
             return self._sumRootToLeaf(root.right, current)
         elif root.right is None:
             return self._sumRootToLeaf(root.left, current)
-        return self._sumRootToLeaf(root.left, current) + self._sumRootToLeaf(root.right, current)
+        return self._sumRootToLeaf(root.left, current) + self._sumRootToLeaf(
+            root.right, current
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(1)

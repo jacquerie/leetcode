@@ -21,13 +21,12 @@ class Solution:
             return self._hasPathSum(root.right, sum - root.val)
         elif root.right is None:
             return self._hasPathSum(root.left, sum - root.val)
-        return (
-            self._hasPathSum(root.left, sum - root.val) or
-            self._hasPathSum(root.right, sum - root.val)
+        return self._hasPathSum(root.left, sum - root.val) or self._hasPathSum(
+            root.right, sum - root.val
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     t0_0 = TreeNode(5)

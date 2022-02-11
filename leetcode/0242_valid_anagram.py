@@ -8,8 +8,8 @@ class Solution:
         return Counter(s) == Counter(t)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.isAnagram('anagram', 'nagaram')
-    assert not solution.isAnagram('rat', 'car')
+    assert solution.isAnagram("anagram", "nagaram")
+    assert not solution.isAnagram("rat", "car")

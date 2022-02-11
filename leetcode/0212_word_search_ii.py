@@ -31,11 +31,13 @@ class Solution:
         visited = set()
         for i in range(len(board)):
             for j in range(len(board[0])):
-                self.startingHere(board, trie, visited, result, trie.root, '', i, j)
+                self.startingHere(board, trie, visited, result, trie.root, "", i, j)
 
         return list(result)
 
-    def startingHere(self, board, trie, visited, result, current_node, current_word, i, j):
+    def startingHere(
+        self, board, trie, visited, result, current_node, current_word, i, j
+    ):
         if current_node.leaf:
             result.add(current_word)
 
@@ -52,22 +54,33 @@ class Solution:
         current_word = current_word + board[i][j]
 
         visited.add((i, j))
-        self.startingHere(board, trie, visited, result, current_node, current_word, i - 1, j)
-        self.startingHere(board, trie, visited, result, current_node, current_word, i, j - 1)
-        self.startingHere(board, trie, visited, result, current_node, current_word, i + 1, j)
-        self.startingHere(board, trie, visited, result, current_node, current_word, i, j + 1)
+        self.startingHere(
+            board, trie, visited, result, current_node, current_word, i - 1, j
+        )
+        self.startingHere(
+            board, trie, visited, result, current_node, current_word, i, j - 1
+        )
+        self.startingHere(
+            board, trie, visited, result, current_node, current_word, i + 1, j
+        )
+        self.startingHere(
+            board, trie, visited, result, current_node, current_word, i, j + 1
+        )
         visited.remove((i, j))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    expected = ['eat', 'oath']
-    result = solution.findWords([
-        ['o', 'a', 'a', 'n'],
-        ['e', 't', 'a', 'e'],
-        ['i', 'h', 'k', 'r'],
-        ['i', 'f', 'l', 'v'],
-    ], ['oath', 'pea', 'eat', 'rain'])
+    expected = ["eat", "oath"]
+    result = solution.findWords(
+        [
+            ["o", "a", "a", "n"],
+            ["e", "t", "a", "e"],
+            ["i", "h", "k", "r"],
+            ["i", "f", "l", "v"],
+        ],
+        ["oath", "pea", "eat", "rain"],
+    )
 
     assert sorted(expected) == sorted(result)

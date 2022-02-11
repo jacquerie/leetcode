@@ -19,11 +19,11 @@ class Solution:
         if carry:
             result.append(str(carry))
 
-        return ''.join(reversed(result))
+        return "".join(reversed(result))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert '18' == solution.addStrings('9', '9')
-    assert '28' == solution.addStrings('9', '19')
+    assert "18" == solution.addStrings("9", "9")
+    assert "28" == solution.addStrings("9", "19")

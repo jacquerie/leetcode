@@ -11,11 +11,11 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.maxPower('leetcode')
-    assert 5 == solution.maxPower('abbcccddddeeeeedcba')
-    assert 5 == solution.maxPower('triplepillooooow')
-    assert 11 == solution.maxPower('hooraaaaaaaaaaay')
-    assert 1 == solution.maxPower('tourist')
+    assert 2 == solution.maxPower("leetcode")
+    assert 5 == solution.maxPower("abbcccddddeeeeedcba")
+    assert 5 == solution.maxPower("triplepillooooow")
+    assert 11 == solution.maxPower("hooraaaaaaaaaaay")
+    assert 1 == solution.maxPower("tourist")

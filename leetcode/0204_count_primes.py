@@ -17,7 +17,7 @@ class Solution:
         return sum(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 0 == solution.countPrimes(0)

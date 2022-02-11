@@ -8,20 +8,20 @@ class Solution:
         anagrams = defaultdict(list)
 
         for str in strs:
-            anagrams[''.join(sorted(str))].append(str)
+            anagrams["".join(sorted(str))].append(str)
 
         return anagrams.values()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
+    strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
     expected = [
-        ['eat', 'tea', 'ate'],
-        ['tan', 'nat'],
-        ['bat'],
+        ["eat", "tea", "ate"],
+        ["tan", "nat"],
+        ["bat"],
     ]
     result = solution.groupAnagrams(strs)
 

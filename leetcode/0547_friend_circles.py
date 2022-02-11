@@ -38,22 +38,28 @@ class Solution:
         return len({union_find.root(i) for i in range(len(M))})
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 2 == solution.findCircleNum([
-        [1, 1, 0],
-        [1, 1, 0],
-        [0, 0, 1],
-    ])
-    assert 1 == solution.findCircleNum([
-        [1, 1, 0],
-        [1, 1, 1],
-        [0, 1, 1],
-    ])
-    assert 1 == solution.findCircleNum([
-        [1, 0, 0, 1],
-        [0, 1, 1, 0],
-        [0, 1, 1, 1],
-        [1, 0, 1, 1],
-    ])
+    assert 2 == solution.findCircleNum(
+        [
+            [1, 1, 0],
+            [1, 1, 0],
+            [0, 0, 1],
+        ]
+    )
+    assert 1 == solution.findCircleNum(
+        [
+            [1, 1, 0],
+            [1, 1, 1],
+            [0, 1, 1],
+        ]
+    )
+    assert 1 == solution.findCircleNum(
+        [
+            [1, 0, 0, 1],
+            [0, 1, 1, 0],
+            [0, 1, 1, 1],
+            [1, 0, 1, 1],
+        ]
+    )

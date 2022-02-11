@@ -20,7 +20,7 @@ class Solution:
         return all(count % partition_size == 0 for count in counts)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert solution.hasGroupsSizeX([1, 2, 3, 4, 4, 3, 2, 1])

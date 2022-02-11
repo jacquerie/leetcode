@@ -3,7 +3,7 @@
 
 class Solution:
 
-    VOWELS = {'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'}
+    VOWELS = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"}
 
     def reverseVowels(self, s):
         result = list(s)
@@ -19,12 +19,12 @@ class Solution:
                 i += 1
                 j -= 1
 
-        return ''.join(result)
+        return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
-    assert 'holle' == solution.reverseVowels('hello')
-    assert 'Aa' == solution.reverseVowels('aA')
-    assert 'EO' == solution.reverseVowels('OE')
+    assert "holle" == solution.reverseVowels("hello")
+    assert "Aa" == solution.reverseVowels("aA")
+    assert "EO" == solution.reverseVowels("OE")

@@ -13,7 +13,7 @@ class Solution:
     def rand10(self):
         x, y = 0, 0
 
-        while (not x or not y):
+        while not x or not y:
             roll = rand7()
             if 1 <= roll <= 2:
                 x = roll
@@ -23,7 +23,7 @@ class Solution:
         return 5 * (x - 1) + (y - 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert 2 == solution.rand10()

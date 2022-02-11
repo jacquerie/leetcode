@@ -27,7 +27,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
 
     assert [[0, 0], [0, 1]] == solution.allCellsDistOrder(1, 2, 0, 0)
